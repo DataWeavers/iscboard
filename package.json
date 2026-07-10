@@ -1,0 +1,13 @@
+{
+  "name": "aisworld-portal",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Fetches the AISWORLD listserv RSS feed, categorizes and de-duplicates posts, and writes public/data.json for the static portal.",
+  "scripts": {
+    "fetch": "node scripts/fetch-feed.mjs"
+  },
+  "dependencies": {
+    "fast-xml-parser": "^4.5.0"
+  }
+}

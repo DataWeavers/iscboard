@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AISWORLD Digest</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: oklch(98% 0.005 80);
+    color: oklch(24% 0.01 60);
+    font-family: 'Public Sans', sans-serif;
+  }
+  a { color: inherit; }
+  ::selection { background: oklch(85% 0.05 40); }
+
+  header {
+    border-bottom: 1px solid oklch(88% 0.01 60);
+    padding: 36px 48px 28px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  header .row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
+  h1 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 34px; margin: 0; letter-spacing: -0.01em; }
+  header .meta { font-size: 13px; color: oklch(48% 0.01 60); }
+  header .meta a { text-decoration: underline; text-underline-offset: 2px; }
+  header p { margin: 6px 0 0; font-size: 15px; color: oklch(42% 0.012 60); max-width: 640px; }
+
+  nav {
+    display: flex; gap: 8px; flex-wrap: wrap;
+    padding: 20px 48px;
+    border-bottom: 1px solid oklch(90% 0.008 60);
+    position: sticky; top: 0;
+    background: oklch(98% 0.005 80 / 0.92);
+    backdrop-filter: blur(6px);
+    z-index: 5;
+  }
+  nav button {
+    font-family: 'Public Sans', sans-serif;
+    font-size: 13.5px;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 20px;
+    border: 1px solid oklch(88% 0.01 60);
+    background: oklch(100% 0 0);
+    color: oklch(30% 0.012 60);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  nav button:hover { background: oklch(94% 0.008 60); }
+  nav button.active {
+    border-color: oklch(30% 0.01 60);
+    background: oklch(24% 0.01 60);
+    color: oklch(98% 0.005 80);
+  }
+  nav button .count { font-size: 11.5px; font-weight: 600; opacity: 0.7; }
+
+  main { max-width: 820px; margin: 0 auto; padding: 32px 48px 96px; }
+  .group { margin-bottom: 36px; }
+  .group h2 {
+    font-family: 'Public Sans', sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: oklch(52% 0.012 60); margin: 0 0 14px;
+  }
+  .items { display: flex; flex-direction: column; gap: 2px; }
+  .item {
+    display: block; text-decoration: none; color: inherit;
+    padding: 16px 18px; border-radius: 10px;
+    animation: fadeIn 0.3s ease both;
+  }
+  .item:hover { background: oklch(95% 0.008 60); }
+  .item-top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
+  .pill { font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+  .repost-badge {
+    font-size: 11px; color: oklch(52% 0.01 60);
+    border: 1px solid oklch(85% 0.01 60); border-radius: 20px; padding: 2px 8px;
+  }
+  .item-date { font-size: 12.5px; color: oklch(52% 0.01 60); margin-left: auto; }
+  .item-subject { font-family: 'Source Serif 4', serif; font-size: 18px; font-weight: 600; line-height: 1.35; margin-bottom: 4px; }
+  .item-snippet { font-size: 14px; color: oklch(40% 0.012 60); line-height: 1.5; margin-bottom: 6px; }
+  .item-sender { font-size: 12.5px; color: oklch(55% 0.012 60); }
+
+  .empty { text-align: center; padding: 80px 0; color: oklch(52% 0.01 60); font-size: 15px; }
+
+  footer {
+    border-top: 1px solid oklch(90% 0.008 60);
+    padding: 24px 48px;
+    font-size: 12.5px;
+    color: oklch(55% 0.012 60);
+    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+  }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="row">
+    <h1>AISWORLD Digest</h1>
+    <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
+  </div>
+  <p>A sorted, de-duplicated view of the mailing list — filter to the categories you actually read.</p>
+</header>
+
+<nav id="filter-bar"></nav>
+
+<main>
+  <div id="feed"></div>
+  <div class="empty" id="empty-state" style="display:none;">No messages in this category right now.</div>
+</main>
+
+<footer>
+  <span>Auto-updated daily from the AISWORLD RSS feed. Duplicate reposts of the same call/announcement are merged into one entry.</span>
+  <span id="footer-counts"></span>
+</footer>
+
+<script>
+  const CATEGORIES = [
+    { id: 'all', label: 'All' },
+    { id: 'cfp', label: 'Calls for Papers' },
+    { id: 'conference', label: 'Conferences & Workshops' },
+    { id: 'journal', label: 'Journal / Special Issues' },
+    { id: 'job', label: 'Jobs & Recruiting' },
+    { id: 'funding', label: 'PhD & Funding' },
+    { id: 'general', label: 'General Discussion' },
+  ];
+  const HUES = { cfp: 250, conference: 150, journal: 30, job: 10, funding: 300, general: 210 };
+
+  function hueColor(cat, l, c) {
+    return `oklch(${l} ${c} ${HUES[cat] ?? 60})`;
+  }
+
+  function dayBucket(iso, today) {
+    const d = new Date(iso);
+    const diffDays = Math.round((today - d) / 86400000);
+    if (diffDays <= 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays <= 6) return 'This week';
+    return 'Earlier';
+  }
+
+  function formatDateLabel(iso) {
+    return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  }
+
+  let activeCategory = 'all';
+  let DATA = { lastUpdated: null, messages: [] };
+
+  function render() {
+    const today = new Date();
+    document.getElementById('updated-at').textContent = DATA.lastUpdated
+      ? new Date(DATA.lastUpdated).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })
+      : 'not yet run';
+
+    const counts = { all: DATA.messages.length };
+    CATEGORIES.forEach(c => { if (c.id !== 'all') counts[c.id] = 0; });
+    DATA.messages.forEach(m => { counts[m.category] = (counts[m.category] || 0) + 1; });
+
+    const filterBar = document.getElementById('filter-bar');
+    filterBar.innerHTML = '';
+    CATEGORIES.forEach(c => {
+      const btn = document.createElement('button');
+      btn.className = activeCategory === c.id ? 'active' : '';
+      btn.innerHTML = `${c.label} <span class="count">${counts[c.id] || 0}</span>`;
+      btn.onclick = () => { activeCategory = c.id; render(); };
+      filterBar.appendChild(btn);
+    });
+
+    const filtered = activeCategory === 'all'
+      ? DATA.messages
+      : DATA.messages.filter(m => m.category === activeCategory);
+
+    const buckets = { Today: [], Yesterday: [], 'This week': [], Earlier: [] };
+    filtered.forEach(m => buckets[dayBucket(m.date, today)].push(m));
+
+    const feed = document.getElementById('feed');
+    feed.innerHTML = '';
+    ['Today', 'Yesterday', 'This week', 'Earlier'].forEach(label => {
+      const items = buckets[label];
+      if (!items.length) return;
+      const section = document.createElement('section');
+      section.className = 'group';
+      const h2 = document.createElement('h2');
+      h2.textContent = label;
+      section.appendChild(h2);
+      const itemsWrap = document.createElement('div');
+      itemsWrap.className = 'items';
+      items.forEach(m => {
+        const catMeta = CATEGORIES.find(c => c.id === m.category);
+        const repostCount = m.reposts ? m.reposts.length : 1;
+        const a = document.createElement('a');
+        a.className = 'item';
+        a.href = m.url || 'https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD';
+        a.target = '_blank';
+        a.rel = 'noopener';
+        a.innerHTML = `
+          <div class="item-top">
+            <span class="pill" style="background:${hueColor(m.category, '92%', '0.03')}; color:${hueColor(m.category, '32%', '0.09')};">${catMeta ? catMeta.label : m.category}</span>
+            ${repostCount > 1 ? `<span class="repost-badge">posted ${repostCount}×</span>` : ''}
+            <span class="item-date">${formatDateLabel(m.date)}</span>
+          </div>
+          <div class="item-subject"></div>
+          <div class="item-snippet"></div>
+          <div class="item-sender"></div>
+        `;
+        a.querySelector('.item-subject').textContent = m.subject;
+        a.querySelector('.item-snippet').textContent = m.snippet || '';
+        a.querySelector('.item-sender').textContent = m.sender || '';
+        itemsWrap.appendChild(a);
+      });
+      section.appendChild(itemsWrap);
+      feed.appendChild(section);
+    });
+
+    document.getElementById('empty-state').style.display = filtered.length === 0 ? 'block' : 'none';
+    const totalReposts = DATA.messages.reduce((sum, m) => sum + (m.reposts ? m.reposts.length : 1), 0);
+    document.getElementById('footer-counts').textContent = `${totalReposts} messages · ${DATA.messages.length} unique threads`;
+  }
+
+  fetch('./data.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => { DATA = data; render(); })
+    .catch(() => { render(); });
+</script>
+</body>
+</html>

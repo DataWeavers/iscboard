@@ -1,0 +1,11 @@
+{
+  "_comment": "Order matters: first matching rule wins. Each rule is tested against 'subject + description' (case-insensitive). Edit freely to retune classification.",
+  "rules": [
+    { "id": "cfp",        "label": "Calls for Papers",          "keywords": ["call for papers", "cfp", "submission deadline", "papers are invited"] },
+    { "id": "conference", "label": "Conferences & Workshops",    "keywords": ["conference", "workshop", "symposium", "colloquium", "save the date", "registration open"] },
+    { "id": "journal",    "label": "Journal / Special Issues",   "keywords": ["special issue", "journal", "misq", "jais", "isr ", "editorial", "call for reviewers"] },
+    { "id": "job",        "label": "Jobs & Recruiting",          "keywords": ["assistant professor", "associate professor", "full professor", "faculty position", "tenure-track", "lecturer", "postdoc", "postdoctoral", "vacancy", "hiring", "job opening"] },
+    { "id": "funding",    "label": "PhD & Funding",              "keywords": ["phd", "ph.d", "doctoral", "scholarship", "fellowship", "funding", "grant"] },
+    { "id": "general",    "label": "General Discussion",         "keywords": [] }
+  ]
+}
