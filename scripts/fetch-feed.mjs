@@ -64,7 +64,10 @@ async function main() {
   }
   const xml = await res.text();
 
-  const parser = new XMLParser({ ignoreAttributes: false });
+  // processEntities:{} removes the (relatively low) default cap on total
+  // entity expansions — RSS descriptions with lots of escaped HTML
+  // (&lt;, &amp;, etc.) can easily exceed the library's default limit.
+  const parser = new XMLParser({ ignoreAttributes: false, processEntities: {} });
   const feed = parser.parse(xml);
   const rawItems = feed?.rss?.channel?.item ?? [];
   const items = Array.isArray(rawItems) ? rawItems : [rawItems];
