@@ -1,4 +1,4 @@
-name: Update AISWORLD digest
+name: Update ISC Board data
 
 on:
   schedule:
@@ -39,13 +39,13 @@ jobs:
       - name: Commit updated data
         id: commit
         run: |
-          git config user.name "aisworld-portal-bot"
+          git config user.name "iscboard-bot"
           git config user.email "actions@users.noreply.github.com"
           git add public/data.json
           if git diff --cached --quiet; then
             echo "changed=false" >> "$GITHUB_OUTPUT"
           else
-            git commit -m "chore: update AISWORLD digest data"
+            git commit -m "chore: update ISC Board data"
             git push
             echo "changed=true" >> "$GITHUB_OUTPUT"
           fi
