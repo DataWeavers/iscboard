@@ -1,7 +1,9 @@
 // fetch-feed.mjs
-// Fetches the AISWORLD listserv RSS feed, classifies each post into a topic
-// category, merges it into the existing data.json (de-duplicating reposts of
-// the same announcement), prunes old entries, and writes public/data.json.
+// Fetches the AISWORLD listserv RSS feed, tags each post along three facets
+// (Type / Topic / Event — see computeTypeTags / computeTopicTags /
+// computeEventTags below), merges it into the existing data.json
+// (de-duplicating reposts of the same announcement), prunes old entries, and
+// writes public/data.json.
 //
 // Run manually:   npm install && npm run fetch
 // Run on a schedule: see .github/workflows/update.yml (daily cron)
@@ -13,31 +15,189 @@ import { existsSync } from 'node:fs';
 const FEED_URL = 'https://listserv.isworld.org/scripts/wa-ISWORLD.exe?RSS&L=AISWORLD&v=2.0&LIMIT=100';
 const DATA_PATH = new URL('../public/data.json', import.meta.url);
 const CATEGORIES_PATH = new URL('../config/categories.json', import.meta.url);
+const TOPICS_PATH = new URL('../config/topics.json', import.meta.url);
 const RETENTION_DAYS = 60; // drop threads whose most recent post is older than this
 
 function stripHtml(str = '') {
   return str.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
 
-// Collapses "Re:", "Fwd:", trailing whitespace/punctuation variance so the
-// same announcement posted multiple times maps to one key.
+// Collapses "Re:", "Fwd:", "AW:" (the German reply prefix), trailing
+// whitespace/punctuation variance so the same announcement posted multiple
+// times maps to one key.
 function normalizeSubject(subject = '') {
   return subject
     .toLowerCase()
-    .replace(/^\s*(re|fwd?|fw)\s*:\s*/i, '')
+    .replace(/^\s*(re|fwd?|fw|aw)\s*:\s*/i, '')
     .replace(/[^\w\s]/g, '')
     .replace(/\s+/g, ' ')
     .trim();
 }
 
-function categorize(text, rules) {
-  const lower = text.toLowerCase();
-  for (const rule of rules) {
-    if (rule.keywords.length === 0) continue; // fallback rule, matched last
-    if (rule.keywords.some(k => lower.includes(k))) return rule.id;
+// --- Fuzzy repost detection ---------------------------------------------
+// Some reposts get reworded enough (emoji swapped in, "Last Call" ->
+// "Extended Deadline", underscores -> spaces) that normalizeSubject()'s exact
+// key won't catch them. We catch those with trigram similarity, but subject
+// similarity ALONE is unreliable: two unrelated one-line replies in the same
+// email thread (e.g. "Re: X" / "AW: X") can score 100% on a short subject
+// while discussing completely different things. Requiring the full message
+// body to ALSO be similar is what actually distinguishes "same announcement,
+// reworded" from "different message, similarly-titled" (e.g. a conference's
+// six distinct per-track CFPs, which share boilerplate but aren't dupes).
+const FUZZY_SUBJECT_THRESHOLD = 0.6;
+const FUZZY_BODY_THRESHOLD = 0.65;
+// Pairs below the auto-merge bar but above this are logged for a human to
+// check rather than silently merged (or silently left as two entries).
+const FUZZY_REVIEW_THRESHOLD = 0.4;
+
+function trigrams(str = '') {
+  const clean = str.toLowerCase().replace(/\s+/g, '');
+  const grams = new Set();
+  for (let i = 0; i < clean.length - 2; i++) grams.add(clean.slice(i, i + 3));
+  return grams;
+}
+
+function diceCoefficient(a, b) {
+  if (a.size === 0 || b.size === 0) return 0;
+  let inter = 0;
+  for (const g of a) if (b.has(g)) inter++;
+  return (2 * inter) / (a.size + b.size);
+}
+
+// Distinguishes "same announcement, reworded" from "different event, same
+// template" — e.g. one organizer's near-identical CFP boilerplate sent out
+// separately for DSCI-2026 and IOI-2026 scores high on both thresholds above
+// despite being two different conferences. Pulls each subject's "ACRONYM
+// 20XX" identifier(s) (normalizing underscores/hyphens so "CFP_MoMM2026_..."
+// and "MoMM 2026" both expose "momm"); if both subjects name at least one
+// such identifier and none match, they're different events — block the
+// merge no matter how similar the wording is.
+const MONTH_WORDS = new Set([
+  'jan', 'january', 'feb', 'february', 'mar', 'march', 'apr', 'april', 'may',
+  'jun', 'june', 'jul', 'july', 'aug', 'august', 'sep', 'sept', 'september',
+  'oct', 'october', 'nov', 'november', 'dec', 'december',
+]);
+
+function extractEventIdentifiers(subject = '') {
+  const normalized = subject.replace(/[^a-zA-Z0-9]+/g, ' ');
+  const re = /\b([a-zA-Z]{2,12})\s?(20\d{2})\b/g;
+  const ids = new Set();
+  let m;
+  while ((m = re.exec(normalized))) {
+    const id = m[1].toLowerCase();
+    if (!MONTH_WORDS.has(id)) ids.add(id);
   }
-  const fallback = rules.find(r => r.keywords.length === 0);
-  return fallback ? fallback.id : 'general';
+  return ids;
+}
+
+function sameNamedEvent(idsA, idsB) {
+  if (idsA.size === 0 || idsB.size === 0) return true; // nothing to contradict on
+  for (const id of idsA) if (idsB.has(id)) return true;
+  return false;
+}
+
+// Scans all threads for reworded reposts of the same announcement. Mutates
+// nothing; returns { merges: [[keepIndex, dropIndex], ...], review: [...] }.
+function findFuzzyDuplicates(messages) {
+  const subjTri = messages.map(m => trigrams(normalizeSubject(m.subject)));
+  const bodyTri = messages.map(m => trigrams(m.snippet));
+  const eventIds = messages.map(m => extractEventIdentifiers(m.subject));
+  const merges = [];
+  const review = [];
+
+  for (let i = 0; i < messages.length; i++) {
+    for (let j = i + 1; j < messages.length; j++) {
+      const subjSim = diceCoefficient(subjTri[i], subjTri[j]);
+      const bodySim = diceCoefficient(bodyTri[i], bodyTri[j]);
+      const plausiblySameEvent = sameNamedEvent(eventIds[i], eventIds[j]);
+      if (subjSim >= FUZZY_SUBJECT_THRESHOLD && bodySim >= FUZZY_BODY_THRESHOLD && plausiblySameEvent) {
+        merges.push([i, j, subjSim, bodySim]);
+      } else if (plausiblySameEvent && (subjSim >= FUZZY_REVIEW_THRESHOLD || bodySim >= FUZZY_REVIEW_THRESHOLD)) {
+        review.push([i, j, subjSim, bodySim]);
+      }
+    }
+  }
+  return { merges, review };
+}
+
+// --- Type tags ------------------------------------------------------------
+// Every rule whose pattern matches applies. Falls back to General Discussion
+// only when nothing else matched.
+//
+// One more inference on top of the keyword rules: a detected venue acronym
+// (computeEventTags — HICSS, AMCIS, WPMC, ...) is a strong enough signal on
+// its own that the post is conference/workshop-related even when the body
+// never uses those literal words (some RSS entries are just a stub linking
+// out to the full message, or the text focuses on the topic and never
+// names the event format).
+function computeTypeTags(text, rules, eventTags) {
+  const hits = rules.filter(r => r.pattern && new RegExp(r.pattern, 'i').test(text)).map(r => r.label);
+  if (!hits.includes('Conference & Workshop') && eventTags.length > 0) {
+    hits.push('Conference & Workshop');
+  }
+  if (hits.length === 0) {
+    const fallback = rules.find(r => !r.pattern);
+    return fallback ? [fallback.label] : ['General Discussion'];
+  }
+  return hits;
+}
+
+// --- Topic tags -------------------------------------------------------
+// Cross-cutting and independent of type — a post can be both "AI & GenAI"
+// and "Cybersecurity & Privacy" (config/topics.json).
+function computeTopicTags(text, topics) {
+  const lower = text.toLowerCase();
+  return topics.filter(t => t.keywords.some(k => lower.includes(k))).map(t => t.label);
+}
+
+// "ACRONYM 20XX" / "ACRONYM_20XX" pattern — covers the vast majority of CFP
+// and conference subjects (ICSOC 2026, DSCI-2026, MoMM2026, ...). Requires
+// the matched token to actually look like an acronym by ORIGINAL casing
+// (ALLCAPS, or an internal lower->upper transition like "iiWAS"/"MoMM"/"WeB")
+// so ordinary Title Case words ("Conference 2026", "the 2026 Workshop") don't
+// get mistaken for venue names.
+function looksAcronymLike(token) {
+  if (/^[A-Z0-9]+$/.test(token)) return true;
+  if (/[a-z][A-Z]/.test(token)) return true;
+  return false;
+}
+
+function extractRawIdentifiers(subject) {
+  const normalized = subject.replace(/[^a-zA-Z0-9]+/g, ' ');
+  const re = /\b([a-zA-Z]{2,12})\s?(20\d{2})\b/g;
+  const out = [];
+  let m;
+  while ((m = re.exec(normalized))) {
+    const raw = m[1];
+    if (MONTH_WORDS.has(raw.toLowerCase())) continue;
+    if (!looksAcronymLike(raw)) continue;
+    if (!out.includes(raw)) out.push(raw);
+  }
+  return out;
+}
+
+// Fallback for acronym+ordinal forms with no year in the subject at all
+// (e.g. "HICSS-60", "HICSS 60") — only fires for ALLCAPS tokens, since that's
+// the one reliable signal separating a real acronym from an ordinary word
+// that happens to precede a number.
+function extractVenueTag(subject) {
+  const ids = extractRawIdentifiers(subject);
+  if (ids.length > 0) return ids[0].toUpperCase();
+  const ord = subject.match(/\b([A-Z]{2,10})[-\s](\d{2,3})\b/);
+  return ord ? ord[1] : null;
+}
+
+// --- Event tags --------------------------------------------------------
+// Usually zero or one venue code (HICSS, ISSRE, AMCIS, ...) pulled straight
+// from the subject; kept as an array for a consistent shape with the other
+// two tag groups even though it rarely holds more than one entry.
+function computeEventTags(subject) {
+  const venueTag = extractVenueTag(subject);
+  return venueTag ? [venueTag] : [];
+}
+
+function union(a = [], b = []) {
+  return [...new Set([...a, ...b])];
 }
 
 async function loadExisting() {
@@ -51,8 +211,9 @@ async function loadExisting() {
 }
 
 async function main() {
-  const [{ rules }, existing] = await Promise.all([
+  const [{ rules }, { topics }, existing] = await Promise.all([
     readFile(CATEGORIES_PATH, 'utf-8').then(JSON.parse),
+    readFile(TOPICS_PATH, 'utf-8').then(JSON.parse),
     loadExisting(),
   ]);
 
@@ -83,7 +244,9 @@ async function main() {
     const sender = stripHtml(item['dc:creator'] ?? item.author ?? 'Unknown sender');
     const description = stripHtml(item.description ?? '');
     const key = normalizeSubject(subject);
-    const category = categorize(`${subject} ${description}`, rules);
+    const eventTags = computeEventTags(subject);
+    const typeTags = computeTypeTags(`${subject} ${description}`, rules, eventTags);
+    const topicTags = computeTopicTags(`${subject} ${description}`, topics);
 
     const existingThread = byKey.get(key);
     if (existingThread) {
@@ -91,6 +254,14 @@ async function main() {
         existingThread.reposts.push(date);
         existingThread.reposts.sort();
       }
+      // Union tags across all reposts of a thread rather than overwriting —
+      // a later repost's rewording might legitimately surface a tag the
+      // first post's text didn't trigger (or vice versa), and dropping a
+      // previously-detected tag on a reword is worse than keeping a stale
+      // extra one.
+      existingThread.typeTags = union(existingThread.typeTags, typeTags);
+      existingThread.topicTags = union(existingThread.topicTags, topicTags);
+      existingThread.eventTags = union(existingThread.eventTags, eventTags);
       // Keep the latest link/date/snippet as the thread's primary record.
       if (date > existingThread.date) {
         existingThread.date = date;
@@ -101,12 +272,14 @@ async function main() {
     } else {
       byKey.set(key, {
         key,
-        category,
         subject,
         sender,
         date,
         url: link,
         snippet: description,
+        typeTags,
+        topicTags,
+        eventTags,
         reposts: [date],
       });
     }
@@ -115,9 +288,43 @@ async function main() {
   // Prune threads not seen recently (feed only carries the last ~100 posts,
   // so anything this old has scrolled out of the window anyway).
   const cutoff = Date.now() - RETENTION_DAYS * 86400000;
-  const messages = [...byKey.values()]
+  let messages = [...byKey.values()]
     .filter(m => new Date(m.date).getTime() >= cutoff)
     .sort((a, b) => new Date(b.date) - new Date(a.date));
+
+  // Second pass: catch reposts whose subject was reworded enough to dodge
+  // the exact-key merge above (see findFuzzyDuplicates for the threshold
+  // rationale). Union-find style: repeatedly fold the highest-confidence
+  // pair together until none remain, keeping the thread with the newer date
+  // as the surviving record and carrying over the other's repost history.
+  let fuzzy = findFuzzyDuplicates(messages);
+  while (fuzzy.merges.length > 0) {
+    const [i, j] = fuzzy.merges[0];
+    const [keep, drop] = new Date(messages[i].date) >= new Date(messages[j].date)
+      ? [messages[i], messages[j]]
+      : [messages[j], messages[i]];
+    const mergedReposts = [...new Set([...keep.reposts, ...drop.reposts])].sort();
+    const merged = {
+      ...keep,
+      reposts: mergedReposts,
+      typeTags: union(keep.typeTags, drop.typeTags),
+      topicTags: union(keep.topicTags, drop.topicTags),
+      eventTags: union(keep.eventTags, drop.eventTags),
+    };
+    messages = messages
+      .filter(m => m !== messages[i] && m !== messages[j])
+      .concat(merged)
+      .sort((a, b) => new Date(b.date) - new Date(a.date));
+    fuzzy = findFuzzyDuplicates(messages);
+  }
+  if (fuzzy.review.length > 0) {
+    console.log(`\n${fuzzy.review.length} possible-duplicate pair(s) below the auto-merge bar — check manually:`);
+    for (const [i, j, subjSim, bodySim] of fuzzy.review) {
+      console.log(`  [subj ${subjSim.toFixed(2)} / body ${bodySim.toFixed(2)}]`);
+      console.log(`    A: ${messages[i].subject}`);
+      console.log(`    B: ${messages[j].subject}`);
+    }
+  }
 
   const output = {
     lastUpdated: new Date().toISOString(),

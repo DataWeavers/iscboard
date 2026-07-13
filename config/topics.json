@@ -1,0 +1,13 @@
+{
+  "_comment": "Cross-cutting topic tags — a message can match zero, one, or several. Tested against 'subject + description' (case-insensitive substring). These sit alongside (not instead of) the venue tag auto-extracted from the subject (e.g. HICSS, ISSRE, AMCIS).",
+  "topics": [
+    { "id": "ai", "label": "AI & GenAI", "keywords": ["artificial intelligence", "generative ai", "genai", "gen ai", "large language model", "llm", "chatbot", "machine learning", " ai agent", "agentic ai", " ai ", " ai,", " ai.", "ai-generated", "ai-enhanced", "ai-driven"] },
+    { "id": "data", "label": "Data Science & Analytics", "keywords": ["data science", "analytics", "data mining", "big data"] },
+    { "id": "security", "label": "Cybersecurity & Privacy", "keywords": ["cybersecurity", "cyber security", "security", "privacy", "ransomware", "encryption"] },
+    { "id": "digital", "label": "Digital Transformation", "keywords": ["digital transformation", "digital sovereignty", "digital economy", "digital innovation", "digital governance"] },
+    { "id": "business", "label": "Business & Enterprise", "keywords": ["enterprise", "business process", "organizational", "e-business", "e-commerce"] },
+    { "id": "health", "label": "Health", "keywords": ["health", "well-being", "wellbeing", "medical"] },
+    { "id": "education", "label": "Education & Teaching", "keywords": ["education", "teaching", "pedagogy", "curriculum"] },
+    { "id": "sustainability", "label": "Sustainability", "keywords": ["sustainability", "sustainable", "climate"] }
+  ]
+}

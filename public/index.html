@@ -20,72 +20,70 @@
 
   header {
     border-bottom: 1px solid oklch(88% 0.01 60);
-    padding: 36px 48px 28px;
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
+    padding: 28px 48px 24px;
   }
-  header .row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; }
-  h1 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: 34px; margin: 0; letter-spacing: -0.01em; }
+  header .row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; max-width: 1180px; margin: 0 auto; width: 100%; }
+  h1 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: clamp(24px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
   header .meta { font-size: 13px; color: oklch(48% 0.01 60); }
   header .meta a { text-decoration: underline; text-underline-offset: 2px; }
   header p { margin: 6px 0 0; font-size: 15px; color: oklch(42% 0.012 60); max-width: 640px; }
 
-  nav {
-    display: flex; gap: 8px; flex-wrap: wrap;
-    padding: 20px 48px;
-    border-bottom: 1px solid oklch(90% 0.008 60);
-    position: sticky; top: 0;
-    background: oklch(98% 0.005 80 / 0.92);
-    backdrop-filter: blur(6px);
-    z-index: 5;
+  .mobile-bar { display: none; padding: 12px 48px; border-bottom: 1px solid oklch(90% 0.008 60); position: sticky; top: 0; background: oklch(98% 0.005 80 / 0.94); backdrop-filter: blur(6px); z-index: 5; }
+  .mobile-bar button {
+    width: 100%; max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    font-family: 'Public Sans', sans-serif; font-size: 13.5px; font-weight: 600; padding: 10px 14px;
+    border-radius: 10px; border: 1px solid oklch(85% 0.01 60); background: oklch(100% 0 0); color: oklch(28% 0.012 60); cursor: pointer;
   }
-  nav button {
-    font-family: 'Public Sans', sans-serif;
-    font-size: 13.5px;
-    font-weight: 500;
-    padding: 8px 14px;
-    border-radius: 20px;
-    border: 1px solid oklch(88% 0.01 60);
-    background: oklch(100% 0 0);
-    color: oklch(30% 0.012 60);
-    cursor: pointer;
-    display: flex;
-    align-items: center;
-    gap: 6px;
-  }
-  nav button:hover { background: oklch(94% 0.008 60); }
-  nav button.active {
-    border-color: oklch(30% 0.01 60);
-    background: oklch(24% 0.01 60);
-    color: oklch(98% 0.005 80);
-  }
-  nav button .count { font-size: 11.5px; font-weight: 600; opacity: 0.7; }
 
-  main { max-width: 820px; margin: 0 auto; padding: 32px 48px 96px; }
-  .group { margin-bottom: 36px; }
+  .layout { display: flex; flex-wrap: wrap; gap: 32px; max-width: 1180px; margin: 0 auto; padding: 24px 48px 96px; align-items: flex-start; }
+
+  aside { flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 22px; width: 100%; }
+  .sidebar-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .sidebar-head span { font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(40% 0.01 60); }
+  .sidebar-head button { font-size: 11.5px; font-weight: 600; color: oklch(46% 0.09 40); background: none; border: none; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+
+  .facet-group { display: flex; flex-direction: column; gap: 6px; }
+  .facet-title { display: flex; align-items: center; gap: 6px; }
+  .facet-dot { width: 7px; height: 7px; border-radius: 2px; display: inline-block; }
+  .facet-title h2 { font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: oklch(46% 0.02 60); margin: 0; }
+  .facet-chips { display: flex; flex-direction: column; gap: 1px; }
+  .facet-chip {
+    font-family: 'Public Sans', sans-serif; font-size: 13px; font-weight: 500; padding: 6px 6px; border-radius: 7px; border: none;
+    background: transparent; color: oklch(38% 0.012 60); cursor: pointer; display: flex; align-items: center; gap: 8px; width: 100%; text-align: left;
+  }
+  .facet-chip:hover { background: oklch(95% 0.008 60); }
+  .facet-chip.active:hover { background: inherit; }
+  .facet-chip .box { width: 8px; height: 8px; border-radius: 2.5px; flex-shrink: 0; border: 1px solid oklch(78% 0.01 60); }
+  .facet-chip .label { flex: 1; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .facet-chip .count { font-size: 11px; font-weight: 600; opacity: 0.55; flex-shrink: 0; }
+
+  main { flex: 3 1 480px; min-width: 0; width: 100%; }
+  .group { margin-bottom: 32px; }
   .group h2 {
     font-family: 'Public Sans', sans-serif; font-size: 12px; font-weight: 600;
     letter-spacing: 0.08em; text-transform: uppercase;
     color: oklch(52% 0.012 60); margin: 0 0 14px;
   }
-  .items { display: flex; flex-direction: column; gap: 2px; }
+  .items { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
   .item {
-    display: block; text-decoration: none; color: inherit;
-    padding: 16px 18px; border-radius: 10px;
+    display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit;
+    padding: 16px; border-radius: 12px; border: 1px solid oklch(90% 0.008 60); background: oklch(100% 0 0);
     animation: fadeIn 0.3s ease both;
   }
-  .item:hover { background: oklch(95% 0.008 60); }
-  .item-top { display: flex; align-items: center; gap: 10px; margin-bottom: 6px; flex-wrap: wrap; }
-  .pill { font-size: 11.5px; font-weight: 600; padding: 3px 10px; border-radius: 20px; }
+  .item:hover { border-color: oklch(78% 0.01 60); box-shadow: 0 2px 10px oklch(30% 0.01 60 / 0.06); }
+  .item-top { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .pill { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 20px; }
   .repost-badge {
-    font-size: 11px; color: oklch(52% 0.01 60);
-    border: 1px solid oklch(85% 0.01 60); border-radius: 20px; padding: 2px 8px;
+    font-size: 10.5px; color: oklch(52% 0.01 60);
+    border: 1px solid oklch(85% 0.01 60); border-radius: 20px; padding: 1.5px 7px;
   }
-  .item-date { font-size: 12.5px; color: oklch(52% 0.01 60); margin-left: auto; }
-  .item-subject { font-family: 'Source Serif 4', serif; font-size: 18px; font-weight: 600; line-height: 1.35; margin-bottom: 4px; }
-  .item-snippet { font-size: 14px; color: oklch(40% 0.012 60); line-height: 1.5; margin-bottom: 6px; }
-  .item-sender { font-size: 12.5px; color: oklch(55% 0.012 60); }
+  .item-date { font-size: 12px; color: oklch(52% 0.01 60); margin-left: auto; white-space: nowrap; }
+  .item-subject { font-family: 'Source Serif 4', serif; font-size: 16.5px; font-weight: 600; line-height: 1.35; }
+  .item-sender { font-size: 12px; color: oklch(55% 0.012 60); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: auto; padding-top: 2px; }
+  .item-tag { font-size: 10.5px; font-weight: 600; letter-spacing: 0.01em; border-radius: 5px; padding: 2px 6px; }
+  .item-tag.topic { color: oklch(46% 0.02 150); background: oklch(94% 0.015 150); }
+  .item-tag.event { color: oklch(42% 0.02 10); background: oklch(95% 0.012 10); }
 
   .empty { text-align: center; padding: 80px 0; color: oklch(52% 0.01 60); font-size: 15px; }
 
@@ -94,10 +92,18 @@
     padding: 24px 48px;
     font-size: 12.5px;
     color: oklch(55% 0.012 60);
-    display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px;
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
   }
+  footer .row { max-width: 1180px; width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
 
   @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+  @media (max-width: 780px) {
+    header, .mobile-bar, .layout, footer { padding-left: 20px; padding-right: 20px; }
+    aside { display: none; }
+    aside.open { display: flex; margin-bottom: 4px; }
+    .mobile-bar { display: block; }
+  }
 </style>
 </head>
 <body>
@@ -107,40 +113,56 @@
     <h1>AISWORLD Digest</h1>
     <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
   </div>
-  <p>A sorted, de-duplicated view of the mailing list — filter to the categories you actually read.</p>
+  <p>A sorted, de-duplicated view of the mailing list — every post is tagged, not boxed into one category.</p>
 </header>
 
-<nav id="filter-bar"></nav>
+<div class="mobile-bar">
+  <button id="mobile-toggle">Filters <span id="mobile-toggle-icon">+</span></button>
+</div>
 
-<main>
-  <div id="feed"></div>
-  <div class="empty" id="empty-state" style="display:none;">No messages in this category right now.</div>
-</main>
+<div class="layout">
+  <aside id="sidebar">
+    <div class="sidebar-head">
+      <span>Filters</span>
+      <button id="clear-all" style="display:none;">Clear all</button>
+    </div>
+    <div id="facet-groups"></div>
+  </aside>
+
+  <main>
+    <div id="feed"></div>
+    <div class="empty" id="empty-state" style="display:none;">No messages match this filter.</div>
+  </main>
+</div>
 
 <footer>
-  <span>Auto-updated daily from the AISWORLD RSS feed. Duplicate reposts of the same call/announcement are merged into one entry.</span>
-  <span id="footer-counts"></span>
+  <div class="row">
+    <span>Pulled from a sample AISWORLD RSS fetch (100 most recent posts, Jun 12–Jul 10, 2026); links go to each post's listserv archive page.</span>
+    <span id="footer-counts"></span>
+  </div>
 </footer>
 
 <script>
-  const CATEGORIES = [
-    { id: 'all', label: 'All' },
-    { id: 'cfp', label: 'Calls for Papers' },
-    { id: 'conference', label: 'Conferences & Workshops' },
-    { id: 'journal', label: 'Journal / Special Issues' },
-    { id: 'job', label: 'Jobs & Recruiting' },
-    { id: 'funding', label: 'PhD & Funding' },
-    { id: 'general', label: 'General Discussion' },
+  const FACET_DEFS = [
+    { key: 'typeTags', label: 'Type', hue: 250 },
+    { key: 'topicTags', label: 'Topic', hue: 150 },
+    { key: 'eventTags', label: 'Event & Conference', hue: 10 },
   ];
-  const HUES = { cfp: 250, conference: 150, journal: 30, job: 10, funding: 300, general: 210 };
+  const TYPE_HUES = {
+    'Conference & Workshop': 150,
+    'Journal & Special Issue': 30,
+    'Job Posting': 10,
+    'PhD & Funding': 300,
+    'General Discussion': 210,
+  };
 
-  function hueColor(cat, l, c) {
-    return `oklch(${l} ${c} ${HUES[cat] ?? 60})`;
+  function hueColor(hue, l, c) {
+    return `oklch(${l} ${c} ${hue === undefined ? 60 : hue})`;
   }
 
   function dayBucket(iso, today) {
     const d = new Date(iso);
-    const diffDays = Math.round((today - d) / 86400000);
+    const diffDays = Math.floor((today - d) / 86400000);
     if (diffDays <= 0) return 'Today';
     if (diffDays === 1) return 'Yesterday';
     if (diffDays <= 6) return 'This week';
@@ -151,8 +173,76 @@
     return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
   }
 
-  let activeCategory = 'all';
+  let selected = { typeTags: [], topicTags: [], eventTags: [] };
+  let sidebarOpen = false;
   let DATA = { lastUpdated: null, messages: [] };
+
+  // Union within a group (any selected tag matches), intersection across
+  // groups (every group with a selection must be satisfied).
+  function matchesFacets(m, exceptKey) {
+    return FACET_DEFS.every(fg => {
+      if (fg.key === exceptKey) return true;
+      const picks = selected[fg.key];
+      if (picks.length === 0) return true;
+      const tags = m[fg.key] || [];
+      return picks.some(p => tags.includes(p));
+    });
+  }
+
+  function toggleTag(groupKey, tag) {
+    const list = selected[groupKey];
+    const has = list.includes(tag);
+    selected[groupKey] = has ? list.filter(t => t !== tag) : list.concat([tag]);
+    render();
+  }
+
+  function clearAll() {
+    selected = { typeTags: [], topicTags: [], eventTags: [] };
+    render();
+  }
+
+  function renderFacets() {
+    const wrap = document.getElementById('facet-groups');
+    wrap.innerHTML = '';
+    const activeCount = selected.typeTags.length + selected.topicTags.length + selected.eventTags.length;
+    document.getElementById('clear-all').style.display = activeCount > 0 ? 'inline' : 'none';
+    document.getElementById('mobile-toggle').firstChild.textContent = `Filters${activeCount > 0 ? ' (' + activeCount + ')' : ''} `;
+
+    FACET_DEFS.forEach(fg => {
+      // Count against every OTHER group's active selection (not this
+      // group's own) so a facet's own counts stay meaningful even after
+      // you've picked something in it.
+      const pool = DATA.messages.filter(m => matchesFacets(m, fg.key));
+      const tally = {};
+      pool.forEach(m => (m[fg.key] || []).forEach(t => { tally[t] = (tally[t] || 0) + 1; }));
+      const limit = fg.key === 'eventTags' ? 14 : 10;
+      const tags = Object.keys(tally).sort((a, b) => tally[b] - tally[a]).slice(0, limit);
+
+      const groupEl = document.createElement('div');
+      groupEl.className = 'facet-group';
+      groupEl.innerHTML = `
+        <div class="facet-title">
+          <span class="facet-dot" style="background:${hueColor(fg.hue, '55%', '0.14')};"></span>
+          <h2>${fg.label}</h2>
+        </div>
+        <div class="facet-chips"></div>
+      `;
+      const chipsWrap = groupEl.querySelector('.facet-chips');
+      tags.forEach(tag => {
+        const isActive = selected[fg.key].includes(tag);
+        const btn = document.createElement('button');
+        btn.className = 'facet-chip' + (isActive ? ' active' : '');
+        btn.style.fontWeight = isActive ? '600' : '500';
+        btn.style.background = isActive ? hueColor(fg.hue, '93%', '0.045') : 'transparent';
+        btn.style.color = isActive ? hueColor(fg.hue, '32%', '0.1') : 'oklch(38% 0.012 60)';
+        btn.innerHTML = `<span class="box" style="${isActive ? `border-color:${hueColor(fg.hue, '46%', '0.16')};background:${hueColor(fg.hue, '46%', '0.16')};` : ''}"></span><span class="label"></span><span class="count">${tally[tag]}</span>`;
+        btn.querySelector('.label').textContent = tag;
+        btn.onclick = () => toggleTag(fg.key, tag);
+        chipsWrap.appendChild(btn);
+      });
+      wrap.appendChild(groupEl);
+    });
+  }
 
   function render() {
     const today = new Date();
@@ -160,23 +250,9 @@
       ? new Date(DATA.lastUpdated).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })
       : 'not yet run';
 
-    const counts = { all: DATA.messages.length };
-    CATEGORIES.forEach(c => { if (c.id !== 'all') counts[c.id] = 0; });
-    DATA.messages.forEach(m => { counts[m.category] = (counts[m.category] || 0) + 1; });
+    renderFacets();
 
-    const filterBar = document.getElementById('filter-bar');
-    filterBar.innerHTML = '';
-    CATEGORIES.forEach(c => {
-      const btn = document.createElement('button');
-      btn.className = activeCategory === c.id ? 'active' : '';
-      btn.innerHTML = `${c.label} <span class="count">${counts[c.id] || 0}</span>`;
-      btn.onclick = () => { activeCategory = c.id; render(); };
-      filterBar.appendChild(btn);
-    });
-
-    const filtered = activeCategory === 'all'
-      ? DATA.messages
-      : DATA.messages.filter(m => m.category === activeCategory);
+    const filtered = DATA.messages.filter(m => matchesFacets(m, null));
 
     const buckets = { Today: [], Yesterday: [], 'This week': [], Earlier: [] };
     filtered.forEach(m => buckets[dayBucket(m.date, today)].push(m));
@@ -194,26 +270,60 @@
       const itemsWrap = document.createElement('div');
       itemsWrap.className = 'items';
       items.forEach(m => {
-        const catMeta = CATEGORIES.find(c => c.id === m.category);
         const repostCount = m.reposts ? m.reposts.length : 1;
+        const secondary = (m.topicTags || []).concat(m.eventTags || []).slice(0, 4);
         const a = document.createElement('a');
         a.className = 'item';
         a.href = m.url || 'https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD';
         a.target = '_blank';
         a.rel = 'noopener';
-        a.innerHTML = `
-          <div class="item-top">
-            <span class="pill" style="background:${hueColor(m.category, '92%', '0.03')}; color:${hueColor(m.category, '32%', '0.09')};">${catMeta ? catMeta.label : m.category}</span>
-            ${repostCount > 1 ? `<span class="repost-badge">posted ${repostCount}×</span>` : ''}
-            <span class="item-date">${formatDateLabel(m.date)}</span>
-          </div>
-          <div class="item-subject"></div>
-          <div class="item-snippet"></div>
-          <div class="item-sender"></div>
-        `;
-        a.querySelector('.item-subject').textContent = m.subject;
-        a.querySelector('.item-snippet').textContent = m.snippet || '';
-        a.querySelector('.item-sender').textContent = m.sender || '';
+
+        const top = document.createElement('div');
+        top.className = 'item-top';
+        (m.typeTags || []).forEach(t => {
+          const hue = TYPE_HUES[t] !== undefined ? TYPE_HUES[t] : 60;
+          const pill = document.createElement('span');
+          pill.className = 'pill';
+          pill.style.background = hueColor(hue, '92%', '0.03');
+          pill.style.color = hueColor(hue, '32%', '0.09');
+          pill.textContent = t;
+          top.appendChild(pill);
+        });
+        if (repostCount > 1) {
+          const badge = document.createElement('span');
+          badge.className = 'repost-badge';
+          badge.textContent = `posted ${repostCount}×`;
+          top.appendChild(badge);
+        }
+        const dateEl = document.createElement('span');
+        dateEl.className = 'item-date';
+        dateEl.textContent = formatDateLabel(m.date);
+        top.appendChild(dateEl);
+        a.appendChild(top);
+
+        const subjectEl = document.createElement('div');
+        subjectEl.className = 'item-subject';
+        subjectEl.textContent = m.subject;
+        a.appendChild(subjectEl);
+
+        const senderEl = document.createElement('span');
+        senderEl.className = 'item-sender';
+        senderEl.textContent = m.sender || '';
+        a.appendChild(senderEl);
+
+        if (secondary.length > 0) {
+          const tagsWrap = document.createElement('div');
+          tagsWrap.className = 'item-tags';
+          secondary.forEach(t => {
+            const isEvent = (m.eventTags || []).includes(t);
+            const tagEl = document.createElement('span');
+            tagEl.className = 'item-tag ' + (isEvent ? 'event' : 'topic');
+            tagEl.textContent = t;
+            tagsWrap.appendChild(tagEl);
+          });
+          a.appendChild(tagsWrap);
+        }
+
         itemsWrap.appendChild(a);
       });
       section.appendChild(itemsWrap);
@@ -224,6 +334,13 @@
     const totalReposts = DATA.messages.reduce((sum, m) => sum + (m.reposts ? m.reposts.length : 1), 0);
     document.getElementById('footer-counts').textContent = `${totalReposts} messages · ${DATA.messages.length} unique threads`;
   }
+
+  document.getElementById('clear-all').onclick = clearAll;
+  document.getElementById('mobile-toggle').onclick = () => {
+    sidebarOpen = !sidebarOpen;
+    document.getElementById('sidebar').classList.toggle('open', sidebarOpen);
+    document.getElementById('mobile-toggle-icon').textContent = sidebarOpen ? '\u2212' : '+';
+  };
 
   fetch('./data.json', { cache: 'no-store' })
     .then(r => r.json())

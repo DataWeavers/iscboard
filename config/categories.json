@@ -1,11 +1,10 @@
 {
-  "_comment": "Order matters: first matching rule wins. Each rule is tested against 'subject + description' (case-insensitive). Edit freely to retune classification.",
+  "_comment": "Type tags — every rule whose pattern matches applies. Patterns are case-insensitive regex source strings tested against 'subject + description'. The 'general' rule has no pattern and is the fallback used only when nothing else matches.",
   "rules": [
-    { "id": "cfp",        "label": "Calls for Papers",          "keywords": ["call for papers", "cfp", "submission deadline", "papers are invited"] },
-    { "id": "conference", "label": "Conferences & Workshops",    "keywords": ["conference", "workshop", "symposium", "colloquium", "save the date", "registration open"] },
-    { "id": "journal",    "label": "Journal / Special Issues",   "keywords": ["special issue", "journal", "misq", "jais", "isr ", "editorial", "call for reviewers"] },
-    { "id": "job",        "label": "Jobs & Recruiting",          "keywords": ["assistant professor", "associate professor", "full professor", "faculty position", "tenure-track", "lecturer", "postdoc", "postdoctoral", "vacancy", "hiring", "job opening"] },
-    { "id": "funding",    "label": "PhD & Funding",              "keywords": ["phd", "ph.d", "doctoral", "scholarship", "fellowship", "funding", "grant"] },
-    { "id": "general",    "label": "General Discussion",         "keywords": [] }
+    { "id": "conference", "label": "Conference & Workshop", "pattern": "conference|workshop|symposium|colloquium|minitrack|consortium|summit\\b|\\bexpo\\b|registration|proceedings" },
+    { "id": "journal", "label": "Journal & Special Issue", "pattern": "special issue|\\bjournal\\b|\\bmisq\\b|\\bjais\\b|\\bisr\\b|\\bjitcar\\b|\\bejis\\b|table of contents|editorial" },
+    { "id": "job", "label": "Job Posting", "pattern": "assistant professor|associate professor|full professor|faculty position|tenure-track|tenure track|\\blecturer\\b|postdoc|postdoctoral|job opening|now hiring|we are hiring" },
+    { "id": "funding", "label": "PhD & Funding", "pattern": "\\bphd\\b(?!\\s*\\()|ph\\.d|doctoral|fellowship|\\bfunding\\b|(?<!dear )\\bgrant\\b(?!\\s+[A-Z][a-z])" },
+    { "id": "general", "label": "General Discussion", "pattern": null }
   ]
 }
