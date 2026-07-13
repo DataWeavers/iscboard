@@ -16,11 +16,31 @@ const FEED_URL = 'https://listserv.isworld.org/scripts/wa-ISWORLD.exe?RSS&L=AISW
 const DATA_PATH = new URL('../public/data.json', import.meta.url);
 const CATEGORIES_PATH = new URL('../config/categories.json', import.meta.url);
 const TOPICS_PATH = new URL('../config/topics.json', import.meta.url);
-const RETENTION_DAYS = 90; // drop threads whose most recent post is older than this
+const RETENTION_DAYS = 60; // drop threads whose most recent post is older than this
 
 function stripHtml(str = '') {
   return str.replace(/<[^>]*>/g, ' ').replace(/\s+/g, ' ').trim();
 }
+
+// The AISWORLD listserv sends a daily "AISWORLD Index" digest e-mail that
+// lists every post's subject line; when someone REPLIES to that digest
+// (e.g. to ask to unsubscribe, or to comment on the list itself), the RSS
+// description for their reply is the entire quoted digest body — full of
+// OTHER people's post subjects ("CALL for PAPERS", "Workshop", "Conference"
+// ...). Tagging on that text mistags an unrelated admin note as a real
+// announcement. Cut the snippet at the first sign of a quoted digest before
+// any keyword matching runs.
+const DIGEST_QUOTE_RE = /AISWORLD Index\b/i;
+function stripQuotedDigest(text) {
+  const idx = text.search(DIGEST_QUOTE_RE);
+  return idx === -1 ? text : text.slice(0, idx).trim();
+}
+
+// List-management requests (unsubscribe/subscribe/signoff) are pure admin
+// noise, never a real announcement — force them to General Discussion with
+// no topic/event tags even if quoted content or the subject itself trips a
+// keyword rule.
+const ADMIN_SUBJECT_RE = /\bunsu[bs]?scribe\b|\bsubscribe\b|\bsignoff\b|\bsign off\b|\bleave the list\b|\bremove me\b/i;
 
 // Collapses "Re:", "Fwd:", "AW:" (the German reply prefix), trailing
 // whitespace/punctuation variance so the same announcement posted multiple
@@ -242,11 +262,12 @@ async function main() {
     const dateRaw = item.pubDate ?? item['dc:date'] ?? null;
     const date = dateRaw ? new Date(dateRaw).toISOString() : new Date().toISOString();
     const sender = stripHtml(item['dc:creator'] ?? item.author ?? 'Unknown sender');
-    const description = stripHtml(item.description ?? '');
+    const description = stripQuotedDigest(stripHtml(item.description ?? ''));
     const key = normalizeSubject(subject);
-    const eventTags = computeEventTags(subject);
-    const typeTags = computeTypeTags(`${subject} ${description}`, rules, eventTags);
-    const topicTags = computeTopicTags(`${subject} ${description}`, topics);
+    const isAdmin = ADMIN_SUBJECT_RE.test(subject);
+    const eventTags = isAdmin ? [] : computeEventTags(subject);
+    const typeTags = isAdmin ? ['General Discussion'] : computeTypeTags(`${subject} ${description}`, rules, eventTags);
+    const topicTags = isAdmin ? [] : computeTopicTags(`${subject} ${description}`, topics);
 
     const existingThread = byKey.get(key);
     if (existingThread) {
