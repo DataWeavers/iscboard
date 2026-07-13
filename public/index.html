@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>AISWORLD Digest</title>
+<title>Information Systems Community Board</title>
 <!-- Invisible visit analytics via GoatCounter (free, privacy-friendly, no cookies).
-     Dashboard: https://aisdigest.goatcounter.com -->
-<script data-goatcounter="https://aisdigest.goatcounter.com/count"
+     Dashboard: https://iscboard.goatcounter.com -->
+<script data-goatcounter="https://iscboard.goatcounter.com/count"
         async src="//gc.zgo.at/count.js"></script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -114,11 +114,17 @@
 
 <header>
   <div class="row">
-    <h1>AISWORLD Digest</h1>
+    <h1>Information Systems Community Board</h1>
     <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
   </div>
   <p>A sorted, de-duplicated view of the mailing list — every post is tagged, not boxed into one category.</p>
+  <p style="font-size:12.5px; color:oklch(52% 0.012 60); max-width:640px;">Not affiliated with or endorsed by AIS or the AISWORLD listserv.</p>
 </header>
+
+<div style="background:oklch(93% 0.04 250); border-bottom:1px solid oklch(85% 0.03 250); padding:10px 20px; display:flex; align-items:center; justify-content:center; gap:10px; font-size:13.5px; color:oklch(32% 0.08 250); flex-wrap:wrap; text-align:center;">
+  <span style="white-space:nowrap;">🚀 Just launched — help shape it.</span>
+  <a href="#" id="feedback-banner-link" style="font-weight:700; text-decoration:underline; text-underline-offset:2px; color:oklch(32% 0.08 250); cursor:pointer; white-space:nowrap;">Send feedback →</a>
+</div>
 
 <div class="mobile-bar">
   <button id="mobile-toggle">Filters <span id="mobile-toggle-icon">+</span></button>
@@ -141,8 +147,19 @@
 
 <footer>
   <div class="row">
-    <span>Pulled from a sample AISWORLD RSS fetch (100 most recent posts, Jun 12–Jul 10, 2026); links go to each post's listserv archive page.</span>
+    <span id="footer-caption">Pulled from the AISWORLD listserv RSS feed; links go to each post's listserv archive page.</span>
     <span id="footer-counts"></span>
+  </div>
+  <div class="row" style="margin-top:4px;">
+    <details id="contact-details" style="width:100%;">
+      <summary style="cursor:pointer; color:oklch(46% 0.09 250); font-weight:600;">Contact / suggest a fix</summary>
+      <form id="contact-form" action="https://formspree.io/f/xrengerd" method="POST" style="display:flex; flex-direction:column; gap:8px; max-width:420px; margin-top:12px;">
+        <input type="email" name="email" placeholder="Your email" required style="font-family:'Public Sans',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid oklch(85% 0.01 60);">
+        <textarea name="message" placeholder="Message" required rows="3" style="font-family:'Public Sans',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid oklch(85% 0.01 60); resize:vertical;"></textarea>
+        <button type="submit" style="align-self:flex-start; font-family:'Public Sans',sans-serif; font-size:13px; font-weight:600; padding:8px 16px; border-radius:8px; border:none; background:oklch(24% 0.01 60); color:oklch(98% 0.005 80); cursor:pointer;">Send</button>
+        <span id="contact-status" style="font-size:12px; color:oklch(50% 0.01 60);"></span>
+      </form>
+    </details>
   </div>
 </footer>
 
@@ -336,6 +353,14 @@
 
     document.getElementById('empty-state').style.display = filtered.length === 0 ? 'block' : 'none';
     const totalReposts = DATA.messages.reduce((sum, m) => sum + (m.reposts ? m.reposts.length : 1), 0);
+    const dates = DATA.messages.map(m => new Date(m.date)).filter(d => !isNaN(d));
+    if (dates.length > 0) {
+      const oldest = new Date(Math.min(...dates));
+      const newest = new Date(Math.max(...dates));
+      const fmt = d => d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('footer-caption').textContent =
+        `Pulled from the AISWORLD listserv RSS feed (${fmt(oldest)}–${fmt(newest)}); links go to each post's listserv archive page.`;
+    }
     document.getElementById('footer-counts').textContent = `${totalReposts} messages · ${DATA.messages.length} unique threads`;
   }
 
@@ -345,6 +370,23 @@
     document.getElementById('sidebar').classList.toggle('open', sidebarOpen);
     document.getElementById('mobile-toggle-icon').textContent = sidebarOpen ? '\u2212' : '+';
   };
+
+  document.getElementById('feedback-banner-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    const details = document.getElementById('contact-details');
+    details.open = true;
+    details.scrollIntoView({ block: 'center' });
+  });
+
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const status = document.getElementById('contact-status');
+    status.textContent = 'Sending…';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then(r => { status.textContent = r.ok ? 'Thanks — message sent!' : 'Something went wrong, try again.'; if (r.ok) form.reset(); })
+      .catch(() => { status.textContent = 'Something went wrong, try again.'; });
+  });
 
   fetch('./data.json', { cache: 'no-store' })
     .then(r => r.json())
