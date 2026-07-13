@@ -4,13 +4,23 @@ on:
   schedule:
     - cron: '0 12 * * *'   # daily at 12:00 UTC — adjust to taste
   workflow_dispatch: {}     # lets you trigger a manual run from the Actions tab
+  push:
+    branches: [main]        # also redeploy whenever you push other changes (index.html, etc.)
 
 permissions:
   contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
 
 jobs:
   fetch:
     runs-on: ubuntu-latest
+    outputs:
+      changed: ${{ steps.commit.outputs.changed }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,9 +37,35 @@ jobs:
         working-directory: .
 
       - name: Commit updated data
+        id: commit
         run: |
           git config user.name "aisworld-portal-bot"
           git config user.email "actions@users.noreply.github.com"
           git add public/data.json
-          git diff --cached --quiet || git commit -m "chore: update AISWORLD digest data"
-          git push
+          if git diff --cached --quiet; then
+            echo "changed=false" >> "$GITHUB_OUTPUT"
+          else
+            git commit -m "chore: update AISWORLD digest data"
+            git push
+            echo "changed=true" >> "$GITHUB_OUTPUT"
+          fi
+
+  deploy:
+    needs: fetch
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main   # pick up the data.json commit from the fetch job, if any
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: public
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
