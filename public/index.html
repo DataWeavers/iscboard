@@ -54,7 +54,7 @@
   h1 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: clamp(24px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
   header .meta { font-size: 13px; color: oklch(48% 0.01 60); }
   header .meta a { text-decoration: underline; text-underline-offset: 2px; }
-  header p { margin: 6px 0 0; font-size: 15px; color: oklch(42% 0.012 60); max-width: 640px; }
+  header p { margin: 6px 0 0; max-width: 640px; font-size: 15px; color: oklch(42% 0.012 60); }
 
   .mobile-bar { display: none; padding: 12px 48px; border-bottom: 1px solid oklch(90% 0.008 60); position: sticky; top: 0; background: oklch(98% 0.005 80 / 0.94); backdrop-filter: blur(6px); z-index: 5; }
   .mobile-bar button {
@@ -137,12 +137,14 @@
 <body>
 
 <header>
-  <div class="row">
-    <h1>Information Systems Community Board</h1>
-    <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
+  <div style="max-width:1180px; margin:0 auto; width:100%;">
+    <div class="row">
+      <h1>Information Systems Community Board</h1>
+      <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
+    </div>
+    <p style="text-align:left;">A tagged, de-duplicated view of the AISWORLD mailing list.</p>
+    <p style="text-align:left; font-size:12.5px; color:oklch(52% 0.012 60); max-width:640px;">Personal project, not affiliated with or endorsed by AIS or the AISWORLD listserv.</p>
   </div>
-  <p>A tagged, de-duplicated view of the AISWORLD mailing list.</p>
-  <p style="font-size:12.5px; color:oklch(52% 0.012 60); max-width:640px;">Personal project, not affiliated with or endorsed by AIS or the AISWORLD listserv.</p>
 </header>
 
 <div style="background:oklch(93% 0.04 250); border-bottom:1px solid oklch(85% 0.03 250); padding:10px 20px; display:flex; align-items:center; justify-content:center; gap:10px; font-size:13.5px; color:oklch(32% 0.08 250); flex-wrap:wrap; text-align:center;">
