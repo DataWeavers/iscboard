@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://dataweavers.github.io/iscboard/sitemap.xml

@@ -1,0 +1,12 @@
+# Information Systems Community Board
+
+A tagged, de-duplicated board of posts from the AISWORLD mailing list —
+the community list of the Association for Information Systems (AIS) —
+covering academic jobs, faculty positions, and careers in Information
+Systems and tech, calls for papers, conferences & workshops, journal
+special issues, PhD & funding opportunities, and general discussion.
+Unofficial, not affiliated with or endorsed by AIS or the AISWORLD
+listserv.
+
+Data source: AISWORLD public RSS feed, refreshed daily.
+Each post links to its original listserv archive entry.
