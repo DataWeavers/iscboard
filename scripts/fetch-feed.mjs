@@ -37,9 +37,8 @@ function stripQuotedDigest(text) {
 }
 
 // List-management requests (unsubscribe/subscribe/signoff) are pure admin
-// noise, never a real announcement — force them to General Discussion with
-// no topic/event tags even if quoted content or the subject itself trips a
-// keyword rule.
+// noise, never a real announcement — skipped entirely rather than shown as
+// a post (see the `continue` in the main loop below).
 const ADMIN_SUBJECT_RE = /\bunsu[bs]?scribe\b|\bsubscribe\b|\bsignoff\b|\bsign off\b|\bleave the list\b|\bremove me\b/i;
 
 // Collapses "Re:", "Fwd:", "AW:" (the German reply prefix), trailing
@@ -258,16 +257,16 @@ async function main() {
 
   for (const item of items) {
     const subject = stripHtml(item.title ?? '(no subject)');
+    if (ADMIN_SUBJECT_RE.test(subject)) continue; // list-admin noise (unsubscribe/subscribe/signoff) — not a real post, skip entirely
     const link = item.link ?? '';
     const dateRaw = item.pubDate ?? item['dc:date'] ?? null;
     const date = dateRaw ? new Date(dateRaw).toISOString() : new Date().toISOString();
     const sender = stripHtml(item['dc:creator'] ?? item.author ?? 'Unknown sender');
     const description = stripQuotedDigest(stripHtml(item.description ?? ''));
     const key = normalizeSubject(subject);
-    const isAdmin = ADMIN_SUBJECT_RE.test(subject);
-    const eventTags = isAdmin ? [] : computeEventTags(subject);
-    const typeTags = isAdmin ? ['General Discussion'] : computeTypeTags(`${subject} ${description}`, rules, eventTags);
-    const topicTags = isAdmin ? [] : computeTopicTags(`${subject} ${description}`, topics);
+    const eventTags = computeEventTags(subject);
+    const typeTags = computeTypeTags(`${subject} ${description}`, rules, eventTags);
+    const topicTags = computeTopicTags(`${subject} ${description}`, topics);
 
     const existingThread = byKey.get(key);
     if (existingThread) {
