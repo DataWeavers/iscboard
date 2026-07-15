@@ -508,12 +508,13 @@
     let inList = false;
     const inline = txt => esc(txt)
       .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, t, u) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`)
+      .replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, (_, pre, u) => `${pre}<a href="${u}" target="_blank" rel="noopener">source</a>`)
       .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
     lines.forEach(raw => {
       const line = raw.trim();
       if (/^[-*]\s+/.test(line)) {
         if (!inList) { html += '<ul>'; inList = true; }
-        html += `<li>${inline(line.replace(/^[-*]\s+/, ''))}</li>`;
+        html += `<li>${inline(line.replace(/^[-*]\s+/, '').replace(/^\[[ xX]?\]\s*/, ''))}</li>`;
       } else {
         if (inList) { html += '</ul>'; inList = false; }
         if (line) html += `<p>${inline(line)}</p>`;
