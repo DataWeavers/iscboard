@@ -2,11 +2,22 @@
 
 ## About Me
 
-I'm Arvin Mesgari, an IS educator, researcher, and tech enthusiast who's been reading AISWORLD for years. My research sits at the intersection of online communities, sensemaking, and technology affordances, which is more or less what this project turned into.
+I'm Arvin Mesgari, an IS educator, researcher, and tech enthusiast who's
+been reading AISWORLD for years. My research sits at the intersection of
+online communities, sensemaking, and technology affordances, which is
+more or less what this project turned into.
 
-Like a lot of you, I love the AISWORLD list but also drown in it. Duplicates everywhere, and the good stuff gets buried fast. I kept craving an easier way to browse the content I actually care about. Then AI happened, and I figured I'd take a stab at it. It became a passion project and a fun excuse to see AI-assisted web dev in action.
+Like a lot of you, I love the AISWORLD list but also drown in it.
+Duplicates everywhere, and the good stuff gets buried fast. I kept craving
+an easier way to browse the content I actually care about. Then AI
+happened, and I figured I'd take a stab at it. It became a passion project
+and a fun excuse to see AI-assisted web dev in action.
 
-This board is the result: a tagged, de-duplicated view of the list with just the bare bones of each post, plus links back to the original archive. It's not meant to replace or compete with the mailing list. My hope is that it makes the content easier to access and brings the list a broader audience of academics and practitioners.
+This board is the result: a tagged, de-duplicated view of the list with
+just the bare bones of each post, plus links back to the original archive.
+It's not meant to replace or compete with the mailing list. My hope is
+that it makes the content easier to access and brings the list a broader
+audience of academics and practitioners.
 
 If you have feedback or ideas, send them my way through the website.
 
@@ -62,9 +73,28 @@ at the top of `fetch-feed.mjs`; no rebuild step beyond the daily cron.
 Use the "Send feedback" link on the site, or the contact form in the
 footer — both go straight to me.
 
+## Ask (AI search)
+
+The board has an AI search box: a visitor types a question, the browser
+does a cheap keyword pre-filter over the current posts, sends only the
+handful of relevant ones to a small proxy, and the proxy asks a language
+model to draft an answer that links **only** to those posts. This keeps
+cost and latency flat no matter how big the board grows — the model never
+sees the whole dataset, just the slice that matches the query. It's a
+multi-turn conversation: visitors can ask follow-up questions and the
+prior turns (plus the accumulated posts) stay in context.
+
+The proxy is a Cloudflare Worker (`worker/search-worker.js`) — needed
+because a static GitHub Pages site can't safely hold the model API key.
+The Worker holds the key server-side and calls the **OpenAI API**, which
+isn't subject to the free-tier throttling that Gemini's free tier hits.
+Gemini (free tier), Claude, and Muse Spark alternatives are documented in
+the worker file.
+
 ## Setup & deploy
 
 - `public/` — the site itself; the only folder your host needs to serve.
 - `scripts/fetch-feed.mjs` — pulls the feed, tags, dedupes, and rewrites `public/data.json`. Runs server-side via the included GitHub Action (`.github/workflows/update.yml`, daily cron).
+- `worker/search-worker.js` — optional Cloudflare Worker for the AI search box (see "Ask" above).
 - Deploy `public/` to GitHub Pages (or any static host); the Action commits fresh data and redeploys automatically.
 - Local test: `npm install && npm run fetch && npx serve public`.
