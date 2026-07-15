@@ -142,20 +142,22 @@
   .ask-box button:hover { background: oklch(43% 0.11 250); }
   .ask-box button:disabled { opacity: 0.55; cursor: default; }
   .ask-hint { font-size: 11.5px; color: oklch(55% 0.012 60); margin: 6px 2px 0; }
-  .ask-answer {
-    margin-top: 14px; border: 1px solid oklch(88% 0.02 250); background: oklch(98.5% 0.012 250);
-    border-radius: 12px; padding: 16px 18px; font-size: 14.5px; line-height: 1.5; color: oklch(28% 0.015 60);
-    animation: fadeIn 0.25s ease both;
+  .ask-thread { margin-top: 14px; display: none; flex-direction: column; gap: 12px; }
+  .ask-thread.show { display: flex; }
+  .ask-thread-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .ask-thread-head .ask-badge { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(48% 0.11 250); }
+  .ask-thread-head .ask-reset { font-size: 11.5px; color: oklch(52% 0.01 60); background: none; border: none; cursor: pointer; text-decoration: underline; }
+  .ask-user { align-self: flex-end; max-width: 85%; background: oklch(48% 0.11 250); color: oklch(99% 0.005 250); border-radius: 12px 12px 3px 12px; padding: 9px 13px; font-size: 14px; line-height: 1.45; }
+  .ask-ai {
+    align-self: flex-start; max-width: 92%; border: 1px solid oklch(88% 0.02 250); background: oklch(98.5% 0.012 250);
+    border-radius: 12px 12px 12px 3px; padding: 13px 16px; font-size: 14.5px; line-height: 1.5; color: oklch(28% 0.015 60);
   }
-  .ask-answer a { color: oklch(43% 0.12 250); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
-  .ask-answer .ask-answer-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
-  .ask-answer .ask-badge { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(48% 0.11 250); }
-  .ask-answer .ask-dismiss { font-size: 11.5px; color: oklch(52% 0.01 60); background: none; border: none; cursor: pointer; text-decoration: underline; }
-  .ask-answer .ask-disclaimer { font-size: 11px; color: oklch(56% 0.012 60); margin-top: 10px; padding-top: 8px; border-top: 1px solid oklch(90% 0.01 250); }
-  .ask-answer p { margin: 0 0 8px; }
-  .ask-answer p:last-of-type { margin-bottom: 0; }
-  .ask-answer ul { margin: 4px 0 0; padding-left: 20px; }
-  .ask-answer li { margin: 3px 0; }
+  .ask-ai a { color: oklch(43% 0.12 250); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .ask-ai p { margin: 0 0 8px; }
+  .ask-ai p:last-child { margin-bottom: 0; }
+  .ask-ai ul { margin: 4px 0 0; padding-left: 20px; }
+  .ask-ai li { margin: 4px 0; }
+  .ask-followup-hint { font-size: 11px; color: oklch(56% 0.012 60); margin-top: 2px; }
   .ask-spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid oklch(80% 0.05 250); border-top-color: oklch(48% 0.11 250); border-radius: 50%; animation: askspin 0.7s linear infinite; vertical-align: -2px; margin-right: 6px; }
   @keyframes askspin { to { transform: rotate(360deg); } }
 
@@ -195,8 +197,14 @@
       placeholder="Ask about these posts — e.g. &quot;AI conferences with deadlines this month&quot;">
     <button type="submit" id="ask-submit">Ask</button>
   </form>
-  <div class="ask-hint">Answers are drafted by AI from the posts on this board and link only to them. Always verify against the original post.</div>
-  <div id="ask-answer" class="ask-answer" style="display:none;"></div>
+  <div class="ask-hint">Answers are drafted by AI from the posts on this board and link only to them. Ask follow-up questions to dig in. Always verify against the original post.</div>
+  <div class="ask-thread" id="ask-thread">
+    <div class="ask-thread-head">
+      <span class="ask-badge">AI conversation</span>
+      <button class="ask-reset" id="ask-reset" type="button">Clear</button>
+    </div>
+    <div id="ask-messages"></div>
+  </div>
 </div>
 
 <div class="layout">
@@ -515,28 +523,67 @@
     return html;
   }
 
-  function showAnswer(inner) {
-    const box = document.getElementById('ask-answer');
-    box.style.display = 'block';
-    box.innerHTML = inner;
+  // --- Conversation state ------------------------------------------------
+  // convo holds the full turn history sent to the model for follow-ups.
+  // askedPosts accumulates every post surfaced across the conversation (by
+  // url) so later turns keep the earlier context in scope.
+  let convo = [];
+  const askedPosts = new Map();
+
+  function addUserBubble(text) {
+    const wrap = document.getElementById('ask-messages');
+    const el = document.createElement('div');
+    el.className = 'ask-user';
+    el.textContent = text;
+    wrap.appendChild(el);
+  }
+
+  function addAiBubble(html) {
+    const wrap = document.getElementById('ask-messages');
+    const el = document.createElement('div');
+    el.className = 'ask-ai';
+    el.innerHTML = html;
+    wrap.appendChild(el);
+    return el;
+  }
+
+  function resetConversation() {
+    convo = [];
+    askedPosts.clear();
+    document.getElementById('ask-messages').innerHTML = '';
+    document.getElementById('ask-thread').classList.remove('show');
+    document.getElementById('ask-input').value = '';
+    document.getElementById('ask-input').focus();
   }
 
   async function ask(query) {
     const submit = document.getElementById('ask-submit');
+    const input = document.getElementById('ask-input');
     submit.disabled = true;
-    showAnswer('<span class="ask-spinner"></span>Searching the board…');
 
-    const subset = prefilter(query, 25);
+    document.getElementById('ask-thread').classList.add('show');
+    addUserBubble(query);
+    input.value = '';
+    const thinking = addAiBubble('<span class="ask-spinner"></span>Searching the board…');
+
+    // Merge this query's matches into the running post set so follow-ups keep
+    // earlier posts in context.
+    prefilter(query, 25).forEach(m => askedPosts.set(m.url || m.subject, m));
+    const subset = Array.from(askedPosts.values()).slice(0, 30);
+
+    convo.push({ role: 'user', content: query });
+
     if (subset.length === 0) {
-      showAnswer('<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div><p>No posts on the board seem related to that. Try different or broader keywords, or use the filters on the left.</p>');
-      wireDismiss();
+      thinking.innerHTML = '<p>No posts on the board seem related to that. Try different or broader keywords, or use the filters.</p>';
+      convo.push({ role: 'assistant', content: 'No related posts found.' });
       submit.disabled = false;
+      input.focus();
       return;
     }
 
     try {
       const payload = {
-        query,
+        history: convo,
         posts: subset.map(m => ({
           subject: m.subject, date: m.date, url: m.url,
           typeTags: m.typeTags, topicTags: m.topicTags, eventTags: m.eventTags,
@@ -550,23 +597,15 @@
       });
       const data = await r.json();
       if (!r.ok || data.error) throw new Error(data.error || 'Request failed');
-      showAnswer(
-        '<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div>' +
-        renderMarkdown(data.answer) +
-        '<div class="ask-disclaimer">AI-generated from ' + subset.length + ' matched post' + (subset.length === 1 ? '' : 's') + '. Verify details against the original posts before relying on them.</div>'
-      );
-      wireDismiss();
+      thinking.innerHTML = renderMarkdown(data.answer);
+      convo.push({ role: 'assistant', content: data.answer });
     } catch (e) {
-      showAnswer('<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div><p>Something went wrong reaching the assistant. Please try again in a moment.</p>');
-      wireDismiss();
+      thinking.innerHTML = '<p>Something went wrong reaching the assistant. Please try again in a moment.</p>';
+      convo.push({ role: 'assistant', content: 'Error reaching assistant.' });
     } finally {
       submit.disabled = false;
+      input.focus();
     }
-  }
-
-  function wireDismiss() {
-    const d = document.getElementById('ask-dismiss');
-    if (d) d.onclick = () => { document.getElementById('ask-answer').style.display = 'none'; };
   }
 
   if (WORKER_URL) {
@@ -576,6 +615,7 @@
       const q = document.getElementById('ask-input').value.trim();
       if (q) ask(q);
     });
+    document.getElementById('ask-reset').addEventListener('click', resetConversation);
   }
 
   fetch('./data.json', { cache: 'no-store' })
