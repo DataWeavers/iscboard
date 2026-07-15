@@ -126,8 +126,41 @@
 
   @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
 
+  /* --- Ask (LLM search) ------------------------------------------------ */
+  .ask-wrap { max-width: 1180px; margin: 0 auto; padding: 20px 48px 0; width: 100%; }
+  .ask-box { display: flex; gap: 8px; align-items: stretch; }
+  .ask-box input {
+    flex: 1; font-family: 'Public Sans', sans-serif; font-size: 14.5px; padding: 11px 14px;
+    border-radius: 10px; border: 1px solid oklch(85% 0.01 60); background: oklch(100% 0 0); color: oklch(24% 0.01 60);
+  }
+  .ask-box input:focus { outline: none; border-color: oklch(55% 0.09 250); }
+  .ask-box button {
+    font-family: 'Public Sans', sans-serif; font-size: 14px; font-weight: 600; padding: 0 18px;
+    border-radius: 10px; border: none; background: oklch(48% 0.11 250); color: oklch(99% 0.005 250);
+    cursor: pointer; white-space: nowrap;
+  }
+  .ask-box button:hover { background: oklch(43% 0.11 250); }
+  .ask-box button:disabled { opacity: 0.55; cursor: default; }
+  .ask-hint { font-size: 11.5px; color: oklch(55% 0.012 60); margin: 6px 2px 0; }
+  .ask-answer {
+    margin-top: 14px; border: 1px solid oklch(88% 0.02 250); background: oklch(98.5% 0.012 250);
+    border-radius: 12px; padding: 16px 18px; font-size: 14.5px; line-height: 1.5; color: oklch(28% 0.015 60);
+    animation: fadeIn 0.25s ease both;
+  }
+  .ask-answer a { color: oklch(43% 0.12 250); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .ask-answer .ask-answer-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 8px; }
+  .ask-answer .ask-badge { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(48% 0.11 250); }
+  .ask-answer .ask-dismiss { font-size: 11.5px; color: oklch(52% 0.01 60); background: none; border: none; cursor: pointer; text-decoration: underline; }
+  .ask-answer .ask-disclaimer { font-size: 11px; color: oklch(56% 0.012 60); margin-top: 10px; padding-top: 8px; border-top: 1px solid oklch(90% 0.01 250); }
+  .ask-answer p { margin: 0 0 8px; }
+  .ask-answer p:last-of-type { margin-bottom: 0; }
+  .ask-answer ul { margin: 4px 0 0; padding-left: 20px; }
+  .ask-answer li { margin: 3px 0; }
+  .ask-spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid oklch(80% 0.05 250); border-top-color: oklch(48% 0.11 250); border-radius: 50%; animation: askspin 0.7s linear infinite; vertical-align: -2px; margin-right: 6px; }
+  @keyframes askspin { to { transform: rotate(360deg); } }
+
   @media (max-width: 780px) {
-    header, .mobile-bar, .layout, footer { padding-left: 20px; padding-right: 20px; }
+    header, .mobile-bar, .layout, footer, .ask-wrap { padding-left: 20px; padding-right: 20px; }
     aside { display: none; }
     aside.open { display: flex; margin-bottom: 4px; }
     .mobile-bar { display: block; }
@@ -154,6 +187,16 @@
 
 <div class="mobile-bar">
   <button id="mobile-toggle">Filters <span id="mobile-toggle-icon">+</span></button>
+</div>
+
+<div class="ask-wrap" id="ask-wrap" style="display:none;">
+  <form class="ask-box" id="ask-form">
+    <input type="text" id="ask-input" autocomplete="off"
+      placeholder="Ask about these posts — e.g. &quot;AI conferences with deadlines this month&quot;">
+    <button type="submit" id="ask-submit">Ask</button>
+  </form>
+  <div class="ask-hint">Answers are drafted by AI from the posts on this board and link only to them. Always verify against the original post.</div>
+  <div id="ask-answer" class="ask-answer" style="display:none;"></div>
 </div>
 
 <div class="layout">
@@ -413,6 +456,127 @@
       .then(r => { status.textContent = r.ok ? 'Thanks — message sent!' : 'Something went wrong, try again.'; if (r.ok) form.reset(); })
       .catch(() => { status.textContent = 'Something went wrong, try again.'; });
   });
+
+  // --- Ask (LLM search) --------------------------------------------------
+  // After deploying the Cloudflare Worker (see deploy/worker/search-worker.js),
+  // paste its URL here. While empty, the Ask box stays hidden.
+  const WORKER_URL = 'https://iscboard-search.mostafamm-83.workers.dev/';
+
+  const STOPWORDS = new Set(['the','a','an','and','or','for','of','to','in','on','with','is','are','be','by','at','from','about','this','that','these','those','my','me','i','we','you','your','it','as','has','have','do','does','which','what','when','where','who','how','any','all','some','more','most','can','will','would','should','there','their']);
+
+  function tokenize(s) {
+    return (s || '').toLowerCase().replace(/[^a-z0-9\s]+/g, ' ').split(/\s+/).filter(w => w.length > 2 && !STOPWORDS.has(w));
+  }
+
+  // Cheap keyword pre-filter: score every post by query-term overlap across
+  // subject (weighted), tags (weighted), and snippet, then take the top ones.
+  // This is what keeps cost/latency flat as the corpus grows — the model only
+  // ever sees a small, relevant slice.
+  function prefilter(query, limit) {
+    const terms = tokenize(query);
+    if (terms.length === 0) return [];
+    const scored = DATA.messages.map(m => {
+      const subj = (m.subject || '').toLowerCase();
+      const tagText = [...(m.typeTags || []), ...(m.topicTags || []), ...(m.eventTags || [])].join(' ').toLowerCase();
+      const snip = (m.snippet || '').toLowerCase();
+      let score = 0;
+      terms.forEach(t => {
+        if (subj.includes(t)) score += 3;
+        if (tagText.includes(t)) score += 2;
+        if (snip.includes(t)) score += 1;
+      });
+      return { m, score };
+    }).filter(x => x.score > 0);
+    scored.sort((a, b) => b.score - a.score || new Date(b.m.date) - new Date(a.m.date));
+    return scored.slice(0, limit).map(x => x.m);
+  }
+
+  // Minimal, safe markdown: escapes HTML first, then renders [text](url) links,
+  // **bold**, "- " bullet lists, and paragraph breaks. No raw HTML passes through.
+  function renderMarkdown(md) {
+    const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const lines = md.split('\n');
+    let html = '';
+    let inList = false;
+    const inline = txt => esc(txt)
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, t, u) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`)
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    lines.forEach(raw => {
+      const line = raw.trim();
+      if (/^[-*]\s+/.test(line)) {
+        if (!inList) { html += '<ul>'; inList = true; }
+        html += `<li>${inline(line.replace(/^[-*]\s+/, ''))}</li>`;
+      } else {
+        if (inList) { html += '</ul>'; inList = false; }
+        if (line) html += `<p>${inline(line)}</p>`;
+      }
+    });
+    if (inList) html += '</ul>';
+    return html;
+  }
+
+  function showAnswer(inner) {
+    const box = document.getElementById('ask-answer');
+    box.style.display = 'block';
+    box.innerHTML = inner;
+  }
+
+  async function ask(query) {
+    const submit = document.getElementById('ask-submit');
+    submit.disabled = true;
+    showAnswer('<span class="ask-spinner"></span>Searching the board…');
+
+    const subset = prefilter(query, 25);
+    if (subset.length === 0) {
+      showAnswer('<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div><p>No posts on the board seem related to that. Try different or broader keywords, or use the filters on the left.</p>');
+      wireDismiss();
+      submit.disabled = false;
+      return;
+    }
+
+    try {
+      const payload = {
+        query,
+        posts: subset.map(m => ({
+          subject: m.subject, date: m.date, url: m.url,
+          typeTags: m.typeTags, topicTags: m.topicTags, eventTags: m.eventTags,
+          snippet: m.snippet,
+        })),
+      };
+      const r = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await r.json();
+      if (!r.ok || data.error) throw new Error(data.error || 'Request failed');
+      showAnswer(
+        '<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div>' +
+        renderMarkdown(data.answer) +
+        '<div class="ask-disclaimer">AI-generated from ' + subset.length + ' matched post' + (subset.length === 1 ? '' : 's') + '. Verify details against the original posts before relying on them.</div>'
+      );
+      wireDismiss();
+    } catch (e) {
+      showAnswer('<div class="ask-answer-head"><span class="ask-badge">AI answer</span><button class="ask-dismiss" id="ask-dismiss">Dismiss</button></div><p>Something went wrong reaching the assistant. Please try again in a moment.</p>');
+      wireDismiss();
+    } finally {
+      submit.disabled = false;
+    }
+  }
+
+  function wireDismiss() {
+    const d = document.getElementById('ask-dismiss');
+    if (d) d.onclick = () => { document.getElementById('ask-answer').style.display = 'none'; };
+  }
+
+  if (WORKER_URL) {
+    document.getElementById('ask-wrap').style.display = 'block';
+    document.getElementById('ask-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const q = document.getElementById('ask-input').value.trim();
+      if (q) ask(q);
+    });
+  }
 
   fetch('./data.json', { cache: 'no-store' })
     .then(r => r.json())
