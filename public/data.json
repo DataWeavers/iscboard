@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-07-17T18:58:58.261Z",
+  "lastUpdated": "2026-07-17T22:52:11.972Z",
   "messages": [
+    {
+      "key": "position announcement professor",
+      "subject": "Position Announcement - Professor",
+      "sender": "Kevin Scheibe",
+      "date": "2026-07-17T19:31:31.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;daaf5c72.2607C",
+      "snippet": "The Department of Information Systems and Business Analytics (ISBA) in the Ivy College of Business at Iowa State University invites applications for a tenured position at the rank of Professor. The position includes an endowed chair for a distinguished candidate with an exceptional record of research excellence and leadership in Information Systems and Business Analytics. [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Data Science & Analytics"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-07-17T19:31:31.000Z"
+      ]
+    },
     {
       "key": "call for submissions the 25th annual preicis workshop on hci lisbon portugal december 13 2026",
       "subject": "Call for Submissions - The 25th Annual Pre-ICIS Workshop on HCI, Lisbon, Portugal (December 13, 2026)",
