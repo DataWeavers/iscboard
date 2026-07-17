@@ -199,24 +199,27 @@ function extractRawIdentifiers(subject) {
 // (e.g. "HICSS-60", "HICSS 60") — only fires for ALLCAPS tokens, since that's
 // the one reliable signal separating a real acronym from an ordinary word
 // that happens to precede a number.
-function extractVenueTag(subject) {
-  const ids = extractRawIdentifiers(subject);
-  if (ids.length > 0) return ids[0].toUpperCase();
+function extractVenueTags(subject) {
+  const ids = extractRawIdentifiers(subject).map((s) => s.toUpperCase());
   const ord = subject.match(/\b([A-Z]{2,10})[-\s](\d{2,3})\b/);
-  return ord ? ord[1] : null;
+  if (ord && !ids.includes(ord[1])) ids.push(ord[1]);
+  // "pre-ICIS" / "pre AMCIS" side events tag the base venue even with no year
+  // attached (these subjects rarely repeat the year next to the acronym).
+  const preRe = /\bpre[-\s]?([A-Za-z]{2,10})\b/gi;
+  let pm;
+  while ((pm = preRe.exec(subject))) {
+    const code = pm[1].toUpperCase();
+    if (looksAcronymLike(pm[1]) && !ids.includes(code)) ids.push(code);
+  }
+  return ids;
 }
 
 // --- Event tags --------------------------------------------------------
-// Usually zero or one venue code (HICSS, ISSRE, AMCIS, ...) pulled straight
-// from the subject; kept as an array for a consistent shape with the other
-// two tag groups even though it rarely holds more than one entry.
+// Venue codes (HICSS, ISSRE, AMCIS, ICIS, ...) pulled straight from the
+// subject. A subject can name more than one (e.g. a joint AMCIS + ICIS
+// call), so we keep every distinct one, not just the first.
 function computeEventTags(subject) {
-  const venueTag = extractVenueTag(subject);
-  return venueTag ? [venueTag] : [];
-}
-
-function union(a = [], b = []) {
-  return [...new Set([...a, ...b])];
+  return extractVenueTags(subject);
 }
 
 async function loadExisting() {
@@ -274,16 +277,17 @@ async function main() {
         existingThread.reposts.push(date);
         existingThread.reposts.sort();
       }
-      // Union tags across all reposts of a thread rather than overwriting —
-      // a later repost's rewording might legitimately surface a tag the
-      // first post's text didn't trigger (or vice versa), and dropping a
-      // previously-detected tag on a reword is worse than keeping a stale
-      // extra one.
-      existingThread.typeTags = union(existingThread.typeTags, typeTags);
-      existingThread.topicTags = union(existingThread.topicTags, topicTags);
-      existingThread.eventTags = union(existingThread.eventTags, eventTags);
-      // Keep the latest link/date/snippet as the thread's primary record.
-      if (date > existingThread.date) {
+      // Recompute tags fresh from the CURRENT rules on every fetch (no union
+      // with previously-stored tags). This is what makes tag/category rule
+      // changes self-heal: any thread still in the feed window is re-tagged
+      // from scratch on the next run instead of carrying stale tags forever.
+      // Tags follow the newest post's text — if this incoming repost is the
+      // latest, its text (and tags) become the thread's record; otherwise we
+      // keep the tags already derived from the newer post we have.
+      if (date >= existingThread.date) {
+        existingThread.typeTags = typeTags;
+        existingThread.topicTags = topicTags;
+        existingThread.eventTags = eventTags;
         existingThread.date = date;
         existingThread.url = link || existingThread.url;
         existingThread.snippet = description || existingThread.snippet;
@@ -324,12 +328,11 @@ async function main() {
       ? [messages[i], messages[j]]
       : [messages[j], messages[i]];
     const mergedReposts = [...new Set([...keep.reposts, ...drop.reposts])].sort();
+    // Keep the surviving (newer) record's freshly-computed tags — consistent
+    // with the fresh-retag policy above; don't union in the dropped dupe's.
     const merged = {
       ...keep,
       reposts: mergedReposts,
-      typeTags: union(keep.typeTags, drop.typeTags),
-      topicTags: union(keep.topicTags, drop.topicTags),
-      eventTags: union(keep.eventTags, drop.eventTags),
     };
     messages = messages
       .filter(m => m !== messages[i] && m !== messages[j])
