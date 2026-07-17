@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-17T18:58:27.762Z",
+  "lastUpdated": "2026-07-17T18:58:58.261Z",
   "messages": [
     {
       "key": "call for submissions the 25th annual preicis workshop on hci lisbon portugal december 13 2026",
@@ -16,7 +16,9 @@
         "Data Science & Analytics",
         "Education & Teaching"
       ],
-      "eventTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
       "reposts": [
         "2026-07-17T16:58:56.000Z"
       ]
@@ -73,9 +75,7 @@
       "typeTags": [
         "Conference & Workshop"
       ],
-      "topicTags": [
-        "Data Science & Analytics"
-      ],
+      "topicTags": [],
       "eventTags": [
         "CIT"
       ],
@@ -122,7 +122,9 @@
         "Education & Teaching",
         "Sustainability"
       ],
-      "eventTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
       "reposts": [
         "2026-07-16T18:00:35.000Z"
       ]
@@ -271,9 +273,7 @@
       "typeTags": [
         "Conference & Workshop"
       ],
-      "topicTags": [
-        "Data Science & Analytics"
-      ],
+      "topicTags": [],
       "eventTags": [
         "IUCC"
       ],
@@ -568,8 +568,7 @@
         "Conference & Workshop"
       ],
       "topicTags": [
-        "Data Science & Analytics",
-        "AI & GenAI"
+        "Data Science & Analytics"
       ],
       "eventTags": [
         "ICSOC"
@@ -732,7 +731,7 @@
       "sender": "Dave Croasdell",
       "date": "2026-07-10T04:59:22.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;a2a4066e.2607B",
-      "snippet": "Greeting from the “Biggest Little City in the World,” Reno, Nevada where we will be hosting the America’s Conference on Information Systems August 20-22. As a premier global gathering for information systems academics and practitioners, the conference is dedicated to exploring how technology solves complex organizational and environmental challenges. This year, hundreds of scholars will converge in Reno to focus on our central theme: Digital Innovation. [...]",
+      "snippet": "Greeting from the “Biggest Little City in the World,” Reno, Nevada where we will be hosting the America&#8217;s Conference on Information Systems August 20-22. As a premier global gathering for information systems academics and practitioners, the conference is dedicated to exploring how technology solves complex organizational and environmental challenges. This year, hundreds of scholars will converge in Reno to focus on our central theme: Digital Innovation. [...]",
       "reposts": [
         "2026-07-10T04:59:22.000Z"
       ],
@@ -818,8 +817,7 @@
         "2026-07-09T07:38:05.000Z"
       ],
       "typeTags": [
-        "Conference & Workshop",
-        "Journal & Special Issue"
+        "Conference & Workshop"
       ],
       "topicTags": [],
       "eventTags": [
@@ -840,7 +838,9 @@
         "Conference & Workshop"
       ],
       "topicTags": [],
-      "eventTags": []
+      "eventTags": [
+        "ICIS"
+      ]
     },
     {
       "key": "call for participants crosssensory expo 2026 montreal canada",
@@ -848,7 +848,7 @@
       "sender": "Patrick Hung",
       "date": "2026-07-08T20:23:35.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;df54c912.2607B",
-      "snippet": "Apologies for the cross-postings. Please send it to interested colleagues and students. Call For Participants Cross-Sensory Interaction Design & Korean Visual Culture Virtual Reality (VR) Expo 2026",
+      "snippet": "Apologies for the cross-postings. Please send it to interested colleagues and students. Call For Participants Cross-Sensory Interaction Design &amp; Korean Visual Culture Virtual Reality (VR) Expo 2026",
       "reposts": [
         "2026-07-08T20:23:35.000Z"
       ],
@@ -933,7 +933,8 @@
       ],
       "topicTags": [],
       "eventTags": [
-        "FRECTOUR"
+        "FRECTOUR",
+        "RECSYS"
       ]
     },
     {
@@ -942,7 +943,7 @@
       "sender": "Announce",
       "date": "2026-07-08T08:37:24.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;55564265.2607B",
-      "snippet": "*** Call for Open Poster Session *** *** 2026 IEEE Frontiers in Education Conference *** October 11-14, 2026, Coral Beach Hotel & Resort, Paphos, Cyprus https://fie-conference.org/2026/open-poster-session *** 2026 Conference Theme: Engineering and Computing Education in the Large Language Model Era *** *** Abstract Submission Deadline: July 17, 2026 *** The Frontiers in Education (FIE) Conference is a premier international forum bringing together a global community to share ideas, challenge assumptions, and shape the future of teaching and learning. Since 1971, FIE has been co-sponsored by the IEEE Education Society, IEEE Computer Society, and ASEE ERM Division, and is recognized for [...]",
+      "snippet": "*** Call for Open Poster Session *** *** 2026 IEEE Frontiers in Education Conference *** October 11-14, 2026, Coral Beach Hotel &amp; Resort, Paphos, Cyprus https://fie-conference.org/2026/open-poster-session *** 2026 Conference Theme: Engineering and Computing Education in the Large Language Model Era *** *** Abstract Submission Deadline: July 17, 2026 *** The Frontiers in Education (FIE) Conference is a premier international forum bringing together a global community to share ideas, challenge assumptions, and shape the future of teaching and learning. Since 1971, FIE has been co-sponsored by the IEEE Education Society, IEEE Computer Society, and ASEE ERM Division, and is recognized for [...]",
       "reposts": [
         "2026-07-08T08:37:24.000Z"
       ],
@@ -979,7 +980,7 @@
       "sender": "MISQ Executive EiC",
       "date": "2026-07-07T12:37:05.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;5b11d82a.2607A",
-      "snippet": "You might want to consider submitting an extended abstract to MISQEAgenticAI@gmail.com<mailto:MISQEAgenticAI@gmail.com> by September 1, 2026 for the following Academic Workshop & Call for Papers Preparation for the December 2027 MISQE Special Issue on Designing, Managing, and Scaling the Delegation of Work to AI Agents Location: ICIS 2026 pre-conference Workshop in Lisbon, Portugal Date: Saturday, December 12, 2026 Time: 12:30 pm to 5:30 pm [...]",
+      "snippet": "You might want to consider submitting an extended abstract to MISQEAgenticAI@gmail.com&lt;mailto:MISQEAgenticAI@gmail.com&gt; by September 1, 2026 for the following Academic Workshop &amp; Call for Papers Preparation for the December 2027 MISQE Special Issue on Designing, Managing, and Scaling the Delegation of Work to AI Agents Location: ICIS 2026 pre-conference Workshop in Lisbon, Portugal Date: Saturday, December 12, 2026 Time: 12:30 pm to 5:30 pm [...]",
       "reposts": [
         "2026-07-07T12:37:05.000Z"
       ],
@@ -990,7 +991,9 @@
       "topicTags": [
         "AI & GenAI"
       ],
-      "eventTags": []
+      "eventTags": [
+        "ICIS"
+      ]
     },
     {
       "key": "pacific information systems workshop november 2026",
@@ -1015,7 +1018,7 @@
       "sender": "Markus Rach",
       "date": "2026-07-07T11:03:16.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;bc31d9d9.2607A",
-      "snippet": "Dear scholars, Marc Lounis (University of Neuchatel) and myself Prof. Dr. Markus Rach (Canadian University Dubai), invite scholars to our call for chapter \"Marketing, Management, Sales, and the Role of AI-Enhanced Pricing Strategy\". An IGI, indexed, publication. The call and to express your interest to contribute to a chapter can be expressed here: https://forms.cloud.microsoft/r/vKB9sDxW2h [...]",
+      "snippet": "Dear scholars, Marc Lounis (University of Neuchatel) and myself Prof. Dr. Markus Rach (Canadian University Dubai), invite scholars to our call for chapter &quot;Marketing, Management, Sales, and the Role of AI-Enhanced Pricing Strategy&quot;. An IGI, indexed, publication. The call and to express your interest to contribute to a chapter can be expressed here: https://forms.cloud.microsoft/r/vKB9sDxW2h [...]",
       "reposts": [
         "2026-07-07T11:03:16.000Z"
       ],
@@ -1107,7 +1110,7 @@
       "sender": "Petter Nielsen",
       "date": "2026-07-06T09:16:21.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1b0899bc.2607A",
-      "snippet": "Call for Participation: Online Paper Development Workshop on Digital Sovereignty. We are delighted to announce that we are arranging an online Paper Development Workshop (PDW) for our Information Systems Journal Special Issue on Digital Sovereignty. The aim of the PDW is to give prospective authors for the special issue the opportunity to meet the editors and present and discuss their preliminary work on the topic. To allow authors from different geographic regions of AIS to participate, the workshop will have three different sessions. Digital technologies, digital infrastructures, and platform ecosystems have become critical resources for nations, organisations, communities, and individuals. As a result, questions of who controls digital infrastructures, who governs data, and who sets the rules for digital innovation have become concerns for public administration, economic strategy, and everyday life. [...]",
+      "snippet": "Call for Participation: Online Paper Development Workshop on Digital Sovereignty We are delighted to announce that we are arranging an online Paper Development Workshop (PDW) for our Information Systems Journal Special Issue on Digital Sovereignty. The aim of the PDW is to give prospective authors for the special issue the opportunity to meet the editors and present and discuss their preliminary work on the topic. To allow authors from different geographic regions of AIS to participate, the workshop will have three different sessions. Digital technologies, digital infrastructures, and platform ecosystems have become critical resources for nations, organisations, communities, and individuals. As a result, questions of who controls digital infrastructures, who governs data, and who sets the rules for digital innovation have become concerns for public administration, economic strategy, and everyday life. Artificial intelligence (AI) is perhaps the domain where the question of digital sovereignty is currently most acute &mdash; raising issues of dependence, available alternatives, and open-source solutions. Yet information systems research should have much to contribute, given its socio-technical approach to the study of digital technologies in context. There is a substantial body of information systems research relevant to the digital sovereignty discourse by addressing questions including how states and organisations can navigate global digital ecosystems, how digital architectures and governance standards can be designed to support digital sovereignty, how digital sovereignty influences digital innovation and the short- and long-term implications for individuals&#39; and communities&rsquo; autonomy, rights, resilience and risks. In this special issue, we invite empirically grounded and theoretically ambitious research that explains digital sovereignty as a socio-technical accomplishment, including its tensions, trade-offs, and unintended consequences. We also welcome conceptual or review papers on the topic. We expect extended abstracts of studies based on qualitative research, but we also welcome ideas for quantitative contributions, provided they emphasise the research context and the theoretical and practical implications of their findings. Workshop details: Submission deadline: 6th September 2026 (11.59 pm UTC) Notification of acceptance: 18th September 2026 Updated information about the workshop:&nbsp; https://www.mn.uio.no/ifi/english/research/groups/is/call-for-papers/online-paper-development-workshop-ds/index.html Session&rsquo;s time and date: Asia-Pacific: September 24th 11:30 PM to 3:30 PM SGT Africa/Europe: September 24th 12:00 PM to 4 PM UTC Americas: September 28th 11:00 AM to 3 PM EDT Format: Online workshop with presentation and interaction with special issue editors Abstract format: Participation is based on an accepted extended abstract of up to 3 pages. The abstract must indicate a plan for a substantial information systems contribution foregrounding digital technologies in context, emphasising the specific nature of digital technologies, infrastructures, and platforms and their social implications Submission instructions Extended abstract of a maximum of 3 pages Email your submission to Coordinating Senior Editor: pnielsen@ifi.uio.no Indicate in the email the session of preference Indicate in the email who will present the work Special issue Submission deadline for full papers: March 31st 2027 Call for papers: https://onlinelibrary.wiley.com/page/journal/13652575/homepage/call-for-papers/si-2026-000456 Extended call for papers: https://www.mn.uio.no/ifi/english/research/groups/is/special-issue-on-digital-sovereignty.html Contact/questions: Petter Nielsen at&nbsp;pnielsen@ifi.uio.no For questions regarding this workshop, get in touch with Coordinating Senior Editor Petter Nielsen We are looking forward to seeing your contributions,&nbsp; On behalf of the Senior Editors,&nbsp; Petter Nielsen Daniel J. Veit Laura Brandimarte Juliana Sutanto Mary Tate Ben Eaton",
       "reposts": [
         "2026-07-06T09:16:21.000Z"
       ],
@@ -1116,8 +1119,8 @@
         "Journal & Special Issue"
       ],
       "topicTags": [
-        "Digital Transformation",
-        "AI & GenAI"
+        "AI & GenAI",
+        "Digital Transformation"
       ],
       "eventTags": []
     },
@@ -1136,7 +1139,8 @@
       ],
       "topicTags": [],
       "eventTags": [
-        "AMCIS"
+        "AMCIS",
+        "ICIS"
       ]
     },
     {
@@ -1145,7 +1149,7 @@
       "sender": "Monideepa Tarafdar",
       "date": "2026-07-04T09:46:20.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;78ba048a.2607A",
-      "snippet": "JAIS is pleased to announce the July-August (27:4) issue available at https://aisel.aisnet.org/jais/ Editorial Writing an \"A\" Paper in the Age of GenAI: A Guide to Responsible Augmentation<https://aisel.aisnet.org/jais/vol27/iss4/8> Gerald C. Kane and Monideepa Tarafdar Articles A Layered Needs-Affordances-Features Approach to Advancing Artificial Intelligence Fairness in Hiring Systems<https://aisel.aisnet.org/jais/vol27/iss4/7> Kofi Arhin, Louis Hickman, and Jason Kuruzovich Increasing Label Quality with Interactive Image Labeling Systems: An Explanatory Design Theory<https://aisel.aisnet.org/jais/vol27/iss4/6> Stefan Morana, Jasper Feine, and Alexander Maedche [...]",
+      "snippet": "JAIS is pleased to announce the July-August (27:4) issue available at https://aisel.aisnet.org/jais/ Editorial Writing an &quot;A&quot; Paper in the Age of GenAI: A Guide to Responsible Augmentation&lt;https://aisel.aisnet.org/jais/vol27/iss4/8&gt; Gerald C. Kane and Monideepa Tarafdar Articles A Layered Needs-Affordances-Features Approach to Advancing Artificial Intelligence Fairness in Hiring Systems&lt;https://aisel.aisnet.org/jais/vol27/iss4/7&gt; Kofi Arhin, Louis Hickman, and Jason Kuruzovich Increasing Label Quality with Interactive Image Labeling Systems: An Explanatory Design Theory&lt;https://aisel.aisnet.org/jais/vol27/iss4/6&gt; Stefan Morana, Jasper Feine, and Alexander Maedche [...]",
       "reposts": [
         "2026-07-04T09:46:20.000Z"
       ],
@@ -1163,7 +1167,7 @@
       "sender": "Jason Cohen",
       "date": "2026-07-04T09:26:25.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;51a8bcf5.2607A",
-      "snippet": "Professor Jason Cohen, PhD (WITS). Dean | Faculty of Commerce, Law and Management. Professor of Information Systems. Behaviour & Information Technology. Special Issue on The Bright and Dark sides of AI-Generated Content in the Digital Economy. https://think.taylorandfrancis.com/special_issues/the-bright-and-dark-sides-of-ai-generated-content-in-the-digital-economy/. Timeline: The special issue will be accepting submissions until July 31, 2026. [...]",
+      "snippet": "[cid:image-7543406-1054035@za01.rocketseed.cloud] Professor Jason Cohen, PhD (WITS) Dean | Faculty of Commerce, Law and Management Professor of Information Systems [cid:image-54319-1054035@za01.rocketseed.cloud] E: Jason.Cohen@wits.ac.za T: + 27 11 717 8012&lt;tel:+%2027%2011%20717%208012&gt; W: wits.ac.za/clm/ [cid:image-56215-1054035@za01.rocketseed.cloud]&lt;https://za01.rocketseed.cloud/rs/a0xMC4fx8oxWXSz&gt; [cid:image-54323-1054035@za01.rocketseed.cloud] [cid:image-54322-1054035@za01.rocketseed.cloud] Commerce, Law &amp; Management Building, Braamfontein Campus West, Johannesburg [cid:image-54331-1054035@za01.rocketseed.cloud] Behaviour &amp; Information Technology Special Issue on The Bright and Dark sides of AI-Generated Content in the Digital Economy https://think.taylorandfrancis.com/special_issues/the-bright-and-dark-sides-of-ai-generated-content-in-the-digital-economy/ Timeline: The special issue will be accepting submissions until July 31, 2026. [...]",
       "reposts": [
         "2026-07-04T09:26:25.000Z"
       ],
@@ -1182,7 +1186,7 @@
       "sender": "Yuheng Hu",
       "date": "2026-07-04T03:55:33.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;216d3871.2607A",
-      "snippet": "We invite submissions for the 2nd Annual Fisher AI in Business Conference, hosted by the Max M. Fisher College of Business at The Ohio State University. This year's theme is AI Innovation at Scale. The conference will include an Industry & Practitioner Track and an Academic Research Track, with Thursday serving as a shared bridge day between research and practice. We welcome submissions on AI in business, including generative and agentic AI, human-AI collaboration, enterprise adoption, governance, strategy, workforce impacts, and AI evaluation/ROI. [...]",
+      "snippet": "We invite submissions for the 2nd Annual Fisher AI in Business Conference, hosted by the Max M. Fisher College of Business at The Ohio State University. This year's theme is AI Innovation at Scale. The conference will include an Industry &amp; Practitioner Track and an Academic Research Track, with Thursday serving as a shared bridge day between research and practice. We welcome submissions on AI in business, including generative and agentic AI, human-AI collaboration, enterprise adoption, governance, strategy, workforce impacts, and AI evaluation/ROI. [...]",
       "reposts": [
         "2026-07-04T03:55:33.000Z"
       ],
@@ -1201,7 +1205,7 @@
       "sender": "Kavakli Vagelio",
       "date": "2026-07-03T16:11:47.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9424c3f1.2607A",
-      "snippet": "CALL FOR PAPERS The 19th IFIP WG8.1 Working Conference on the Practice of Enterprise Modeling (PoEM 2026) December 1-3, 2026 | Mytilene, Greece https://poem2026.aegean.gr/ **** SCOPE **** The PoEM working conference strives to improve the understanding of the practice of Enterprise Modeling (EM) by offering a forum for sharing experiences and knowledge between the academic community and practitioners from industry and the public sector. The 19th edition of the conference will take place in Mytilene, Greece, from December 1 to December 3, 2026, and will be hosted by the University of the Aegean. [...]",
+      "snippet": "CALL FOR PAPERS The 19th IFIP WG8.1 Working Conference on the Practice of Enterprise Modeling (PoEM 2026) December 1-3, 2026 | Mytilene, Greece https://poem2026.aegean.gr/ **** SCOPE **** The PoEM working conference strives to improve the understanding of the practice of Enterprise Modeling (EM) by offering a forum for sharing experiences and knowledge between the academic community and practitioners from industry and the public sector. The 19th edition of the conference will take place in Mytilene, Greece, from December 1 to December 3, 2026, and will be hosted by the University of the Aegean&lt;http://www.aegean.gr/&gt;. [...]",
       "reposts": [
         "2026-07-03T16:11:47.000Z"
       ],
@@ -1295,12 +1299,11 @@
       "sender": "Hakikur Rahman",
       "date": "2026-07-01T14:25:40.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;daa8836d.2607A",
-      "snippet": "Call for Articles. International Journal of Information Communication Technologies and Human Development (IJICTHD) (Gold Open Access | Continuous Publication). The International Journal of Information Communication Technologies and Human Development (IJICTHD) invites original research articles, conceptual papers, and empirical studies that examine how information and communication technologies (ICTs) contribute to human development, social change, and inclusive governance. As a Gold Open Access journal published continuously since 2009 and indexed in INSPEC and multiple international indices, IJICTHD provides a global platform for interdisciplinary scholarship at the intersection of technology, society, and development. [...]",
+      "snippet": "Call for Articles International Journal of Information Communication Technologies and Human Development (IJICTHD) (Gold Open Access | Continuous Publication) The International Journal of Information Communication Technologies and Human Development (IJICTHD) invites original research articles, conceptual papers, and empirical studies that examine how information and communication technologies (ICTs) contribute to human development, social change, and inclusive governance. As a Gold Open Access journal published continuously since 2009 and indexed in INSPEC and multiple international indices, IJICTHD provides a global platform for interdisciplinary scholarship at the intersection of technology, society, and development. [...]",
       "reposts": [
         "2026-07-01T14:25:40.000Z"
       ],
       "typeTags": [
-        "Journal & Special Issue",
         "General Discussion"
       ],
       "topicTags": [],
@@ -1330,7 +1333,7 @@
       "sender": "Giorgio Ubbiali",
       "date": "2026-07-01T10:18:45.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;85e31ef4.2607A",
-      "snippet": "[Apologies for cross-posting] Dear all, We are delighted to inform you that registrations for FOIS are now open! Early bird registration before 31 July (or 21 August for students). For FOIS authors, registration is mandatory before 8 July. For JOWO and satellite track authors, registration is mandatory before 31 July. A limited number of student grants for attending FOIS 2026 are available. Grants will be awarded to students attending the conference who lack sufficient funding. Preference will be given to students who are going to present a paper and/or were selected for the Early Career Symposium. These [...]",
+      "snippet": "[Apologies for cross-posting] Dear all, We are delighted to inform you that registrations for FOIS are now open! - Early bird registration before 31 July (or 21 August for students). - For FOIS authors, registration is mandatory before 8 July. - For JOWO and satellite track authors, registration is mandatory before 31 July. A limited number of student grants for attending FOIS 2026 are available. Grants will be awarded to students attending the conference who lack sufficient funding. Preference will be given to students who are going to present a paper and/or were selected for the Early Career Symposium. These [...]",
       "reposts": [
         "2026-07-01T10:18:45.000Z"
       ],
@@ -1349,7 +1352,7 @@
       "sender": "Andrea Esposito",
       "date": "2026-07-01T09:40:37.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1a7f2d84.2607A",
-      "snippet": "Call for Papers – First Submission Round. EICS 2027: The 19th ACM SIGCHI Symposium on Engineering Interactive Computing Systems. 21–25 June 2027, Toulouse, France. Submission deadline for the First Round of Full Papers and Technical Notes: 23 July 2026. EICS 2027 is the nineteenth ACM SIGCHI Symposium on Engineering Interactive Computing Systems. The conference is devoted to the engineering of interactive computing systems and their user interfaces, addressing software quality factors including usability, user experience, reliability, security, and related concerns throughout the complete engineering lifecycle. EICS brings together researchers and practitioners working at the intersection [...]",
+      "snippet": "# Call for Papers – First Submission Round ## EICS 2027: The 19th ACM SIGCHI Symposium on Engineering Interactive Computing Systems **21–25 June 2027, Toulouse, France** --- Submission deadline for the First Round of Full Papers and Technical Notes: **23 July 2026** --- EICS 2027 is the nineteenth ACM SIGCHI Symposium on Engineering Interactive Computing Systems. The conference is devoted to the engineering of interactive computing systems and their user interfaces, addressing software quality factors including usability, user experience, reliability, security, and related concerns throughout the complete engineering lifecycle. EICS brings together researchers and practitioners working at the intersection [...]",
       "reposts": [
         "2026-07-01T09:40:37.000Z"
       ],
@@ -1387,7 +1390,7 @@
       "sender": "Hesti Sudjana",
       "date": "2026-06-30T08:46:22.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3f361f6e.2606E",
-      "snippet": "C A L L F O R P A P E R S. The 28th International Conference on Information Integration and Web Intelligence (iiWAS2026). \"From Data to Insight: Advancing Information Integration and Web Intelligence for Human-Centric Decision Making\". 07-09 December 2026, Bangkok, Thailand. email: iiwas2026@iiwas.org. Paper submission: https://iiwas2026.iiwas.org. Website: https://www.iiwas.org/conferences/iiwas2026/. Important Dates: 15 July 2026: paper submission deadline full papers (15 pages), short papers (6 pages). 05 September 2026: Acceptance Notifications. 25 September 2026: Camera-Ready Papers and Authors Registration deadline. 07 - 09 December 2026: Conference Dates [...]",
+      "snippet": "C A L L F O R P A P E R S The 28th International Conference on Information Integration and Web Intelligence (iiWAS2026) &quot;From Data to Insight: Advancing Information Integration and Web Intelligence for Human-Centric Decision Making&quot; 07-09 December 2026, Bangkok, Thailand email: iiwas2026@iiwas.org Paper submission: https://iiwas2026.iiwas.org Website: https://www.iiwas.org/conferences/iiwas2026/ **** Important Dates **** 15 July 2026: paper submission deadline full papers (15 pages), short papers (6 pages) 05 September 2026: Acceptance Notifications 25 September 2026: Camera-Ready Papers and Authors Registration deadline 07 - 09 December 2026: Conference Dates [...]",
       "reposts": [
         "2026-06-13T18:31:00.000Z",
         "2026-06-30T08:46:22.000Z"
@@ -1426,7 +1429,7 @@
       "sender": "Dave Chatterjee, Ph.D.",
       "date": "2026-06-29T12:00:00.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2e79718.2606E",
-      "snippet": "Dear Colleagues: My new article, \"The Cryptographic Reckoning: Why Quantum Readiness Begins with Agility, Not Algorithms,\" is live in INFORMS Analytics Magazine. -- https://pubsonline.informs.org/do/10.1287/LYTX.2026.02.06; -- https://www.dchatte.com/wp-content/uploads/2026/06/The-Cryptographic-Reckoning-_-Analytics-Magazine.pdf The core argument: post-quantum migration is failing in most enterprises — and the bottleneck is not algorithmic. It is organizational. The article applies the CPD Framework to diagnose exactly why — and what to do about it. The CPD Framework — first introduced in Cybersecurity Readiness (SAGE, 2021) — was built to surface these failure modes across contexts. Post-quantum migration is its latest proving ground. [...]",
+      "snippet": "Dear Colleagues: My new article, &quot;The Cryptographic Reckoning: Why Quantum Readiness Begins with Agility, Not Algorithms,&quot; is live in INFORMS Analytics Magazine. -- https://pubsonline.informs.org/do/10.1287/LYTX.2026.02.06; -- https://www.dchatte.com/wp-content/uploads/2026/06/The-Cryptographic-Reckoning-_-Analytics-Magazine.pdf The core argument: post-quantum migration is failing in most enterprises — and the bottleneck is not algorithmic. It is organizational. The article applies the CPD Framework to diagnose exactly why — and what to do about it. The CPD Framework — first introduced in Cybersecurity Readiness (SAGE, 2021) — was built to surface these failure modes across contexts. Post-quantum migration is its latest proving ground. [...]",
       "reposts": [
         "2026-06-29T12:00:00.000Z"
       ],
@@ -1434,9 +1437,9 @@
         "General Discussion"
       ],
       "topicTags": [
+        "Data Science & Analytics",
         "Cybersecurity & Privacy",
-        "Business & Enterprise",
-        "Data Science & Analytics"
+        "Business & Enterprise"
       ],
       "eventTags": []
     },
@@ -1465,7 +1468,7 @@
       "sender": "Ilan Oshri",
       "date": "2026-06-29T05:00:25.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;af97b4dd.2606E",
-      "snippet": "Associate Professor in Behavioural Information Systems. Auckland, New Zealand. Employees work in a hybrid mode. Full-time. Campus: Auckland City Campus. Position Number: 60000487. UoA Department Name: Info Systems & Operations Mgmt. Job Description. Waipapa Taumata Rau | The University of Auckland. The University of Auckland creates globally transformative impacts through its distinctive strengths in world-leading research, scholarship, teaching and collaborative partnerships, inspired by its unique position in Aotearoa New Zealand and the Asia-Pacific. [...]",
+      "snippet": "* Associate Professor in Behavioural Information Systems * Auckland, New ZealandEmployees work in a hybrid mode * Full-time * Campus: Auckland City Campus * Position Number: 60000487 * UoA Department Name: Info Systems &amp; Operations Mgmt Job Description Waipapa Taumata Rau | The University of Auckland The University of Auckland creates globally transformative impacts through its distinctive strengths in world-leading research, scholarship, teaching and collaborative partnerships, inspired by its unique position in Aotearoa New Zealand and the Asia-Pacific. [...]",
       "reposts": [
         "2026-06-29T05:00:25.000Z"
       ],
@@ -1483,7 +1486,7 @@
       "sender": "Mai, Feng",
       "date": "2026-06-29T00:43:29.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3836a142.2606D",
-      "snippet": "We extended the submission deadline for the INFORMS 10th Workshop on Data Science to July 12, 2026. Please submit your papers here: https://cmt3.research.microsoft.com/DATASCIENCE2026/ Conference date: Saturday, October 31, 2026 Location: San Francisco, California, USA For more information, please check the website: https://sites.google.com/view/data-science-2026 [...]",
+      "snippet": "We extended the submission deadline for the INFORMS 10th Workshop on Data Science to July 12, 2026. Please submit your papers here: https://cmt3.research.microsoft.com/DATASCIENCE2026/ Conference date: Saturday, October 31, 2026 Location: San Francisco, California, USA For more information, please check the website: https://sites.google.com/view/data-science-2026 From: AISWorld &lt;AISWORLD@LISTSERV.ISWORLD.ORG&gt; on behalf of Feng Mai &lt;000000c76bae873b-dmarc-request@LISTSERV.ISWORLD.ORG&gt; Date: Tuesday, May 5, 2026 at 1:18 PM To: AISWORLD@LISTSERV.ISWORLD.ORG &lt;AISWORLD@LISTSERV.ISWORLD.ORG&gt; Subject: [External] [AISWORLD] INFORMS Workshop on Data Science 2026 [...]",
       "reposts": [
         "2026-06-29T00:43:29.000Z"
       ],
@@ -1517,7 +1520,7 @@
       "sender": "Gianni Jacucci",
       "date": "2026-06-27T16:29:22.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;85da1354.2606D",
-      "snippet": "OISI 2026 – Update and Renewed Invitation. Organisational Intervention in Social Informatics. Communication, Accountability and Meaning in the Age of Generative AI. Trento, Italy (Dolomites). 5–7 October 2026. A brief update for colleagues interested in OISI 2026. Since the original announcement, a collection of provocation notes has begun to accumulate from researchers, practitioners, managers, and organisational innovators. The resulting conversation is proving broader than initially anticipated. [...]",
+      "snippet": "OISI 2026 – Update and Renewed InvitationOrganisational Intervention in Social Informatics*Communication, Accountability and Meaning in the Age of Generative AI**Trento, Italy (Dolomites)*5–7 October 2026 A brief update for colleagues interested in OISI 2026. Since the original announcement, a collection of provocation notes has begun to accumulate from researchers, practitioners, managers, and organisational innovators. The resulting conversation is proving broader than initially anticipated. [...]",
       "reposts": [
         "2026-06-27T16:29:22.000Z"
       ],
@@ -1537,7 +1540,7 @@
       "sender": "Liu, Peng",
       "date": "2026-06-26T15:50:18.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9236a8d4.2606D",
-      "snippet": "The Workshop on e-Business (WeB) 2026. Agentic AI and Trusted Digital Commerce Ecosystems. Call for Papers. Important Dates. Conference Date: December 12, 2026. Submission Due Date: August 10, 2026. Acceptance Notification Date: September 14, 2026. Information & Management Special Issue Invitation for Submission: January 15, 2027. Highlights: Information & Management (I&M) Special Issue. The 25th Anniversary Workshop on e-Business (WeB 2026) is collaborating with Information & Management (I&M) to launch a Special Issue with the conference theme: Reimagining e-Business at 25: Intelligent, Agentic, and Trustworthy Digital Commerce. [...]",
+      "snippet": "The Workshop on e-Business (WeB) 2026 Agentic AI and Trusted Digital Commerce Ecosystems Call for Papers Important Dates * Conference Date: December 12, 2026 * Submission Due Date: August 10, 2026 * Acceptance Notification Date: September 14, 2026 * Information &amp; Management Special Issue Invitation for Submission: January 15, 2027 Highlights: Information &amp; Management (I&amp;M) Special Issue The 25th Anniversary Workshop on e-Business (WeB 2026) is collaborating with Information &amp; Management (I&amp;M) to launch a Special Issue with the conference theme: Reimagining e-Business at 25: Intelligent, Agentic, and Trustworthy Digital Commerce. [...]",
       "reposts": [
         "2026-06-26T15:50:18.000Z"
       ],
@@ -1559,7 +1562,7 @@
       "sender": "Slim Kallel",
       "date": "2026-06-26T06:29:17.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;71a05fb3.2606D",
-      "snippet": "Call for Papers. CoopIS 2026: The 32nd International Conference on Cooperative Information Systems. October 26 - 28, 2026. Angers, France. https://coopis.scitevents.org/. Proceedings: Springer LNCS. Important Dates: [...]",
+      "snippet": "Call for Papers CoopIS 2026: The 32nd International Conference on Cooperative Information Systems October 26 - 28, 2026 Angers, France https://coopis.scitevents.org/ Proceedings: Springer LNCS Important Dates:",
       "reposts": [
         "2026-06-26T06:29:17.000Z"
       ],
@@ -1596,7 +1599,7 @@
       "sender": "Phil Menard",
       "date": "2026-06-25T13:57:47.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f0d79488.2606D",
-      "snippet": "Dear Members of the AIS Special Interest Group on Security and Privacy (SIGSEC), The time has come to elect officers for the upcoming term. Nominations will be open from now until July 15, 2026, with elections to be held online in late July. If you are interested in serving as a SIGSEC officer or would like to nominate a colleague, please email me at philip.menard@utsa.edu with \"SIGSEC Nomination\" in the subject line and indicate the position(s) of interest. I will follow up directly with nominees and the committee. Details on the open positions are below: [...]",
+      "snippet": "Dear Members of the AIS Special Interest Group on Security and Privacy (SIGSEC), The time has come to elect officers for the upcoming term. Nominations will be open from now until *July 15, 2026*, with elections to be held online in late July. If you are interested in serving as a SIGSEC officer or would like to nominate a colleague, please email me at philip.menard@utsa.edu with &quot;SIGSEC Nomination&quot; in the subject line and indicate the position(s) of interest. I will follow up directly with nominees and the committee. Details on the open positions are below: [...]",
       "reposts": [
         "2026-06-25T13:57:47.000Z"
       ],
@@ -1614,13 +1617,13 @@
       "sender": "Nik Rushdi Hassan",
       "date": "2026-06-25T13:18:51.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;cd71d3c.2606D",
-      "snippet": "Dear colleagues, For everyone interested in IS theories, the deadline to submit an extended abstract to the EJIS Special Issue on Native IS Theories is June 29th. These two videos, first by Prof Kalle Lyytinen and the second, continuing the discussion on Zoom provide useful information about IS theories in general and those interested in the EJIS Special Issue.",
+      "snippet": "Dear colleagues, For everyone interested in IS theories, the deadline to submit an extended abstract to the EJIS Special Issue on Native IS Theories ( https://think.taylorandfrancis.com/special_issues/ejis-native-is-theories) is June 29th. These two videos, first by Prof Kalle Lyytinen and the second, continuing the discussion on Zoom provide useful information about IS theories in general and those interested in the EJIS Special Issue ECIS Workshop for the EJIS SI https://youtu.be/Q1gRL2N9Id4 Zoom session for the EJIS SI https://youtu.be/_gtYtxCtFv4",
       "reposts": [
         "2026-06-25T13:18:51.000Z"
       ],
       "typeTags": [
-        "Journal & Special Issue",
-        "Conference & Workshop"
+        "Conference & Workshop",
+        "Journal & Special Issue"
       ],
       "topicTags": [],
       "eventTags": []
@@ -1631,7 +1634,7 @@
       "sender": "Yu, Feng",
       "date": "2026-06-25T11:03:54.000Z",
       "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ceb7f8e.2606D",
-      "snippet": "[Please accept our apologies if you receive multiple copies of this message]. IOI-2026 Call for Papers. The 6th International Conference on Internet of Intelligence (IOI-2026). https://hpcn.exeter.ac.uk/ioi2026. Exeter, UK, 26-28 October 2026. INTRODUCTION [...]",
+      "snippet": "[Please accept our apologies if you receive multiple copies of this message] ************************* IOI-2026 Call for Papers********************** The 6th International Conference on Internet of Intelligence (IOI-2026) https://hpcn.exeter.ac.uk/ioi2026 Exeter, UK, 26-28 October 2026 INTRODUCTION",
       "reposts": [
         "2026-06-25T11:03:54.000Z"
       ],
