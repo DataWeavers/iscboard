@@ -4,7 +4,7 @@
     { "id": "conference", "label": "Conference & Workshop", "pattern": "conference|workshop|symposium|colloquium|minitrack|consortium|summit\\b|\\bexpo\\b|registration|proceedings" },
     { "id": "journal", "label": "Journal & Special Issue", "pattern": "special issue|\\bmisq\\b|\\bjais\\b|\\bisr\\b|\\bjmis\\b|\\bejis\\b|\\bisj\\b|\\bjit\\b|\\bjsis\\b|\\bdss\\b|\\bjitcar\\b|information\\s*(&|and)\\s*management|information\\s*(&|and)\\s*organization|table of contents|editorial" },
     { "id": "job", "label": "Job Posting", "pattern": "assistant professor|associate professor|full professor|faculty position|tenure-track|tenure track|\\btenured\\b|endowed chair|position announcement|\\blecturer\\b|postdoc|postdoctoral|job opening|now hiring|we are hiring" },
-    { "id": "funding", "label": "PhD & Funding", "pattern": "\\bphd\\b(?!\\s*\\()(?!\\s+degree)(?!\\s+in\\b)|ph\\.?d\\.?(?=\\s)(?!\\s+degree)(?!\\s+in\\b)(?!\\s*\\()|doctoral|fellowship|(?<!state )(?<!contingent on )\\bfunding\\b|(?<!dear )\\bgrant\\b(?!\\s+[A-Z][a-z])" },
+    { "id": "funding", "label": "PhD & Funding", "pattern": "\\bphd\\b(?!\\s*\\()(?!\\s+degree)(?!\\s+in\\b)|ph\\.?d\\.?(?=\\s)(?!\\s+degree)(?!\\s+in\\b)(?!\\s*\\()|doctoral\\s+(?:scholarship|fellowship|position|studentship|funding|grant|stipend|programme|program|opportunit)|fellowship|(?<!state )(?<!contingent on )\\bfunding\\b|(?<!dear )\\bgrant\\b(?!\\s+[A-Z][a-z])" },
     { "id": "general", "label": "General Discussion", "pattern": null }
   ]
 }
