@@ -1,6 +1,107 @@
 {
-  "lastUpdated": "2026-08-25T12:26:28.623Z",
+  "lastUpdated": "2026-08-26T12:29:01.625Z",
   "messages": [
+    {
+      "key": "preicis sigdsa 2026 cfp for doctoral development workshop",
+      "subject": "Pre-ICIS SIGDSA 2026 - CFP for Doctoral Development Workshop",
+      "sender": "Stephen McCarthy",
+      "date": "2026-08-26T08:57:15.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;e4e280e8.2608D",
+      "snippet": "Call for Papers The pre-ICIS SIGDSA 2026 Symposium theme is “Analytics and AI-Based Decision Support for Digital Collaboration and Coexistence”. Decision-making is increasingly shared across people, organizations, and intelligent systems. As analytics and AI move from supporting individual choices to shaping how teams, firms, and communities coordinate, new questions arise about how decision support should be designed, governed, and evaluated. The idea of coexistence points to realities this research must confront: humans and AI now take part in the same decisions, and data-rich and data-poor settings sit side by side across regions, sectors, and groups with very different levels of [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Data Science & Analytics"
+      ],
+      "eventTags": [
+        "SIGDSA",
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-08-26T08:57:15.000Z"
+      ]
+    },
+    {
+      "key": "ecis 2027 call for submissions",
+      "subject": "ECIS 2027 Call for Submissions",
+      "sender": "Recker, Prof. Dr. Jan",
+      "date": "2026-08-26T05:14:48.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;651d487a.2608D",
+      "snippet": "Dear colleagues, We invite the submission of Completed Research Papers, Short Research Papers, and Workshop Proposals to the 35th European Conference on Information Systems (ECIS 2027). ECIS 2027 will bring together academic and industry professionals from around the world to exchange knowledge related to diverse facets of information systems research and practice. The conference will provide exciting opportunities for participation, collaboration, and dialogue related to the conference theme &quot;Bridging Digital Borders&quot;. With your contributions, we will present an exciting programme that draws upon the best ECIS traditions. We anticipate thought-provoking presentations and stimulating discussions that exemplify our incredible discipline. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ECIS"
+      ],
+      "reposts": [
+        "2026-08-26T05:14:48.000Z"
+      ]
+    },
+    {
+      "key": "call for submissions the 25th annual preicis workshop on hci lisbon portugal december 13 2026",
+      "subject": "Call for Submissions - The 25th Annual Pre-ICIS Workshop on HCI, Lisbon, Portugal (December 13, 2026)",
+      "sender": "Bingqing XIONG",
+      "date": "2026-08-26T00:58:38.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9b245560.2608D",
+      "snippet": "Dear Colleagues, We are pleased to accept submissions to the 25th Annual Pre-ICIS Workshop on HCI Research, to be held in Lisbon, Portugal on December 13, 2026, in conjunction with the International Conference on Information Systems (ICIS 2026). IMPORTANT DATES: Submissions Due: August 31st, 2026 Acceptance Notification: October 11th, 2026 Camera-ready manuscripts due: October 25th, 2026 [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-07-17T16:58:56.000Z",
+        "2026-08-26T00:58:38.000Z"
+      ]
+    },
+    {
+      "key": "dss special issue on extended reality xr for enhanced decision making and organizational transformation",
+      "subject": "DSS Special Issue on Extended Reality (XR) for Enhanced Decision Making and Organizational Transformation",
+      "sender": "Andy",
+      "date": "2026-08-25T18:47:06.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d2d59161.2608D",
+      "snippet": "*Call for Papers * *DSS Special Issue on * *Extended Reality (XR) for Enhanced Decision Making and Organizational Transformation* Extended Reality (XR) as immersive technologies – encompassing Virtual Reality (VR), Augmented Reality (AR), and Mixed Reality (MR) – is rapidly transforming how individuals, organizations, and societies interact with digital and physical environments. XR technologies create immersive, interactive, and context-rich environments where users can visualize data, collaborate across distances, simulate real-world scenarios, understand complex spatial relationships, and make more timely and informed decisions. They represent a key component of the accelerating convergence between the digital and physical worlds, where digital contents [...]",
+      "typeTags": [
+        "Journal & Special Issue"
+      ],
+      "topicTags": [
+        "Business & Enterprise"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-08-25T18:47:06.000Z"
+      ]
+    },
+    {
+      "key": "research track 2026 preicis sigdsa symposium lisbon portugal",
+      "subject": "Research Track, 2026 Pre-ICIS SIGDSA Symposium (Lisbon, Portugal)",
+      "sender": "Xingwei (Nancy) Yang",
+      "date": "2026-08-25T12:29:58.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;eafb257c.2608D",
+      "snippet": "Dear colleagues, We are pleased to invite submissions to the 2026 Pre-ICIS SIGDSA Symposium Research Track, held with ICIS 2026 in Lisbon, Portugal, on December 12–13, 2026. AIS SIGDSA &lt;https://communities.aisnet.org/sigdsa/about/about-us&gt; is a community within the Association for Information Systems that supports research and teaching in decision support, analytics, collaboration, knowledge management, data science, and AI-enabled decision-making. This year’s theme is “Analytics and AI-Based Decision Support for Digital Collaboration and Coexistence.” We welcome Completed Research and Research-in-Progress papers on human-AI teaming, agentic decision support systems, generative AI, responsible analytics, AI-enabled business applications, digital ecosystems, sustainability, machine learning, MLOps, and decision analytics. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Data Science & Analytics",
+        "Education & Teaching",
+        "Sustainability"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-08-12T01:03:07.000Z",
+        "2026-08-25T12:29:58.000Z"
+      ]
+    },
     {
       "key": "cfp codeisb conference on the digital economy code at the indian school of business",
       "subject": "CFP: CODE@ISB - Conference on the Digital Economy (CODE) at the Indian School of Business",
@@ -869,28 +970,6 @@
       ],
       "reposts": [
         "2026-08-12T20:58:25.000Z"
-      ]
-    },
-    {
-      "key": "research track 2026 preicis sigdsa symposium lisbon portugal",
-      "subject": "Research Track, 2026 Pre-ICIS SIGDSA Symposium (Lisbon, Portugal)",
-      "sender": "Xingwei Yang",
-      "date": "2026-08-12T01:03:07.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;11c0492f.2608B",
-      "snippet": "Association for Information Systems Special Interest Group in Decision Support and Analytics (AIS SIGDSA) facilitates the exchange, development, communication, and dissemination of information about Decision Support, Analytics, Collaboration, and Knowledge Management Research and teaching issues in business, management, and organizational contexts among AIS members and in the larger community of IS/IT practitioners and scholars. The 2026 Pre-ICIS SIGDSA Symposium will be held from December 12 to December 13 in conjunction with the International Conference on Information Systems (ICIS 2026) in Lisbon, Portugal. The theme for the pre-ICIS SIGDSA 2026 Symposium is \"Analytics and AI-Based Decision Support for Digital Collaboration and [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Data Science & Analytics",
-        "Business & Enterprise",
-        "Education & Teaching"
-      ],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-08-12T01:03:07.000Z"
       ]
     },
     {
@@ -2116,28 +2195,6 @@
       "eventTags": [],
       "reposts": [
         "2026-07-17T19:31:31.000Z"
-      ]
-    },
-    {
-      "key": "call for submissions the 25th annual preicis workshop on hci lisbon portugal december 13 2026",
-      "subject": "Call for Submissions - The 25th Annual Pre-ICIS Workshop on HCI, Lisbon, Portugal (December 13, 2026)",
-      "sender": "Sameh Al Natour",
-      "date": "2026-07-17T16:58:56.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;8ff308f1.2607C",
-      "snippet": "Dear Colleagues, We are pleased to accept submissions to the 25th Annual Pre-ICIS Workshop on HCI Research, to be held in Lisbon, Portugal on December 13, 2026, in conjunction with the International Conference on Information Systems (ICIS 2026). IMPORTANT DATES: Submissions Due: August 31st, 2026 Acceptance Notification: October 11th, 2026 Camera-ready manuscripts due: October 25th, 2026 Workshop event: December 13th, 2026 WORKSHOP FORMAT:&nbsp; The workshop will feature a keynote speaker, as well as completed research and research-in-progress papers accepted for presentation either in the main program as Oral Presentations or as part of a Rapid Research Roundtable (RRR). The RRR offers an opportunity for less matured papers, which have not been accepted for oral presentations, to gain exposure and benefit from the collaborative feedback of the community. Given the diverse goals of this workshop, a non-exhaustive list of potential topics is provided below: Achieving Digital HCI in the Age of AI Analysis, design, development, evaluation, and usage of information systems Digital collaboration and coexistence in HCI Guidelines and standards for interface design HCI considerations of generative AI Design and evaluation of innovative interaction technologies Design and evaluation of mobile and/or web interfaces Interface design for collaborative or competitive environments Interface design for individual and/or collective usage Interface design for the elderly, the young, and/or other special needs populations Adaptive, context-aware interface design Novel forms of authentication and/or authorization (e.g., mousing or typing dynamics) Impact of interface design on beliefs, attitudes, emotions, behaviors, productivity, and/or performance Cognitive, Affective, and/or Conversational HCI Data analytics in HCI Gamified approaches to HCI Human-Centered Artificial Intelligence (AI) Human-Robot Interactions Neuroscientific approaches to HCI Nudging strategies and techniques in HCI Usability engineering (i.e., friction reduction), ease-of-use and user experience Ethical issues in HCI Pedagogical issues related to HCI education Implications and consequences of HCI advances on individuals, collectives, and society FAST-TRACKING OPPORTUNITIES WITH THCI: The best completed research papers from the workshop will be fast-tracked for publication consideration in the AIS Transactions on Human-Computer Interaction (AIS THCI). SUBMISSION, REVIEW, AND ACCEPTANCE PROCESS: The workshop seeks high-quality submissions detailing completed research or research-in-progress. Authors should identify their submission as &ldquo;Completed Research&rdquo; or &ldquo;Research in Progress&rdquo; on the first page below the title. Submissions will undergo a double-blind review process. The submissions should not have been published or be under review elsewhere. All accepted submissions will be published in the workshop proceedings, which will be made available electronically via the AIS digital library. SUBMISSION FORMAT: All submissions must be formatted for letter size (8.5- x 11-inch where 1 inch = 2.5 cm) and have 1-inch margins on each side. Please use Times New Roman 12-point font with single spacing for the body of the paper. The first page of the manuscript should have a title, the type of the submission (Completed Research or Research-in-Progress), total word count of the submission, an abstract of 150 words or less, and a list of 5-6 keywords. Maximum length for submitted manuscripts are as follows: Completed Research Paper &rarr; 14 pages Research-in-Progress &rarr; 7 pages These page limits are inclusive of all text, figures, and tables, but do not include the cover page, abstract, keywords, or references. Only submissions in Word format will be accepted for review. Authors are invited to submit their manuscripts on the submission website by the submission deadline communicated above. The submission system will open on August 10th, 2026, and instructions will be provided on www.sighci.org. Note that as this is a cooperative workshop environment, we expect submitting authors to serve as reviewers of other manuscripts. ORGANIZING COMMITTEE: Workshop Co-chairs: Sameh Al Natour, Toronto Metropolitan University (salnatour@torontomu.ca); Chee-Wee Tan, Hong Kong Polytechnic University (chee-wee.tan@polyu.edu.hk) Program Co-chairs: Ryan Schuetzler, Brigham Young University (ryan.schuetzler@byu.edu); Bingqing Xiong, Deakin University (b.xiong@deakin.edu.au) Digital Chair: Dave Wilson, Brigham Young University (davidwilson@byu.edu) On behalf of the 2026 Pre-ICIS HCI Workshop Organizing Committee",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Data Science & Analytics",
-        "Education & Teaching"
-      ],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-07-17T16:58:56.000Z"
       ]
     },
     {
