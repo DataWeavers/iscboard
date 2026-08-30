@@ -1,6 +1,27 @@
 {
-  "lastUpdated": "2026-08-29T15:55:25.016Z",
+  "lastUpdated": "2026-08-30T15:41:53.093Z",
   "messages": [
+    {
+      "key": "aibb 2027 call for special sessions and workshops proposals",
+      "subject": "AIBB 2027 - Call for Special Sessions and Workshops Proposals",
+      "sender": "AIBB",
+      "date": "2026-08-30T08:39:25.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;c7816dbe.2608E",
+      "snippet": "------------------ Call for Special Sessions and Workshops Proposals-------------- The 8th Joint International Conference on AI, Big Data and Blockchain (AIBB 2027) [Springer LNNS Series] Prague, Czech Republic 16-18 Aug 2027 [Hybrid] https://ficloud.org/aibb2027",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Data Science & Analytics"
+      ],
+      "eventTags": [
+        "AIBB"
+      ],
+      "reposts": [
+        "2026-08-30T08:39:25.000Z"
+      ]
+    },
     {
       "key": "cfa pdw digital innovation transformation and entrepreneurship in the ai age in heilbronn germany",
       "subject": "CfA: PDW \"Digital Innovation, Transformation, and Entrepreneurship in the AI Age\" in Heilbronn, Germany",
