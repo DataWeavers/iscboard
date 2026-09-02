@@ -1,6 +1,77 @@
 {
-  "lastUpdated": "2026-09-01T15:44:52.589Z",
+  "lastUpdated": "2026-09-02T15:35:12.582Z",
   "messages": [
+    {
+      "key": "episode 112 when the ehr goes dark patient safety meets cybersecurity governance",
+      "subject": "Episode 112 -- When the EHR Goes Dark: Patient Safety Meets Cybersecurity Governance",
+      "sender": "Dave Chatterjee, Ph.D.",
+      "date": "2026-09-02T14:57:48.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;434da494.2609A",
+      "snippet": "Dear Colleagues: In Episode 112 of the Cybersecurity Readiness Podcast Series, I sit down with Dr. Mark Yoffe — a board-certified internal medicine physician with deep expertise in cybersecurity&lt;https://www.linkedin.com/in/mark-yoffe/&gt; — to explore a question most healthcare organizations haven't fully reckoned with. -- https://youtu.be/Lwsb0ZrGhrk [cid:389f832c-cebd-44ff-9c0d-04f192171110]&lt;https://youtu.be/Lwsb0ZrGhrk&gt; We open with a sobering scenario: a nurse can't confirm whether a cardiac patient's overnight anticoagulant was administered because the EHR is degraded — resulting in a double dose. It sounds hypothetical. It isn't. Variations of this have played out during real ransomware attacks and extended downtime events. Dr. Yoffe walks us through what actually happens [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Cybersecurity & Privacy",
+        "Health"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-02T14:57:48.000Z"
+      ]
+    },
+    {
+      "key": "isj paper development workshop submissions open",
+      "subject": "ISJ Paper Development Workshop - Submissions Open!",
+      "sender": "Ravi Patnayakuni",
+      "date": "2026-09-02T12:00:00.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9610e392.2609A",
+      "snippet": "Full message available at: ISJ Paper Development Workshop - Submissions Open!",
+      "typeTags": [
+        "Conference & Workshop",
+        "Journal & Special Issue"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-02T12:00:00.000Z"
+      ]
+    },
+    {
+      "key": "multiple tenuretrack assistantassociatefull professor positions in is cuhk business school chinese university of hong kong",
+      "subject": "Multiple Tenure-track Assistant/Associate/Full Professor Positions in IS - CUHK Business School (Chinese University of Hong Kong)",
+      "sender": "Weiquan Wang (DOT)",
+      "date": "2026-09-02T00:53:53.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;fee6ba.2609A",
+      "snippet": "The Department of Decisions, Operations and Technology at CUHK (Chinese University of Hong Kong) Business School comprises over 40 faculty members specializing in three research areas: Operations Management, Management Information Systems, and Business Economics. The Department now invites applications for tenure-track faculty positions in the area of Information Systems commencing Summer/Fall 2027. [...]",
+      "reposts": [
+        "2026-07-10T15:45:22.000Z",
+        "2026-08-02T07:16:00.000Z",
+        "2026-09-02T00:53:53.000Z"
+      ],
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [],
+      "eventTags": []
+    },
+    {
+      "key": "optional abstract submission open for misqs si on indigenous theory development",
+      "subject": "optional abstract submission open for MISQ's SI on indigenous theory development",
+      "sender": "V Venkatesh Pro",
+      "date": "2026-09-01T19:23:30.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;8e2bb391.2609A",
+      "snippet": "Starting today (until Oct 31, 2026), MISQ welcomes optional abstracts for the special issue on indigenous theory development. Abstracts should be no more than 500 words and will receive feedback, particularly on fit. Selected abstracts, based on fit and quality, will be invited around mid-November for participation in a paper development workshop on Dec 3. While the selection of abstracts will be done after all abstracts have been reviewed, we will endeavor to provide feedback on submitted abstracts approximately 2 weeks after submission. [...]",
+      "typeTags": [
+        "Conference & Workshop",
+        "Journal & Special Issue"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-01T19:23:30.000Z"
+      ]
+    },
     {
       "key": "ecis 2027 track 358 cybersecurity and privacy in the age of ai",
       "subject": "ECIS 2027 Track &#35;8 - Cybersecurity and privacy in the age of AI",
@@ -1672,23 +1743,6 @@
       "reposts": [
         "2026-08-03T20:29:34.000Z"
       ]
-    },
-    {
-      "key": "multiple tenuretrack assistantassociatefull professor positions in is cuhk business school chinese university of hong kong",
-      "subject": "Multiple Tenure-track Assistant/Associate/Full Professor Positions in IS - CUHK Business School (Chinese University of Hong Kong)",
-      "sender": "Weiquan Wang (DOT)",
-      "date": "2026-08-02T07:16:00.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d50bcc7.2608A",
-      "snippet": "The Department of Decisions, Operations and Technology at CUHK (Chinese University of Hong Kong) Business School comprises over 40 faculty members specializing in three research areas: Operations Management, Management Information Systems, and Business Economics. The Department now invites applications for tenure-track faculty positions in the area of Information Systems commencing Summer/Fall 2027. [...]",
-      "reposts": [
-        "2026-07-10T15:45:22.000Z",
-        "2026-08-02T07:16:00.000Z"
-      ],
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [],
-      "eventTags": []
     },
     {
       "key": "call for papers 2026 preicis sigdsa symposium december 1213 lisbon portugal",
