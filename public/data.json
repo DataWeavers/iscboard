@@ -1,6 +1,81 @@
 {
-  "lastUpdated": "2026-09-03T15:27:26.893Z",
+  "lastUpdated": "2026-09-04T15:24:54.185Z",
   "messages": [
+    {
+      "key": "fois 2026 fois online 09092026 starting 700 brt 1200 cest",
+      "subject": "[FOIS 2026] FOIS Online - 09/09/2026 starting 7:00 BRT / 12:00 CEST",
+      "sender": "Giorgio Ubbiali",
+      "date": "2026-09-04T14:11:10.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ac283373.2609A",
+      "snippet": "[Apologies for cross-posting]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "FOIS"
+      ],
+      "reposts": [
+        "2026-09-04T14:11:10.000Z"
+      ]
+    },
+    {
+      "key": "cfp synthetic organising in digital transformation with algorithmic systems sjis",
+      "subject": "CfP - Synthetic Organising in Digital Transformation with Algorithmic Systems (SJIS)",
+      "sender": "Thorsten Schoormann",
+      "date": "2026-09-04T11:40:24.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ade69445.2609A",
+      "snippet": "### CfP – Joint Thematic Issue: Scandinavian Journal of Information Systems (SJIS) and puntoOrg ### Synthetic Organising in Digital Transformation with Algorithmic Systems ## Submissions due: September 30th 2026 ##",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Digital Transformation"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-04T11:40:24.000Z"
+      ]
+    },
+    {
+      "key": "phd research fellow on ai digital platforms and extremism",
+      "subject": "PhD Research Fellow on AI, Digital Platforms, and Extremism",
+      "sender": "Øystein Sæbø",
+      "date": "2026-09-04T08:24:04.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ceed114c.2609A",
+      "snippet": "At University of Agder, Norway, we are seekin for a PhD Research Fellow in Information Systems on AI, Digital Platforms, and Extremism. Please have a look here: https://www.jobbnorge.no/en/available-jobs/job/307398/phd-research-fellow-in-information-systems-on-ai-digital-platforms-and-extremism Best regards Øystein Sæbø (Oystein Sabe) Head of Department Department of Information System University of Agder Norway",
+      "typeTags": [
+        "PhD & Funding"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-04T08:24:04.000Z"
+      ]
+    },
+    {
+      "key": "cfp jais theory development workshop icis 2026",
+      "subject": "CFP JAIS Theory Development Workshop - ICIS 2026",
+      "sender": "Julian Prester",
+      "date": "2026-09-04T06:01:10.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3a234c16.2609A",
+      "snippet": "96 /* * { font-family: Verdana,sans-serif; } */ :root { color-scheme: light; supported-color-schemes: light; } html, body { margin: 0 auto !important; padding: 0 !important; height: 100% !important; width: 100% !important; } * { -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; } div[style*=\"margin: 16px 0\"] { margin: 0 !important; } #MessageViewBody, #MessageWebViewDiv { width: 100% !important; } table, td { mso-table-lspace: 0pt !important; mso-table-rspace: 0pt !important; } table { border-spacing: 0 !important; border-collapse: collapse !important; table-layout: fixed !important; margin: 0 auto !important; } .email-center-table > tbody > tr:last-child > td { padding-bottom: 20px; } img { -ms-interpolation-mode: bicubic; } a { text-decoration: none; height:100%; } a[x-apple-data-detectors], .unstyle-auto-detected-links a, .aBn { border-bottom: 0 !important; cursor: default !important; color: inherit !important; text-decoration: none !important; font-size: inherit !important; font-family: inherit !important; font-weight: inherit !important; line-height: inherit !important; } .im { color: inherit !important; } .a6S { display: none !important; opacity: 0.01 !important; } img.g-img+div { display: none !important; } @media only screen and (min-device-width: 320px) and (max-device-width: 374px) { u~div .email-container { min-width: 320px !important; } } @media only screen and (min-device-width: 375px) and (max-device-width: 413px) { u~div .email-container { min-width: 375px !important; } } @media only screen and (min-device-width: 414px) { u~div .email-container { min-width: 414px !important; } } body { font-family: Verdana,sans-serif; } @media screen and (max-width: 600px) { .stack-column, .stack-column-center { display: block !important; width: 100% !important; max-width: 100% !important; direction: ltr !important; } .stack-column-center { text-align: center !important; } .center-on-narrow { text-align: center !important; display: block !important; margin-left: auto !important; margin-right: auto !important; float: none !important; } table.center-on-narrow { display: inline-block !important; } } /* Text Body content styles */ .email-text-content{ font-style: normal; word-wrap: break-word; word-break: break-word; text-align: left; color : #333; } .email-text-content h1 { font-size: 28px; font-weight: normal; /* color: #333; */ margin: 0px 0px 2px 0px !important; line-height: normal !important; } .email-text-content h2 { font-size: 26px; font-weight: normal; /* color: #333; */ margin: 0px 0px 2px 0px !important; line-height: normal !important; } .email-text-content h3 { font-size: 22px; font-weight: normal; /* color: #333; */ margin: 0px 0px 2px 0px !important; line-height: normal !important; } .email-text-content p { font-size: 16px; /* color: #333; */ margin: 0px 0px 2px 0px !important; line-height: normal !important; } .email-text-content ul, .email-text-content ol { /*font-size: 16px;*/ /*line-height: 35px;*/ margin: 10px 0px 14px 0px; line-height: normal; } .email-text-content li { /* margin-left: 0px; */ margin: 4px 0px 4px 0px !important; } /* Text Body content styles Ends */ &nbsp; &nbsp; JAIS Theory Development Workshop​ ICIS 2026, Lisbon, Portugal Saturday, Dec 12, 2026, 1:00 pm to 5:00 pm Since December 2002, the Journal of the Association for Information Systems (JAIS) has organized a number of successful Theory Development Workshops. This year we will hold the 24th JAIS Theory Development Workshop in conjunction with ICIS in Lisbon, Portugal. The in-person workshop is scheduled to take place on Saturday, December 12, from 1:00 pm to 5:00 pm. Submit Abstract Workshop Information and Format The workshop is focused on theory building and conceptual foundations in the information systems field. This workshop is interested in theory development, whether based on the analysis and synthesis of literature, explanation of a novel phenomenon supported by theory, or based on the analysis of empirical data (for example, but not limited to, grounded theory and theory building from computational analysis of large data sets). Workshop participants will discuss their work with and get feedback from JAIS SEs, AEs and ERB members and other workshop participants. To be considered, authors must demonstrate significant theoretical development in their submission. The workshop will consist of two parts. The first part will be a panel/keynote type format and the second part will be breakout sessions. Authors must have a paper accepted at the workshop to attend both sessions. Helpful Papers​​ Leidner, D., &amp; Tona, O. (2021). The CARE Theory of Dignity Amid Personal Data Digitalization. MIS Quarterly , 45(1), 343–370. Gregory, R. W., Henfridsson, O., Kaganer, E., &amp; Kyriakou, S. H. (2021). The role of artificial intelligence and data network effects for creating user value. Academy of Management Review , 46(3), 534–551. Leidner, D. E., &amp; Gregory, R. W. (2024). About theory and theorizing. Journal of the Association for Information Systems , 25(3), 501–521. Abstract Submission​​ The due date for abstract submissions is October 02, 2025 (midnight US Eastern Time). Authors will submit an extended abstract in English (not a full paper). Submissions should be between 2000 words and 3000 words including references, figures, and tables. Authors should not include any appendices. Submissions should use the JAIS paper submission style guide . Include author names and title on the first page. Submissions should be uploaded in PDF format to https://forms.gle/vC3WTZp9VcnikD1SA The upload site will ask for all author names and emails (contact author listed first), paper title, keywords, and a PDF file upload. Author and mentor identities will be open, e.g., the review of the abstracts will not be blind. Submit in PDF format. Documents are limited to 10 MB maximum. Authors are limited to one submission. Review Process​​ Abstracts will be assessed by JAIS editorial board members. Abstracts deemed to have the most promise for the development of a full paper will be accepted to the workshop. Selection for the JAIS Theory Development Workshop is competitive and will be limited to the top 20-25 submissions. Acceptance, Registration and Attendance Notification of acceptance to the workshop will be made by October 25. At least one author from an accepted abstract must register for the workshop by November 30. All selected authors are welcome to register for and attend the workshop. The workshop registration fee is $10 for students and $25 for others. For any questions, please contact Julian Prester, JAIS Managing Editor for Workshops, at julian.prester@sydney.edu.au . Submit Abstract &nbsp;",
+      "typeTags": [
+        "Conference & Workshop",
+        "Journal & Special Issue"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-04T06:01:10.000Z"
+      ]
+    },
     {
       "key": "deadline extension itd special issue digital twins fordevelopment",
       "subject": "Deadline extension: ITD Special Issue: Digital Twins forDevelopment",
