@@ -91,6 +91,13 @@ isn't subject to the free-tier throttling that Gemini's free tier hits.
 Gemini (free tier), Claude, and Muse Spark alternatives are documented in
 the worker file.
 
+Because the Worker holds a paid API key, it only answers requests whose
+`Origin` matches the `ALLOWED_ORIGINS` list at the top of
+`worker/search-worker.js` — update that list if the site ever moves
+domains. It also supports an optional Workers KV binding
+(`RATE_LIMIT_KV`) that caps requests per visitor IP; without that binding
+the Worker still runs, just without the extra rate limit.
+
 ## Setup & deploy
 
 - `public/` — the site itself; the only folder your host needs to serve.
