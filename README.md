@@ -36,7 +36,14 @@ only reads and re-presents what AISWORLD already publishes publicly.
 
 **1. Fetching.** A script (`scripts/fetch-feed.mjs`) pulls the AISWORLD
 public RSS feed on a daily schedule (via a GitHub Action cron job) and
-rebuilds `public/data.json`, which the site reads.
+rebuilds `public/data.json`, which the site reads. A second script
+(`scripts/render-feed.mjs`, chained after it in `npm run fetch`) then
+pre-renders that data into `public/index.html` itself, between `<!--SSR_*-->`
+comment markers — so crawlers and scrapers that don't run JavaScript still
+see real post content on first load, not just the empty containers the
+client-side JS fills in afterward. The client JS still fully re-renders
+over this on every real page load (needed for filtering/Ask), so visitors
+never see a difference.
 
 **2. Categorization ("Type" tags).** Each post's subject + description is
 checked against a set of keyword/regex rules in `config/categories.json`
