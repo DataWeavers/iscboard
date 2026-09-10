@@ -1,6 +1,43 @@
 {
-  "lastUpdated": "2026-09-09T15:32:08.509Z",
+  "lastUpdated": "2026-09-10T15:27:59.735Z",
   "messages": [
+    {
+      "key": "",
+      "subject": "𝗣𝗼𝘀𝘁𝗱𝗼𝗰𝘁𝗼𝗿𝗮𝗹 𝗙𝗲𝗹𝗹𝗼𝘄 𝗢𝗽𝗽𝗼𝗿𝘁𝘂𝗻𝗶𝘁𝘆 – 𝗔𝗜, 𝗠𝗮𝗰𝗵𝗶𝗻𝗲 𝗟𝗲𝗮𝗿𝗻𝗶𝗻𝗴 & 𝗥𝗲𝗰𝗼𝗺𝗺𝗲𝗻𝗱𝗮𝘁𝗶𝗼𝗻 �",
+      "sender": "Xingwei Yang",
+      "date": "2026-09-09T16:24:53.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;28cf5519.2609B",
+      "snippet": "Area of Research Toronto Metropolitan University (TMU) invites applications for a fully funded one-year Postdoctoral Fellow position based at the Operations &amp; Supply Chain Analytics Research (OSCAResearch) Centre, with the possibility of renewal for a second year depending on funding availability. The successful candidate will contribute to an international collaborative research project involving researchers from the Ted Rogers School of Management at TMU and the Oxford Human-Algorithm Interaction (HAI) Lab at Saïd Business School, University of Oxford. The project brings together Dr. Nancy Yang and Dr. Hossein Zolfagharinia at TMU and Dr. Kejia Hu at Oxford. The research will focus [...]",
+      "typeTags": [
+        "Job Posting",
+        "PhD & Funding"
+      ],
+      "topicTags": [
+        "Data Science & Analytics"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-09T16:24:53.000Z"
+      ]
+    },
+    {
+      "key": "ais awards nominations now open",
+      "subject": "AIS AWARDS NOMINATIONS NOW OPEN",
+      "sender": "Aretha N Wright",
+      "date": "2026-09-09T16:19:54.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;625afa0d.2609B",
+      "snippet": "The Association for Information Systems offers a number of prestigious awards to its members, honoring their contributions to all aspects of the field of information systems. Nominations are now open for all awards, including the Leo Award, Fellow Award, various Technology Awards, the Sandy Slaughter Service Award, various Education Awards, Doctoral Student Service Award, Early Career Award, and AIS will accept nominations until Oct. 7. [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-09T16:19:54.000Z"
+      ]
+    },
     {
       "key": "siggreen community update preicis workshop ecis 2027 upcoming activities",
       "subject": "SIGGreen Community Update: Pre-ICIS Workshop, ECIS 2027 & Upcoming Activities",
@@ -4886,28 +4923,6 @@
       ],
       "eventTags": [
         "HICSS"
-      ]
-    },
-    {
-      "key": "doctoral consortium school acm europe school at adbis2026",
-      "subject": "Doctoral Consortium School / ACM Europe School at #ADBIS2026",
-      "sender": "Robert Wrembel",
-      "date": "2026-06-12T10:49:24.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;6ff0922.2606B",
-      "snippet": "2nd Doctoral Consortium School / ACM Europe School at #ADBIS2026 (the European Conference on Advances in Databases and Information Systems). Application deadline: 01/07/2026. DC school dates: 28/09 - 01/10. PhD students are more than welcome to participate in an exciting 4-day program with: meet experts, mentoring & networking opportunities, etc. Courses on: Stream Processing, GenAI in Data Pipelines, Fair & Responsible Data Science, Query Optimization, Complex Data Systems, and more [...]",
-      "reposts": [
-        "2026-06-12T10:49:24.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop",
-        "PhD & Funding"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Data Science & Analytics"
-      ],
-      "eventTags": [
-        "ADBIS"
       ]
     }
   ]
