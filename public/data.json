@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-09-11T15:30:02.723Z",
+  "lastUpdated": "2026-09-12T14:36:43.654Z",
   "messages": [
+    {
+      "key": "reminder call for papers digit 2026 workshop sigadit colocated with icis 2026 lisbon",
+      "subject": "REMINDER: Call for Papers: DIGIT 2026 Workshop (SIG-ADIT), co-located with ICIS 2026, Lisbon",
+      "sender": "Evelyn Ng",
+      "date": "2026-09-12T00:57:09.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;79fd62bb.2609B",
+      "snippet": "Dear Colleagues, We are pleased to invite submissions to DIGIT 2026, the annual Diffusion Interest Group in Information Technology workshop of the AIS Special Interest Group on the Adoption and Diffusion of Information Technology (SIG-ADIT). The workshop will be held on Sunday, December 13, 2026 (1:00–5:00 pm local time) in Lisbon, Portugal, co-located with ICIS 2026. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "DIGIT",
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-12T00:57:09.000Z"
+      ]
+    },
+    {
+      "key": "last call for submissions 2026 preicis sigdsa symposium",
+      "subject": "Last Call for Submissions— 2026 Pre-ICIS SIGDSA Symposium",
+      "sender": "Zadeh, Amir",
+      "date": "2026-09-11T17:31:13.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;77b32dfe.2609B",
+      "snippet": "Dear All, This is a final reminder that the submission deadline for the Pre-ICIS SIGDSA Research Track and Teaching &amp; Prototype Track is September 14, 2026, at 11:59 PM EDT. We invite you to submit your research and innovative teaching or prototype work for consideration at the 2026 Pre-ICIS SIGDSA Symposium, to be held on December 12–13, 2026, in conjunction with ICIS 2026 in Lisbon, Portugal. We encourage all interested authors to take advantage of this final opportunity to submit their work by the deadline. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Education & Teaching"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-11T17:31:13.000Z"
+      ]
+    },
     {
       "key": "participation online study asking for help what should a robot request",
       "subject": "Re: [Participation] Online study: Asking for help --- what should a robot request?",
@@ -4884,25 +4923,6 @@
       ],
       "topicTags": [
         "Business & Enterprise"
-      ],
-      "eventTags": []
-    },
-    {
-      "key": "hicss cfp the metaverse for work and play minitrack with fasttrack to jic",
-      "subject": "[HICSS] CFP: The Metaverse for Work and Play Minitrack (with FAST-TRACK TO JIC)",
-      "sender": "Dincelli, Ersin",
-      "date": "2026-06-13T23:24:58.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;c0b5cf85.2606B",
-      "snippet": "Hawaii International Conference on System Sciences (HICSS-60). Hilton Waikoloa Village, Big Island, Hawaii | January 5-8, 2027. Fast-track submission opportunity (at the discretion of minitrack chairs) in the Journal of Intellectual Capital. Minitrack Description: Although the Metaverse presents significant opportunities, it also introduces a wide range of challenges that may hinder its successful adoption, including surveillance, user tracking, deviant behavior (e.g., bullying and stalking), design-related issues, unintended consequences such as addiction, technostress, anxiety, and cognitive overload, as well as emerging security and privacy threats. [...]",
-      "reposts": [
-        "2026-06-13T23:24:58.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop",
-        "Journal & Special Issue"
-      ],
-      "topicTags": [
-        "Cybersecurity & Privacy"
       ],
       "eventTags": []
     }
