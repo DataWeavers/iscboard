@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-09-12T14:36:43.654Z",
+  "lastUpdated": "2026-09-13T15:16:45.319Z",
   "messages": [
+    {
+      "key": "call for papers thci special issue on anthropomorphism in the age of ai when what why and how",
+      "subject": "Call for Papers: THCI Special Issue on Anthropomorphism in the Age of AI: When, What, Why and How?",
+      "sender": "Ashley Yu",
+      "date": "2026-09-13T00:00:04.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ab5389af.2609B",
+      "snippet": "Dear colleagues, We are pleased to announce a Call for Papers for a special issue of AIS Transactions on Human-Computer Interaction (THCI): Anthropomorphism in the Age of AI: When, What, Why and How? As AI systems become increasingly conversational, adaptive, relational, and humanlike, anthropomorphism raises important questions for IS and HCI research. This special issue seeks work that advances our understanding of how anthropomorphic design cues are incorporated into AI systems, how users perceive and attribute humanlike qualities to them, and how these perceptions and attributions shape user experience, cognition, affect, trust, behavior, and relationships. The issue also invites critical [...]",
+      "typeTags": [
+        "Journal & Special Issue"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-13T00:00:04.000Z"
+      ]
+    },
     {
       "key": "reminder call for papers digit 2026 workshop sigadit colocated with icis 2026 lisbon",
       "subject": "REMINDER: Call for Papers: DIGIT 2026 Workshop (SIG-ADIT), co-located with ICIS 2026, Lisbon",
@@ -4889,42 +4907,6 @@
       "eventTags": [
         "HICSS"
       ]
-    },
-    {
-      "key": "cfp lastminute hicss 60 minitrack on techenabled customer experience",
-      "subject": "CFP (Last-Minute): HICSS 60 Minitrack on Tech-Enabled Customer Experience",
-      "sender": "Huimin Liu",
-      "date": "2026-06-15T12:36:51.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;4d24db42.2606C",
-      "snippet": "Dear Colleagues, I hope this finds you well. This is a last-minute call for papers for our minitrack at the 60th Annual Hawaii International Conference on System Sciences (HICSS-60). The submission deadline is June 15, 2026 (11:59 pm Hawaii time). Tech-Enabled Customer Experience: Experience Design and Impact. Track: Internet at Work and Play. [...]",
-      "reposts": [
-        "2026-06-15T12:36:51.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "HICSS"
-      ]
-    },
-    {
-      "key": "deadline extended bpmeetiot workshop 2026 colocated with cbiedoc enschede the netherlands",
-      "subject": "[Deadline extended] BP-meet-IoT workshop 2026 (co-located with CBI/EDOC) - Enschede, The Netherlands",
-      "sender": "Yannis Bertrand",
-      "date": "2026-06-15T08:15:14.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2dcd39e0.2606C",
-      "snippet": "Call for Papers - BP-meet-IoT workshop co-located with CBI-EDOC 2026 (University of Twente, The Netherlands). We are pleased to invite you to submit your work to BP-meet-IoT - the 10th International Workshop on Business Processes meet the Internet-of-Things, co-located with CBI-EDOC 2026, taking place on September 15, 2026 in Enschede, The Netherlands. [...]",
-      "reposts": [
-        "2026-06-15T08:15:14.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Business & Enterprise"
-      ],
-      "eventTags": []
     }
   ]
 }
