@@ -1,6 +1,49 @@
 {
-  "lastUpdated": "2026-09-13T15:16:45.319Z",
+  "lastUpdated": "2026-09-14T17:13:44.069Z",
   "messages": [
+    {
+      "key": "cfp trustsense 2027 ieee percom 2027 goa indien deadline nov 17",
+      "subject": "CFP: TrustSense 2027 @ IEEE PerCom 2027, Goa, Indien – Deadline Nov 17",
+      "sender": "Ebner, Katharina",
+      "date": "2026-09-14T13:46:28.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;4a0b2d09.2609B",
+      "snippet": "### Apologies for cross-posting ### Dear colleagues, If your research touches on trust, privacy, data quality, human participation, incentives, or related challenges in crowdsensing and pervasive systems, we would be very happy to receive submissions from the Information Systems community to TrustSense2027. The 4th International Workshop on Pervasive Computing Challenges in Trustable Crowdsensing Systems (TrustSense 2027) will be held in conjunction with IEEE PerCom 2027 (https://percom.org/) in Goa, India, March 8–12, 2027. IEEE PerCom is an ICORE/CORE A* ranked conference. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Cybersecurity & Privacy"
+      ],
+      "eventTags": [
+        "TRUSTSENSE",
+        "PERCOM"
+      ],
+      "reposts": [
+        "2026-09-14T13:46:28.000Z"
+      ]
+    },
+    {
+      "key": "informs issisr webinar series dr prasanna tambe sep 28 89 pm us eastern time",
+      "subject": "INFORMS ISS–ISR Webinar Series: Dr. Prasanna Tambe (Sep 28, 8–9 PM U.S. Eastern Time)",
+      "sender": "Ian Ho",
+      "date": "2026-09-13T19:50:10.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9b743101.2609B",
+      "snippet": "The INFORMS Information Systems Society (ISS), in collaboration with Information Systems Research (ISR), is pleased to announce the second episode of the ISS&ndash;ISR Webinar Series . Going beyond a traditional research presentation, this series offers a behind-the-scenes look at how influential IS research is conceived, developed, refined, and ultimately published. We are delighted to welcome Dr. Prasanna (Sonny) Tambe , who will share insights from his recent influential research on the changing value and longevity of technical skills. Speaker: Dr. Prasanna Tambe (Professor of Operations, Information and Decisions, Co-Director, Wharton Human-AI Research, Wharton School, University of Pennsylvania) Time: 8:00&ndash;9:00 PM U.S. Eastern Time, Monday, September 28 Featured Paper: The Death of a Technical Skill ( Information Systems Research , 2025 36(1), 1799&ndash;1820) Host: Dr. Ian Ho (Broadway Distinguished Professor of Analytics, Director of ISM Doctoral Program, Harbert College of Business, Auburn University) &nbsp; Abstract: We analyze how the decline of a technology affects online labor market dynamics. We evaluate the effects of Steve Jobs&rsquo; announcement that Apple would no longer support Adobe Flash&mdash;a popular set of tools for creating internet applications. Despite a precipitous decline in Flash demand, there is no evidence of a reduction in Flash wages on this platform because the supply response was rapid, particularly among younger developers with readily available &ldquo;fallback&rdquo; skills. The key to this rapid adjustment was that the long-run value of the skills that developers expected to acquire on the job acted as a form of nonwage compensation that suddenly fell in its expected value, motivating many developers to switch to other technologies, even though wages themselves did not fall. Our findings underscore how the rise and fall of technologies influences matching in online markets and help to explain (i) why technological obsolescence leaves fewer, older participants in a skill and (ii) why technologies in decline can be contemporaneously characterized by wages that stay flat or even rise in a market setting. Management and policy implications are discussed. This one-hour Zoom webinar will offer more than a traditional research presentation. In the first half, Dr. Tambe will discuss the paper&rsquo;s motivation, approach, findings, and implications. In the second half, we will go behind the scenes to explore how the idea originated, why the research question matters, the toughest challenges encountered, memorable&mdash;and sometimes controversial&mdash;reviewer and editor comments, and the lessons learned along the way. As readers usually see only the polished final article, this webinar provides a rare opportunity to uncover the ideas, decisions, revisions, and occasional surprises that shaped the published paper. If you plan to attend, please preregister using the following link (it takes less than one minute): https://auburn.zoom.us/meeting/register/ig4dSCNlQ1ar1CUgkKXUzA . You should receive a confirmation email with the Zoom login details immediately after registration. If not, please check your junk/spam folder or contact Dr. Ian Ho ( ian.ho@auburn.edu ).&nbsp; Please join us for an engaging conversation about not only the research itself, but also how impactful research makes its way from an initial idea to a published article. We look forward to seeing you there!",
+      "typeTags": [
+        "Conference & Workshop",
+        "Journal & Special Issue",
+        "PhD & Funding"
+      ],
+      "topicTags": [
+        "Data Science & Analytics"
+      ],
+      "eventTags": [
+        "INFORMS"
+      ],
+      "reposts": [
+        "2026-09-13T19:50:10.000Z"
+      ]
+    },
     {
       "key": "call for papers thci special issue on anthropomorphism in the age of ai when what why and how",
       "subject": "Call for Papers: THCI Special Issue on Anthropomorphism in the Age of AI: When, What, Why and How?",
@@ -4848,64 +4891,6 @@
       "topicTags": [],
       "eventTags": [
         "ISSRE"
-      ]
-    },
-    {
-      "key": "dsi26 abstract submission deadline extended",
-      "subject": "DSI'26 Abstract Submission Deadline Extended",
-      "sender": "Yuan Li",
-      "date": "2026-06-16T16:23:45.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ecb154d1.2606C",
-      "snippet": "Dear Colleagues, the abstract submission deadline for the 2026 Decision Sciences Institute Annual Conference (to be held in San Francisco, November 21–23, 2026) is extended to Tuesday, June 23. The abstract is limited to 100 words. As co-track chairs, we warmly invite you to submit your research work to the Cyber Security and System Resiliency track. This track welcomes technical, managerial, organizational, and societal research on cybersecurity, privacy, artificial intelligence, and system resiliency in today's dynamic digital ecosystem. [...]",
-      "reposts": [
-        "2026-06-16T16:23:45.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Cybersecurity & Privacy",
-        "Business & Enterprise"
-      ],
-      "eventTags": []
-    },
-    {
-      "key": "international conference on software and systems reuse product lines and configuration variability 2026 last call for workshop papers",
-      "subject": "International Conference on Software and Systems Reuse, Product Lines, and Configuration (VARIABILITY 2026): Last Call for Workshop Papers",
-      "sender": "Announce",
-      "date": "2026-06-16T07:34:43.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;35278a17.2606C",
-      "snippet": "*** Last Call for Workshop Papers *** International Conference on Software and Systems Reuse, Product Lines, and Configuration (VARIABILITY 2026) 29 September - 2 October 2026, 5* St. Raphael Resort and Marina Limassol, Cyprus https://conf.researchr.org/home/variability-2026 VARIABILITY is a new conference that has been formed by the merger of three prominent conferences focussing on software and systems variability, configuration and reuse: SPLC (the International Systems and Software Product Line Conference, 29 successful editions, ranked as a top conference), VaMoS (the International Working Conference on Variability Modelling of Software-Intensive Systems, 19 successful editions), and ICSR (the International Conference on Systems and Software [...]",
-      "reposts": [
-        "2026-06-16T07:34:43.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "VARIABILITY"
-      ]
-    },
-    {
-      "key": "last call due today june 15 hicss 2027 minitrack on decentralized digital architectures and entrepreneurial ecosystems",
-      "subject": "Last call (Due today June 15): HICSS 2027 Minitrack on Decentralized Digital Architectures and Entrepreneurial Ecosystems",
-      "sender": "Ziyi Xiong",
-      "date": "2026-06-15T16:20:40.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ea4b9d38.2606C",
-      "snippet": "Dear IS colleagues, we are pleased to invite submissions to our \"Decentralized Digital Architectures and Entrepreneurial Ecosystems Minitrack\" under \"Knowledge Innovation and Entrepreneurial Systems Track\" at the 60th Hawaii International Conference on System Sciences (HICSS-60). Entrepreneurial activities are increasingly organized through digital systems that extend beyond the boundaries of individual firms and centralized platforms. Emerging technologies such as AI, blockchain, and Web3 are enabling decentralized digital architectures. [...]",
-      "reposts": [
-        "2026-06-15T16:20:40.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI"
-      ],
-      "eventTags": [
-        "HICSS"
       ]
     }
   ]
