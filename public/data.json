@@ -1,6 +1,46 @@
 {
-  "lastUpdated": "2026-09-14T17:13:44.069Z",
+  "lastUpdated": "2026-09-15T15:53:18.857Z",
   "messages": [
+    {
+      "key": "link to submit abstract is now open for codeisb conference on the digital economy at the indian school of business",
+      "subject": "Link to submit abstract is now open for CODE@ISB (Conference on the Digital Economy at the Indian School of Business)",
+      "sender": "Rajib Saha",
+      "date": "2026-09-15T09:58:10.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d9136b77.2609C",
+      "snippet": "Conference on the Digital Economy (CODE) Indian School of Business (ISB) Jan 5-7, 2027, Hyderabad, India https://www.isb.edu/events/code-2027 The Conference on the Digital Economy at the Indian School of Business (CODE at ISB) is known for its high-quality research program and attracts many top researchers worldwide who engage in cutting-edge research in information systems, strategy and marketing, economics, operations management, and computer science. All aspects of theoretical and empirical research in diverse domains touched by technology are welcome. This conference aims to provide a platform for academics to identify and explore research opportunities in digitization and the digital economy. This research [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Digital Transformation"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-08-25T09:23:10.000Z",
+        "2026-09-15T09:58:10.000Z"
+      ]
+    },
+    {
+      "key": "cfp wisp2026 sigsec preicis workshop",
+      "subject": "CFP: WISP2026, SIGSEC pre-ICIS workshop",
+      "sender": "Järveläinen, Jonna",
+      "date": "2026-09-15T05:48:51.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2c4d00ad.2609C",
+      "snippet": "Dear colleagues, We are pleased to announce a Call for Papers for WISP2026: Workshop on Information Security and Privacy 2026, a pre-ICIS workshop to be held on Saturday, December 12, 2026, in person at the Hyatt Regency Lisbon Hotel in Lisbon, Portugal. The twentieth WISP organized by the Special Interest Group on Information Security and Privacy (SIG SEC) invites you to submit research articles, case studies, position papers, research-in-progress, methodology papers, and panel discussion proposals that address all interesting aspects of information security, assurance, and privacy [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Cybersecurity & Privacy"
+      ],
+      "eventTags": [
+        "WISP",
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-15T05:48:51.000Z"
+      ]
+    },
     {
       "key": "cfp trustsense 2027 ieee percom 2027 goa indien deadline nov 17",
       "subject": "CFP: TrustSense 2027 @ IEEE PerCom 2027, Goa, Indien – Deadline Nov 17",
@@ -1153,24 +1193,6 @@
       "reposts": [
         "2026-08-12T01:03:07.000Z",
         "2026-08-25T12:29:58.000Z"
-      ]
-    },
-    {
-      "key": "cfp codeisb conference on the digital economy code at the indian school of business",
-      "subject": "CFP: CODE@ISB - Conference on the Digital Economy (CODE) at the Indian School of Business",
-      "sender": "Rajib Saha",
-      "date": "2026-08-25T09:23:10.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b6e05eef.2608D",
-      "snippet": "Conference on the Digital Economy (CODE) Indian School of Business (ISB) Jan 5-7, 2027, Hyderabad, India The Conference on the Digital Economy at the Indian School of Business (CODE at ISB) is known for its high-quality research program and attracts many top researchers worldwide who engage in cutting-edge research in information systems, strategy and marketing, economics, operations management, and computer science. All aspects of theoretical and empirical research in diverse domains touched by technology are welcome. This conference aims to provide a platform for academics to identify and explore research opportunities in digitization and the digital economy. This research theme [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Digital Transformation"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-08-25T09:23:10.000Z"
       ]
     },
     {
@@ -4873,24 +4895,6 @@
       ],
       "eventTags": [
         "WISE"
-      ]
-    },
-    {
-      "key": "37th ieee international symposium on software reliability engineering issre 2026 last mile for fast abstracts and project highlights submissions",
-      "subject": "37th IEEE International Symposium on Software Reliability Engineering (ISSRE 2026): Last Mile for Fast Abstracts and Project Highlights Submissions",
-      "sender": "Announce",
-      "date": "2026-06-17T06:51:04.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9ca07c93.2606C",
-      "snippet": "*** Last Mile for Fast Abstracts and Project Highlights Submissions *** 37th IEEE International Symposium on Software Reliability Engineering (ISSRE 2026) October 20-23, 2026, 5* St. Raphael Resort and Marina Limassol, Cyprus https://cyprusconferences.org/issre2026/ (*** Submission Deadline: June 25, 2026 AoE (extended and final!) ***) (*** Proceedings to be published by IEEE ***) A Fast Abstract (FA) or Project Highlights (PH) paper is a two-page, lightly reviewed technical article. The FA/PH track at ISSRE 2026 aims to bring together researchers and practitioners working in Software Reliability Engineering (SRE) to: [...]",
-      "reposts": [
-        "2026-06-17T06:51:04.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "ISSRE"
       ]
     }
   ]
