@@ -1,6 +1,205 @@
 {
-  "lastUpdated": "2026-09-15T15:53:18.857Z",
+  "lastUpdated": "2026-09-16T15:45:08.645Z",
   "messages": [
+    {
+      "key": "icis 2026s pdw on autonomous scholarship call for participation",
+      "subject": "ICIS 2026's PDW on Autonomous Scholarship: Call for Participation",
+      "sender": "Heng Xu",
+      "date": "2026-09-16T14:26:09.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;20649417.2609C",
+      "snippet": "In July 2026, an AI-assisted effort disproved the Jacobian conjecture, a problem that had remained open since 1939, with a counterexample short enough to fit in a social-media post. Days later, another AI system recovered signing keys for HAWK, a post-quantum signature candidate in NIST’s standardization process, and discovered a 200-800× improvement over the best known attack on a reduced-round version of AES. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-16T14:26:09.000Z"
+      ]
+    },
+    {
+      "key": "sig data inaugural workshop at icis 2026",
+      "subject": "SIG Data Inaugural Workshop at ICIS 2026",
+      "sender": "Marta Stelmaszak Rosa",
+      "date": "2026-09-16T12:48:24.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;a1c453ce.2609C",
+      "snippet": "Dear Colleagues, We are pleased to invite you to the SIG Data Inaugural Workshop, taking place on Sunday, 13 December 2026, alongside ICIS 2026 in Lisbon. The workshop will bring together researchers interested in data for an afternoon of discussion, connection, and collective reflection on where data research in information systems is heading. The program will include: [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-16T12:48:24.000Z"
+      ]
+    },
+    {
+      "key": "icis 2026 junior faculty consortium call for participants",
+      "subject": "ICIS 2026 Junior Faculty Consortium: Call for Participants",
+      "sender": "Alvaro Arenas Sarmiento",
+      "date": "2026-09-16T12:17:26.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2c610eb4.2609C",
+      "snippet": "Dear Colleagues, We are delighted to invite applications for the ICIS 2026 Junior Faculty Consortium (JFC). The consortium is designed to support early-career academics as they build successful and fulfilling academic careers. Sessions will address research, teaching, and service responsibilities, with a particular emphasis on balancing these demands and navigating the opportunities and challenges of academic life. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Education & Teaching"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-16T12:17:26.000Z"
+      ]
+    },
+    {
+      "key": "tenuretrack assistant professor house of innovation stockholm school of economics",
+      "subject": "Tenure-Track Assistant Professor - House of Innovation, Stockholm School of Economics",
+      "sender": "Yanpei Lin",
+      "date": "2026-09-16T12:03:26.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;24761652.2609C",
+      "snippet": "Dear all, The House of Innovation (HoI) at the Stockholm School of Economics (SSE) currently invites applications for one tenure-track position (Assistant Professor level). Your profile and qualifications Candidates are expected to have relevant background in Information Systems, Innovation Management or related fields. A research focus on Artificial Intelligence, Digital Health or Digital Resilience will be considered a plus. A PhD in a related field is required by the time of assuming the position. Candidates are expected to have strong qualities in both research and teaching. In research, the candidates should exhibit the ability to publish in top-tier, peer-reviewed, international [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Health",
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-16T12:03:26.000Z"
+      ]
+    },
+    {
+      "key": "call for minitrack proposals amcis 2027 sig osra track on ai and organizational transformation",
+      "subject": "Call for Minitrack Proposals – AMCIS 2027 SIG OSRA Track on AI and Organizational Transformation",
+      "sender": "Shan, Guohou",
+      "date": "2026-09-16T11:46:34.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;6d09d024.2609C",
+      "snippet": "Dear Colleagues, On behalf of AIS SIG OSRA (Organizational Systems Research), we are pleased to invite minitrack proposals for AMCIS 2027 under our track: AI and Organizational Transformation Across Levels: Human Agency, Organizational Change, and Societal Consequences 📅 Minitrack Proposal Submission Deadline: October 15, 2026 📍 AMCIS 2027: July 26–30, 2027 | São Paulo, Brazil 🔗 Submission: https://new.precisionconference.com/amcis27a [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Business & Enterprise"
+      ],
+      "eventTags": [
+        "AMCIS"
+      ],
+      "reposts": [
+        "2026-09-16T11:46:34.000Z"
+      ]
+    },
+    {
+      "key": "the agentic governance gap why autonomous ai systems demand a new cybersecurity discipline",
+      "subject": "The Agentic Governance Gap: Why Autonomous AI Systems Demand a New Cybersecurity Discipline",
+      "sender": "Dave Chatterjee, Ph.D.",
+      "date": "2026-09-16T11:28:18.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b3793046.2609C",
+      "snippet": "Dear Colleagues: My latest column for the INFORMS Analytics Magazine&lt;https://pubsonline.informs.org/do/10.1287/LYTX.2026.03.04/full/&gt; examines the governance gap opening as enterprises move from AI that drafts and recommends to AI that acts—invoking APIs, moving data, and executing transactions with little or no human in the loop. [cid:12c9be5d-9223-45ff-b4fd-6bcc8bfe593d]&lt;https://doi.org/10.1287/LYTX.2026.03.04&gt; The uncomfortable truth: most AI governance programs were built for a copilot model, where a human sits between recommendation and consequence. Agentic AI removes that buffer. In the piece, I map the Commitment–Preparedness–Discipline framework onto what agentic governance actually requires: → Commitment — C-suite ownership of what agents may decide unsupervised → Preparedness — a live inventory [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Data Science & Analytics",
+        "Cybersecurity & Privacy",
+        "Business & Enterprise"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-16T11:28:18.000Z"
+      ]
+    },
+    {
+      "key": "episode 113 the eu cyber resilience act countdown why us companies cant afford to look away",
+      "subject": "Episode 113 -- The EU Cyber Resilience Act Countdown: Why U.S. Companies Can't Afford to Look Away",
+      "sender": "Dave Chatterjee, Ph.D.",
+      "date": "2026-09-16T09:41:23.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;cdc6a22f.2609C",
+      "snippet": "Dear Colleagues: Every organization eventually discovers a gap between what feels like good security practice and what regulators now expect. In this episode, Mark Lambert, Chief Product Officer, ArmorCode Inc.&lt;https://www.linkedin.com/in/marklambertlinkedin/&gt;, and I dig into that gap through the lens of the EU's new Cyber Resilience Act — a sweeping regulation that is reshaping how companies everywhere think about vulnerability disclosure, product security, and accountability. -- https://youtu.be/0hhmACs1tQ0 [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Cybersecurity & Privacy"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-16T09:41:23.000Z"
+      ]
+    },
+    {
+      "key": "call for nominations sig green award for the best journal paper on green is 2025",
+      "subject": "Call for nominations: SIG Green Award for the Best Journal Paper on Green IS (2025)",
+      "sender": "Tanya Giannelia",
+      "date": "2026-09-15T19:37:35.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f5c7dd64.2609C",
+      "snippet": "SIG Green is pleased to begin accepting nominations for the SIG Green Award for the Best Journal Paper on Green IS (2025). See below for details and nomination instructions. 1. Background The award was established in 2017 by the AIS SIG Green board to recognize one outstanding journal paper on topics related to the role of information systems in matters regarding environmental sustainability. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Sustainability"
+      ],
+      "eventTags": [
+        "IS"
+      ],
+      "reposts": [
+        "2026-09-15T19:37:35.000Z"
+      ]
+    },
+    {
+      "key": "link to submit papers is now open for eighteenth annual preicis sig globdev workshop",
+      "subject": "Link to submit papers is now open for Eighteenth Annual Pre-ICIS SIG GlobDev Workshop",
+      "sender": "Meke Kapepo",
+      "date": "2026-09-15T19:17:33.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;5dcb5cea.2609C",
+      "snippet": "Full message available at: Link to submit papers is now open for Eighteenth Annual Pre-ICIS SIG GlobDev Workshop",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-08-19T18:50:00.000Z",
+        "2026-08-19T19:01:22.000Z",
+        "2026-09-15T19:17:33.000Z"
+      ]
+    },
+    {
+      "key": "call for papers egos 2027 playing with complexity qca and organizational games",
+      "subject": "Call for Papers – EGOS 2027: Playing with Complexity: QCA and Organizational Games",
+      "sender": "Fiss, Peer",
+      "date": "2026-09-15T17:55:11.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;54d14323.2609C",
+      "snippet": "Dear colleagues and friends, We are pleased to share the Call for Papers for our sub-theme at the 43rd EGOS Colloquium, to be held at the University of Liverpool, July 8–10, 2027: Sub-theme 53: Playing with Complexity: QCA and Organizational Games [Hybrid] Convenors: Joanna T. Campbell (University of Cincinnati), Peer C. Fiss (University of Southern California), and Johannes Meuer (KLU Hamburg) Organizations increasingly operate in settings that resemble complex games rather than stable systems—from innovation tournaments, digital platforms, and AI races to regulatory sandboxes, experiments, and simulations. Our sub-theme explores how configurational thinking and set-analytic methods such as QCA can [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Business & Enterprise"
+      ],
+      "eventTags": [
+        "EGOS"
+      ],
+      "reposts": [
+        "2026-09-15T17:55:11.000Z"
+      ]
+    },
     {
       "key": "link to submit abstract is now open for codeisb conference on the digital economy at the indian school of business",
       "subject": "Link to submit abstract is now open for CODE@ISB (Conference on the Digital Economy at the Indian School of Business)",
@@ -1548,25 +1747,6 @@
         "Education & Teaching"
       ],
       "eventTags": []
-    },
-    {
-      "key": "cfp eighteenth annual preicis sig globdev workshop",
-      "subject": "CFP : Eighteenth Annual Pre-ICIS SIG GlobDev Workshop",
-      "sender": "Meke Kapepo",
-      "date": "2026-08-19T19:01:22.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2831fca0.2608C",
-      "snippet": "Full message available at: CFP : Eighteenth Annual Pre-ICIS SIG GlobDev Workshop",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-08-19T18:50:00.000Z",
-        "2026-08-19T19:01:22.000Z"
-      ]
     },
     {
       "key": "lowes tech distinguished professor and program director in cybersecurity at appalachian state university search chair is attending amcis",
@@ -4873,28 +5053,6 @@
       "topicTags": [],
       "eventTags": [
         "FOIS"
-      ]
-    },
-    {
-      "key": "call for papers for wise 2026",
-      "subject": "Call for Papers for WISE 2026",
-      "sender": "Shachar Reichman",
-      "date": "2026-06-17T15:55:28.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d98830f.2606C",
-      "snippet": "We are pleased to announce that the 37th Workshop on Information Systems and Economics (WISE 2026), will take place in Lisbon, Portugal, on December 16 - 18, 2026. We invite high-quality theoretical, empirical, experimental, and computational research on the economics of information systems, including AI, digital platforms, data and analytics, privacy and responsible technology, human–technology interaction, fintech, and related topics. The submission portal is now open. Important Dates: Submission deadline: August 23, 2026. Decision notification: September 18, 2026. Early registration deadline: October 15, 2026. WISE 2026: December 16 - 18, 2026.",
-      "reposts": [
-        "2026-06-17T15:55:28.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Data Science & Analytics",
-        "Cybersecurity & Privacy"
-      ],
-      "eventTags": [
-        "WISE"
       ]
     }
   ]
