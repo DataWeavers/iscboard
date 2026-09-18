@@ -1,6 +1,43 @@
 {
-  "lastUpdated": "2026-09-17T15:51:48.270Z",
+  "lastUpdated": "2026-09-18T15:26:03.547Z",
   "messages": [
+    {
+      "key": "icis 2026s pdw on autonomous scholarship call for participation",
+      "subject": "ICIS 2026's PDW on Autonomous Scholarship: Call for Participation",
+      "sender": "Harminder Singh",
+      "date": "2026-09-18T06:42:23.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1fe2509.2609C",
+      "snippet": "Dear all, Some colleagues and I discussed the recent announcement about a PDW in ICIS 20206 on AI-written papers and felt uncomfortable about it. We wondered: how has such a situation come about? It felt like we were digging our own grave. Understanding our discomfort, in my view, requires a timely acknowledgement of some underlying tendencies in the information systems field. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-16T14:26:09.000Z",
+        "2026-09-18T06:42:23.000Z"
+      ]
+    },
+    {
+      "key": "call for minitrack proposals amcis 2027 scuidt track",
+      "subject": "Call for Minitrack Proposals - AMCIS 2027 SCUIDT Track",
+      "sender": "Torres, Russell",
+      "date": "2026-09-17T15:48:57.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;15dd42cf.2609C",
+      "snippet": "Dear Colleagues, The Strategic &amp; Competitive Uses of Information and Digital Technologies (SCUIDT) invites proposals for AMCIS 2027, to be held in São Paulo, Brazil July 26-30, 2027. Several AMCIS tracks focus on the uses of digital and information technologies in decision making. This track returns to the fundamentally important Strategic and Competitive Uses of Information and Digital Technologies (SCUIDT). The Information Age ushered in the use of information and digital technologies as a means of generating business value and gaining competitive advantage. Indeed, for many businesses today, success depends upon appropriate tactical and strategic uses of their information and [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "AMCIS"
+      ],
+      "reposts": [
+        "2026-09-17T15:48:57.000Z"
+      ]
+    },
     {
       "key": "reminder 18th sig cnow workshop submission deadline september 21",
       "subject": "Reminder: 18th SIG CNoW Workshop - submission deadline September 21",
@@ -187,26 +224,6 @@
       ],
       "reposts": [
         "2026-09-16T16:21:29.000Z"
-      ]
-    },
-    {
-      "key": "icis 2026s pdw on autonomous scholarship call for participation",
-      "subject": "ICIS 2026's PDW on Autonomous Scholarship: Call for Participation",
-      "sender": "Heng Xu",
-      "date": "2026-09-16T14:26:09.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;20649417.2609C",
-      "snippet": "In July 2026, an AI-assisted effort disproved the Jacobian conjecture, a problem that had remained open since 1939, with a counterexample short enough to fit in a social-media post. Days later, another AI system recovered signing keys for HAWK, a post-quantum signature candidate in NIST’s standardization process, and discovered a 200-800× improvement over the best known attack on a reduced-round version of AES. [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI"
-      ],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-09-16T14:26:09.000Z"
       ]
     },
     {
@@ -5206,41 +5223,6 @@
       "topicTags": [],
       "eventTags": [
         "ISSRE"
-      ]
-    },
-    {
-      "key": "continuation of ecis workshop for ejis special issue on native is theories on zoom",
-      "subject": "Continuation of ECIS Workshop for EJIS Special Issue on Native IS Theories on Zoom",
-      "sender": "Nik Rushdi Hassan",
-      "date": "2026-06-20T10:28:27.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b16f573b.2606C",
-      "snippet": "Dear all, at the ECIS Workshop for the EJIS Special Issue on Native IS Theories last Monday, many questions were raised that did not get answered because of time constraints. A Zoom session is scheduled for Tuesday June 23 at 11:00am CST to answer those questions and any other questions before the Abstract deadline of June 29th. [...]",
-      "reposts": [
-        "2026-06-20T10:28:27.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop",
-        "Journal & Special Issue"
-      ],
-      "topicTags": [],
-      "eventTags": []
-    },
-    {
-      "key": "fois 2026 announcement extended deadline for early career symposium",
-      "subject": "[FOIS 2026] announcement - Extended deadline for Early Career Symposium",
-      "sender": "Giorgio Ubbiali",
-      "date": "2026-06-19T16:00:40.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;6b9c8f0e.2606C",
-      "snippet": "[apologies for cross-posting]. Dear all, we would like to inform that the deadline for submissions to Early Career Symposium has been extended to 24 June 2026. For more information, we recommend visiting the FOIS 2026 Early Career Symposium webpage: https://www.foisconference.org/ecs/",
-      "reposts": [
-        "2026-06-19T16:00:40.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "FOIS"
       ]
     }
   ]
