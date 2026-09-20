@@ -1,6 +1,42 @@
 {
-  "lastUpdated": "2026-09-19T15:00:48.665Z",
+  "lastUpdated": "2026-09-20T15:04:36.983Z",
   "messages": [
+    {
+      "key": "openrank professor in business analytics information systems",
+      "subject": "Open-Rank Professor in Business Analytics & Information Systems",
+      "sender": "Wael Jabr",
+      "date": "2026-09-20T02:21:48.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3faa0245.2609C",
+      "snippet": "The Pennsylvania State University Smeal College of Business Supply Chain &amp; Information Systems Department Position: The Supply Chain &amp; Information Systems Department in the Smeal College of Business at The Pennsylvania State University invites applications for an open-rank, tenure-track faculty position in Business Analytics &amp; Information Systems. The position is located at University Park, Pennsylvania, with an anticipated start date of Fall 2027. Salary is competitive. [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "Data Science & Analytics"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-20T02:21:48.000Z"
+      ]
+    },
+    {
+      "key": "cfp sig egov preicis workshop on digital government",
+      "subject": "CfP: SIG eGOV pre-ICIS workshop on digital government",
+      "sender": "Sara Hofmann",
+      "date": "2026-09-19T17:12:43.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;c0b5913a.2609C",
+      "snippet": "AIS SIG E-GOV pre-ICIS workshop Full-day workshop on Digital Government December 13, Lisbon (Portugal) Call for extended abstracts Dear colleagues, We warmly invite you to submit an extended abstract for presentation and discussion at the 2026 pre-ICIS Workshop on Digital Government, organized by the Association of Information Systems (AIS) Special Interest Group on e-Government (SIG e-Gov). Abstracts should introduce a new or emerging topic, issue, or research question of relevance to researchers and practitioners within the digital government community. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-19T17:12:43.000Z"
+      ]
+    },
     {
       "key": "endowed bartlett chair professorassociate professor free enterprise",
       "subject": "Endowed Bartlett Chair Professor/Associate Professor, Free Enterprise",
@@ -5152,62 +5188,6 @@
         "Business & Enterprise"
       ],
       "eventTags": []
-    },
-    {
-      "key": "historic milestone official launch of the ais gcc chapter",
-      "subject": "Historic Milestone: Official Launch of the AIS GCC Chapter",
-      "sender": "Savanid (Nui) Vatanasakdakul",
-      "date": "2026-06-22T13:30:47.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;296450ff.2606D",
-      "snippet": "Dear Colleagues and Members of the Information Systems Community, It is my great pleasure to announce a historic milestone for the Information Systems (IS) discipline in the Gulf Cooperation Council (GCC) region. Following the successful GCC Information Systems Symposium, hosted by Carnegie Mellon University in Qatar on 20 November 2025, participants expressed overwhelming support for establishing a formal regional community for Information Systems scholars and practitioners. In our post-symposium survey, 100% of respondents endorsed the creation of an official GCC Chapter of the Association for Information Systems (AIS). [...]",
-      "reposts": [
-        "2026-06-22T13:30:47.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": []
-    },
-    {
-      "key": "pacis 2026 workshop advancing ctc research in information systems jakarta indonesia",
-      "subject": "PACIS 2026 Workshop: Advancing CTC Research in Information Systems (Jakarta, Indonesia)",
-      "sender": "Shohil Kishore",
-      "date": "2026-06-22T00:21:11.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;e15db089.2606C",
-      "snippet": "Dear colleagues, if you are planning to attend PACIS 2026 in Jakarta, Indonesia, we warmly invite you to participate in our inaugural workshop on Advancing Computational Theory Construction (CTC) in Information Systems. This half-day workshop is designed to foster rich exchange and advance emerging research in CTC. The program includes a Keynote by Professor Suprateek Sarker (Editor-in-Chief, Information Systems Research), a Panel featuring four Senior Editors from MIS Quarterly and Information Systems Research, and Roundtables. Although the abstract submission deadline has passed, please contact Shohil Kishore if you would still like to submit an abstract. [...]",
-      "reposts": [
-        "2026-06-22T00:21:11.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI"
-      ],
-      "eventTags": [
-        "PACIS"
-      ]
-    },
-    {
-      "key": "one week left for early registration amcis 2026",
-      "subject": "One Week Left for Early Registration - AMCIS 2026",
-      "sender": "D'Arcy, John",
-      "date": "2026-06-22T00:09:13.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;59e55171.2606C",
-      "snippet": "Dear Colleagues, This is a friendly reminder that early registration for AMCIS 2026 in Reno, Nevada ends in one week, on June 28. The conference will take place August 20-22, 2026. For registration and conference information, please visit: https://amcis2026.aisconferences.org/ AMCIS 2026 promises to bring together an incredible community of academics and industry leaders to explore the future of information systems research, teaching, and impact. [...]",
-      "reposts": [
-        "2026-06-22T00:09:13.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Education & Teaching"
-      ],
-      "eventTags": [
-        "AMCIS"
-      ]
     }
   ]
 }
