@@ -1,6 +1,41 @@
 {
-  "lastUpdated": "2026-09-25T16:07:27.806Z",
+  "lastUpdated": "2026-09-26T15:20:50.120Z",
   "messages": [
+    {
+      "key": "sig health student service award call for application",
+      "subject": "SIG Health Student Service Award Call for Application",
+      "sender": "Hao, Haijing",
+      "date": "2026-09-26T12:31:13.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;accbe5a.2609D",
+      "snippet": "Dear AIS community, SIG Health call for application for student service award. Please see the following link: http://www.aissighealth.com/wordpress/call-for-applications-sighealth-student-service-award-2026/ Haijing Hao, Ph.D. Associate Professor, Computer Information Systems Department, Bentley University, Waltham, MA, USA CFP - Special Collection of npj Health Systems: Digital Health Innovations for the Ageing Society: https://www.nature.com/collections/hafdiicfgb President, SIG Health, Association for Information Systems (AIS) Associate Editor, Nature Portfolio Journals(npj), Health Systems https://faculty.bentley.edu/profile/hhao",
+      "typeTags": [
+        "Job Posting",
+        "PhD & Funding"
+      ],
+      "topicTags": [
+        "Health"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-26T12:31:13.000Z"
+      ]
+    },
+    {
+      "key": "assistant professor of information systems",
+      "subject": "Assistant Professor of Information Systems",
+      "sender": "YoungKi Park",
+      "date": "2026-09-26T04:24:59.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;199dfe9c.2609D",
+      "snippet": "*Assistant Professor of Information Systems* *The George Washington University School of Business* *Department of Information Systems and Technology Management* *Washington, D.C.* The Department of Information Systems and Technology Management at the George Washington University School of Business invites applications for a full-time, tenure-track Assistant Professor of Information Systems position beginning in Fall 2027. Salary is competitive and commensurate with experience and an established research record. [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-26T04:24:59.000Z"
+      ]
+    },
     {
       "key": "cfp worldcist27 15th world conference on information systems and technologies cape town south africa and online deadline november 22",
       "subject": "(CFP) WorldCIST'27 - 15th World Conference on Information Systems and Technologies, Cape Town, South Africa (and online) | Deadline: November 22",
@@ -5398,42 +5433,6 @@
         "Data Science & Analytics"
       ],
       "eventTags": []
-    },
-    {
-      "key": "aacsb ais and others shared framework on research impact",
-      "subject": "AACSB, AIS, and others: Shared framework on research impact",
-      "sender": "Andrew Burton-Jones",
-      "date": "2026-06-28T04:32:43.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;5d0655d7.2606D",
-      "snippet": "Dear IS colleagues Many of us care deeply about making an impact through our research but recognize that academic incentives often get in the way. I'm writing to update you on a collective effort to address this problem, and to pay thanks to the AACSB and AOM for kicking it off. We will continue to update you, and please get involved as the initiative unfolds. Together we can change the system for the better. [...]",
-      "reposts": [
-        "2026-06-28T04:32:43.000Z"
-      ],
-      "typeTags": [
-        "General Discussion"
-      ],
-      "topicTags": [],
-      "eventTags": []
-    },
-    {
-      "key": "oisi 2026 update new dates 57 october enlarged theme governable humanai communication",
-      "subject": "OISI 2026 Update - new dates: 5–7 October + enlarged theme: governable human–AI communication",
-      "sender": "Gianni Jacucci",
-      "date": "2026-06-27T16:29:22.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;85da1354.2606D",
-      "snippet": "OISI 2026 – Update and Renewed InvitationOrganisational Intervention in Social Informatics*Communication, Accountability and Meaning in the Age of Generative AI**Trento, Italy (Dolomites)*5–7 October 2026 A brief update for colleagues interested in OISI 2026. Since the original announcement, a collection of provocation notes has begun to accumulate from researchers, practitioners, managers, and organisational innovators. The resulting conversation is proving broader than initially anticipated. [...]",
-      "reposts": [
-        "2026-06-27T16:29:22.000Z"
-      ],
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI"
-      ],
-      "eventTags": [
-        "OISI"
-      ]
     }
   ]
 }
