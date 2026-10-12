@@ -261,7 +261,9 @@ async function main() {
     headers: { 'User-Agent': 'aisworld-portal-fetch/1.0 (+daily digest bot)' },
   });
   if (!res.ok) {
-    throw new Error(`Feed fetch failed: ${res.status} ${res.statusText}`);
+    // Keep the existing data.json and let the deploy still run (e.g. 429 rate limit).
+    console.warn(`Feed fetch failed: ${res.status} ${res.statusText} — keeping existing data.json`);
+    return;
   }
   const xml = await res.text();
 
