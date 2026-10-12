@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>IS Community Board</title>
+<meta name="description" content="A tagged, de-duplicated board of AISWORLD mailing list posts from the Association for Information Systems (AIS) community — academic jobs, faculty positions, and careers in Information Systems and tech, calls for papers, conferences & workshops, journal special issues, and PhD/funding opportunities, filterable by type, topic, and event.">
+<meta name="keywords" content="AIS, Association for Information Systems, AISWORLD, academic jobs, faculty positions, Information Systems jobs, IS careers, tech jobs academia, assistant professor, tenure-track, call for papers, CFP, IS conferences, IS workshops, PhD funding, faculty positions information systems">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://dataweavers.github.io/iscboard/">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Information Systems Community Board — AIS / AISWORLD Academic Jobs, Conferences & CFPs">
+<meta property="og:description" content="Academic jobs and faculty positions, conferences, calls for papers, and funding from the AIS/AISWORLD Information Systems community — tagged and de-duplicated.">
+<meta property="og:url" content="https://dataweavers.github.io/iscboard/">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Information Systems Community Board — AIS / AISWORLD Academic Jobs, Conferences & CFPs">
+<meta name="twitter:description" content="Academic jobs and faculty positions, conferences, calls for papers, and funding from the AIS/AISWORLD Information Systems community — tagged and de-duplicated.">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Information Systems Community Board",
+  "url": "https://dataweavers.github.io/iscboard/",
+  "description": "A tagged, de-duplicated board of AISWORLD mailing list posts from the Association for Information Systems (AIS) community — academic jobs, faculty positions, and careers in Information Systems, calls for papers, conferences & workshops, journal special issues, and PhD/funding opportunities.",
+  "about": [
+    { "@type": "Organization", "name": "Association for Information Systems", "alternateName": "AIS" }
+  ],
+  "keywords": "AIS, AISWORLD, academic jobs, faculty positions, Information Systems jobs, IS careers, call for papers, IS conferences, PhD funding"
+}
+</script>
+<!-- Invisible visit analytics via GoatCounter (free, privacy-friendly, no cookies).
+     Dashboard: https://aisdigest.goatcounter.com -->
+<script data-goatcounter="https://aisdigest.goatcounter.com/count"
+        async src="//gc.zgo.at/count.js"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,400;8..60,500;8..60,600;8..60,700&family=Public+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root { color-scheme: light; }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: oklch(98% 0.005 80);
+    color: oklch(24% 0.01 60);
+    font-family: 'Public Sans', sans-serif;
+  }
+  a { color: inherit; }
+  ::selection { background: oklch(85% 0.05 40); }
+
+  header {
+    border-bottom: 1px solid oklch(88% 0.01 60);
+    padding: 28px 48px 24px;
+  }
+  header .row { display: flex; align-items: baseline; justify-content: space-between; flex-wrap: wrap; gap: 12px; max-width: 1180px; margin: 0 auto; width: 100%; }
+  h1 { font-family: 'Source Serif 4', serif; font-weight: 600; font-size: clamp(24px, 5vw, 32px); margin: 0; letter-spacing: -0.01em; }
+  header .meta { font-size: 13px; color: oklch(48% 0.01 60); }
+  header .meta a { text-decoration: underline; text-underline-offset: 2px; }
+  header p { margin: 6px 0 0; max-width: 640px; font-size: 15px; color: oklch(42% 0.012 60); }
+
+  .mobile-bar { display: none; padding: 12px 48px; border-bottom: 1px solid oklch(90% 0.008 60); position: sticky; top: 0; background: oklch(98% 0.005 80 / 0.94); backdrop-filter: blur(6px); z-index: 5; }
+  .mobile-bar button {
+    width: 100%; max-width: 1180px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 8px;
+    font-family: 'Public Sans', sans-serif; font-size: 13.5px; font-weight: 600; padding: 10px 14px;
+    border-radius: 10px; border: 1px solid oklch(85% 0.01 60); background: oklch(100% 0 0); color: oklch(28% 0.012 60); cursor: pointer;
+  }
+
+  .layout { display: flex; flex-wrap: wrap; gap: 32px; max-width: 1180px; margin: 0 auto; padding: 24px 48px 96px; align-items: flex-start; }
+
+  aside { flex: 1 1 220px; max-width: 260px; display: flex; flex-direction: column; gap: 22px; width: 100%; }
+  .sidebar-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .sidebar-head span { font-size: 11.5px; font-weight: 700; letter-spacing: 0.08em; text-transform: uppercase; color: oklch(40% 0.01 60); }
+  .sidebar-head button { font-size: 11.5px; font-weight: 600; color: oklch(46% 0.09 40); background: none; border: none; padding: 0; cursor: pointer; text-decoration: underline; text-underline-offset: 2px; }
+
+  .facet-group { display: flex; flex-direction: column; gap: 6px; }
+  .facet-title { display: flex; align-items: center; gap: 6px; }
+  .facet-dot { width: 7px; height: 7px; border-radius: 2px; display: inline-block; }
+  .facet-title h2 { font-size: 11px; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: oklch(46% 0.02 60); margin: 0; }
+  .facet-chips { display: flex; flex-direction: column; gap: 1px; }
+  .facet-chip {
+    font-family: 'Public Sans', sans-serif; font-size: 13px; font-weight: 500; padding: 6px 6px; border-radius: 7px; border: none;
+    background: transparent; color: oklch(38% 0.012 60); cursor: pointer; display: flex; align-items: center; gap: 8px; width: 100%; text-align: left;
+  }
+  .facet-chip:hover { background: oklch(95% 0.008 60); }
+  .facet-chip.active:hover { background: inherit; }
+  .facet-chip .box { width: 8px; height: 8px; border-radius: 2.5px; flex-shrink: 0; border: 1px solid oklch(78% 0.01 60); }
+  .facet-chip .label { flex: 1; text-align: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .facet-chip .count { font-size: 11px; font-weight: 600; opacity: 0.55; flex-shrink: 0; }
+
+  main { flex: 3 1 480px; min-width: 0; width: 100%; }
+  .group { margin-bottom: 32px; }
+  .group h2 {
+    font-family: 'Public Sans', sans-serif; font-size: 12px; font-weight: 600;
+    letter-spacing: 0.08em; text-transform: uppercase;
+    color: oklch(52% 0.012 60); margin: 0 0 14px;
+  }
+  .items { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 12px; }
+  .item {
+    display: flex; flex-direction: column; gap: 10px; text-decoration: none; color: inherit;
+    padding: 16px; border-radius: 12px; border: 1px solid oklch(90% 0.008 60); background: oklch(100% 0 0);
+    animation: fadeIn 0.3s ease both;
+  }
+  .item:hover { border-color: oklch(78% 0.01 60); box-shadow: 0 2px 10px oklch(30% 0.01 60 / 0.06); }
+  .item-top { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+  .pill { font-size: 11px; font-weight: 600; padding: 3px 9px; border-radius: 20px; }
+  .repost-badge {
+    font-size: 10.5px; color: oklch(52% 0.01 60);
+    border: 1px solid oklch(85% 0.01 60); border-radius: 20px; padding: 1.5px 7px; white-space: nowrap;
+  }
+  .item-date { font-size: 12px; color: oklch(52% 0.01 60); margin-left: auto; white-space: nowrap; }
+  .item-subject { font-family: 'Source Serif 4', serif; font-size: 16.5px; font-weight: 600; line-height: 1.35; }
+  .item-sender { font-size: 12px; color: oklch(55% 0.012 60); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .item-tags { display: flex; gap: 5px; flex-wrap: wrap; margin-top: auto; padding-top: 2px; }
+  .item-tag { font-size: 10.5px; font-weight: 600; letter-spacing: 0.01em; border-radius: 5px; padding: 2px 6px; }
+  .item-tag.topic { color: oklch(46% 0.02 150); background: oklch(94% 0.015 150); }
+  .item-tag.event { color: oklch(42% 0.02 10); background: oklch(95% 0.012 10); }
+
+  .item { cursor: pointer; }
+  .item.open { grid-column: 1 / -1; border-color: oklch(78% 0.01 60); }
+  .item-snippet { display: none; font-size: 14px; line-height: 1.55; color: oklch(34% 0.012 60); border-top: 1px solid oklch(92% 0.008 60); padding-top: 12px; text-wrap: pretty; max-width: 760px; }
+  .item.open .item-snippet { display: block; }
+  .item-actions { display: none; align-items: center; gap: 14px; flex-wrap: wrap; font-size: 12.5px; }
+  .item.open .item-actions { display: flex; }
+  .item-actions a { font-weight: 600; color: oklch(43% 0.12 250); text-decoration: underline; text-underline-offset: 2px; }
+  .item-actions span { color: oklch(52% 0.01 60); }
+  .item-toggle { font-size: 11.5px; font-weight: 600; color: oklch(46% 0.09 250); white-space: nowrap; align-self: flex-start; }
+  .archive-note { display: flex; gap: 8px; align-items: baseline; flex-wrap: wrap; font-size: 12.5px; line-height: 1.5; color: oklch(40% 0.012 60); background: oklch(96% 0.012 80); border: 1px solid oklch(90% 0.015 80); border-radius: 10px; padding: 10px 14px; margin-bottom: 20px; }
+  .archive-note a { color: oklch(43% 0.12 250); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .empty { text-align: center; padding: 80px 0; color: oklch(52% 0.01 60); font-size: 15px; }
+
+  footer {
+    border-top: 1px solid oklch(90% 0.008 60);
+    padding: 24px 48px;
+    font-size: 12.5px;
+    color: oklch(55% 0.012 60);
+    display: flex; justify-content: center; flex-wrap: wrap; gap: 8px;
+  }
+  footer .row { max-width: 1180px; width: 100%; display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; }
+
+  @keyframes fadeIn { from { opacity: 0; transform: translateY(4px); } to { opacity: 1; transform: translateY(0); } }
+
+  /* --- Ask (LLM search) ------------------------------------------------ */
+  .ask-wrap { max-width: 1180px; margin: 0 auto; padding: 20px 48px 0; width: 100%; }
+  .ask-box { display: flex; gap: 8px; align-items: stretch; }
+  .ask-box input {
+    flex: 1; font-family: 'Public Sans', sans-serif; font-size: 14.5px; padding: 11px 14px;
+    border-radius: 10px; border: 1px solid oklch(85% 0.01 60); background: oklch(100% 0 0); color: oklch(24% 0.01 60);
+  }
+  .ask-box input:focus { outline: none; border-color: oklch(55% 0.09 250); }
+  .ask-box button {
+    font-family: 'Public Sans', sans-serif; font-size: 14px; font-weight: 600; padding: 0 18px;
+    border-radius: 10px; border: none; background: oklch(48% 0.11 250); color: oklch(99% 0.005 250);
+    cursor: pointer; white-space: nowrap;
+  }
+  .ask-box button:hover { background: oklch(43% 0.11 250); }
+  .ask-box button:disabled { opacity: 0.55; cursor: default; }
+  .ask-hint { font-size: 11.5px; color: oklch(55% 0.012 60); margin: 6px 2px 0; }
+  .ask-thread { margin-top: 14px; display: none; flex-direction: column; gap: 12px; }
+  .ask-thread.show { display: flex; }
+  .ask-thread-head { display: flex; align-items: center; justify-content: space-between; gap: 8px; }
+  .ask-thread-head .ask-badge { font-size: 10.5px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: oklch(48% 0.11 250); }
+  .ask-thread-head .ask-reset { font-size: 11.5px; color: oklch(52% 0.01 60); background: none; border: none; cursor: pointer; text-decoration: underline; }
+  .ask-user { align-self: flex-end; max-width: 85%; background: oklch(48% 0.11 250); color: oklch(99% 0.005 250); border-radius: 12px 12px 3px 12px; padding: 9px 13px; font-size: 14px; line-height: 1.45; }
+  .ask-ai {
+    align-self: flex-start; max-width: 92%; border: 1px solid oklch(88% 0.02 250); background: oklch(98.5% 0.012 250);
+    border-radius: 12px 12px 12px 3px; padding: 13px 16px; font-size: 14.5px; line-height: 1.5; color: oklch(28% 0.015 60);
+  }
+  .ask-ai a { color: oklch(43% 0.12 250); font-weight: 600; text-decoration: underline; text-underline-offset: 2px; }
+  .ask-ai p { margin: 0 0 8px; }
+  .ask-ai p:last-child { margin-bottom: 0; }
+  .ask-ai ul { margin: 4px 0 0; padding-left: 20px; }
+  .ask-ai li { margin: 4px 0; }
+  .ask-followup-hint { font-size: 11px; color: oklch(56% 0.012 60); margin-top: 2px; }
+  .ask-spinner { display: inline-block; width: 13px; height: 13px; border: 2px solid oklch(80% 0.05 250); border-top-color: oklch(48% 0.11 250); border-radius: 50%; animation: askspin 0.7s linear infinite; vertical-align: -2px; margin-right: 6px; }
+  @keyframes askspin { to { transform: rotate(360deg); } }
+
+  @media (max-width: 780px) {
+    header, .mobile-bar, .layout, footer, .ask-wrap { padding-left: 20px; padding-right: 20px; }
+    aside { display: none; }
+    aside.open { display: flex; margin-bottom: 4px; }
+    .mobile-bar { display: block; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div style="max-width:1180px; margin:0 auto; width:100%;">
+    <div class="row">
+      <h1>Information Systems Community Board</h1>
+      <div class="meta">Clustered from the <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD" target="_blank" rel="noopener">AISWORLD listserv</a> &middot; updated <span id="updated-at">—</span></div>
+    </div>
+    <p style="text-align:left;">A tagged, de-duplicated, AI-enabled view of the AISWORLD mailing list.</p>
+    <p style="text-align:left; font-size:12.5px; color:oklch(52% 0.012 60); max-width:640px;">Personal project, not affiliated with or endorsed by AIS or the AISWORLD listserv.</p>
+  </div>
+</header>
+
+<div style="background:oklch(93% 0.04 250); border-bottom:1px solid oklch(85% 0.03 250); padding:10px 20px; display:flex; align-items:center; justify-content:center; gap:10px; font-size:13.5px; color:oklch(32% 0.08 250); flex-wrap:wrap; text-align:center;">
+  <span style="white-space:nowrap;">🚀 Just launched — help shape it.</span>
+  <a href="#" id="feedback-banner-link" style="font-weight:700; text-decoration:underline; text-underline-offset:2px; color:oklch(32% 0.08 250); cursor:pointer; white-space:nowrap;">Send feedback →</a>
+</div>
+
+<div class="mobile-bar">
+  <button id="mobile-toggle">Filters <span id="mobile-toggle-icon">+</span></button>
+</div>
+
+<div class="ask-wrap" id="ask-wrap" style="display:none;">
+  <form class="ask-box" id="ask-form">
+    <input type="text" id="ask-input" autocomplete="off"
+      placeholder="Ask about these posts — e.g. &quot;AI conferences with deadlines this month&quot;">
+    <button type="submit" id="ask-submit">Ask</button>
+  </form>
+  <div class="ask-hint">Answers are drafted by AI from the posts on this board and link only to them. Ask follow-up questions to dig in. Always verify against the original post.</div>
+  <div class="ask-thread" id="ask-thread">
+    <div class="ask-thread-head">
+      <span class="ask-badge">AI conversation</span>
+      <button class="ask-reset" id="ask-reset" type="button">Clear</button>
+    </div>
+    <div id="ask-messages"></div>
+  </div>
+</div>
+
+<div class="layout">
+  <aside id="sidebar">
+    <div class="sidebar-head">
+      <span>Filters</span>
+      <button id="clear-all" style="display:none;">Clear all</button>
+    </div>
+    <div id="facet-groups"></div>
+  </aside>
+
+  <main>
+    <div class="archive-note"><span>Seeing "Too many requests" on archive links? <a href="https://listserv.isworld.org/scripts/wa-ISWORLD.exe?LOGON" target="_blank" rel="noopener">Log in to the listserv</a> (free).</span></div>
+    <div id="feed"></div>
+    <div class="empty" id="empty-state" style="display:none;">No messages match this filter.</div>
+  </main>
+</div>
+
+<footer>
+  <div class="row">
+    <span><span id="footer-caption">Pulled from the AISWORLD listserv RSS feed. Archive links may require a listserv login after several views.</span> · <a href="https://github.com/DataWeavers/iscboard#about-me" target="_blank" rel="noopener" style="color:oklch(46% 0.09 250);">About</a></span>
+    <span id="footer-counts"></span>
+  </div>
+  <div class="row" style="margin-top:4px;">
+    <details id="contact-details" style="width:100%;">
+      <summary style="cursor:pointer; color:oklch(46% 0.09 250); font-weight:600;">Contact / suggest a fix</summary>
+      <form id="contact-form" action="https://formspree.io/f/xrengerd" method="POST" style="display:flex; flex-direction:column; gap:8px; max-width:420px; margin-top:12px;">
+        <input type="email" name="email" placeholder="Your email" required style="font-family:'Public Sans',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid oklch(85% 0.01 60);">
+        <textarea name="message" placeholder="Message" required rows="3" style="font-family:'Public Sans',sans-serif; font-size:13px; padding:8px 10px; border-radius:8px; border:1px solid oklch(85% 0.01 60); resize:vertical;"></textarea>
+        <button type="submit" style="align-self:flex-start; font-family:'Public Sans',sans-serif; font-size:13px; font-weight:600; padding:8px 16px; border-radius:8px; border:none; background:oklch(24% 0.01 60); color:oklch(98% 0.005 80); cursor:pointer;">Send</button>
+        <span id="contact-status" style="font-size:12px; color:oklch(50% 0.01 60);"></span>
+      </form>
+    </details>
+  </div>
+</footer>
+
+<script>
+  const FACET_DEFS = [
+    { key: 'typeTags', label: 'Type', hue: 250 },
+    { key: 'topicTags', label: 'Topic', hue: 150 },
+    { key: 'eventTags', label: 'Event & Conference', hue: 10 },
+  ];
+  const TYPE_HUES = {
+    'Conference & Workshop': 150,
+    'Journal & Special Issue': 30,
+    'Job Posting': 10,
+    'PhD & Funding': 300,
+    'General Discussion': 210,
+  };
+
+  function hueColor(hue, l, c) {
+    return `oklch(${l} ${c} ${hue === undefined ? 60 : hue})`;
+  }
+
+  function dayBucket(iso, today) {
+    const d = new Date(iso);
+    const diffDays = Math.floor((today - d) / 86400000);
+    if (diffDays <= 0) return 'Today';
+    if (diffDays === 1) return 'Yesterday';
+    if (diffDays <= 6) return 'This week';
+    return 'Earlier';
+  }
+
+  function formatDateLabel(iso) {
+    return new Date(iso).toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+  }
+
+  let selected = { typeTags: [], topicTags: [], eventTags: [] };
+  let sidebarOpen = false;
+  let DATA = { lastUpdated: null, messages: [] };
+
+  // Union within a group (any selected tag matches), intersection across
+  // groups (every group with a selection must be satisfied).
+  function matchesFacets(m, exceptKey) {
+    return FACET_DEFS.every(fg => {
+      if (fg.key === exceptKey) return true;
+      const picks = selected[fg.key];
+      if (picks.length === 0) return true;
+      const tags = m[fg.key] || [];
+      return picks.some(p => tags.includes(p));
+    });
+  }
+
+  function toggleTag(groupKey, tag) {
+    const list = selected[groupKey];
+    const has = list.includes(tag);
+    selected[groupKey] = has ? list.filter(t => t !== tag) : list.concat([tag]);
+    // Record only newly-applied filters (not un-toggles), by facet + tag.
+    if (!has) track('filter/' + groupKey + '/' + tag, 'Filter: ' + tag);
+    render();
+  }
+
+  function clearAll() {
+    selected = { typeTags: [], topicTags: [], eventTags: [] };
+    render();
+  }
+
+  function renderFacets() {
+    const wrap = document.getElementById('facet-groups');
+    wrap.innerHTML = '';
+    const activeCount = selected.typeTags.length + selected.topicTags.length + selected.eventTags.length;
+    document.getElementById('clear-all').style.display = activeCount > 0 ? 'inline' : 'none';
+    document.getElementById('mobile-toggle').firstChild.textContent = `Filters${activeCount > 0 ? ' (' + activeCount + ')' : ''} `;
+
+    FACET_DEFS.forEach(fg => {
+      // Count against every OTHER group's active selection (not this
+      // group's own) so a facet's own counts stay meaningful even after
+      // you've picked something in it.
+      const pool = DATA.messages.filter(m => matchesFacets(m, fg.key));
+      const tally = {};
+      pool.forEach(m => (m[fg.key] || []).forEach(t => { tally[t] = (tally[t] || 0) + 1; }));
+      const limit = fg.key === 'eventTags' ? 14 : 10;
+      const tags = Object.keys(tally).sort((a, b) => tally[b] - tally[a]).slice(0, limit);
+
+      const groupEl = document.createElement('div');
+      groupEl.className = 'facet-group';
+      groupEl.innerHTML = `
+        <div class="facet-title">
+          <span class="facet-dot" style="background:${hueColor(fg.hue, '55%', '0.14')};"></span>
+          <h2>${fg.label}</h2>
+        </div>
+        <div class="facet-chips"></div>
+      `;
+      const chipsWrap = groupEl.querySelector('.facet-chips');
+      tags.forEach(tag => {
+        const isActive = selected[fg.key].includes(tag);
+        const btn = document.createElement('button');
+        btn.className = 'facet-chip' + (isActive ? ' active' : '');
+        btn.style.fontWeight = isActive ? '600' : '500';
+        btn.style.background = isActive ? hueColor(fg.hue, '93%', '0.045') : 'transparent';
+        btn.style.color = isActive ? hueColor(fg.hue, '32%', '0.1') : 'oklch(38% 0.012 60)';
+        btn.innerHTML = `<span class="box" style="${isActive ? `border-color:${hueColor(fg.hue, '46%', '0.16')};background:${hueColor(fg.hue, '46%', '0.16')};` : ''}"></span><span class="label"></span><span class="count">${tally[tag]}</span>`;
+        btn.querySelector('.label').textContent = tag;
+        btn.onclick = () => toggleTag(fg.key, tag);
+        chipsWrap.appendChild(btn);
+      });
+      wrap.appendChild(groupEl);
+    });
+  }
+
+  function render() {
+    const today = new Date();
+    document.getElementById('updated-at').textContent = DATA.lastUpdated
+      ? new Date(DATA.lastUpdated).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' })
+      : 'not yet run';
+
+    renderFacets();
+
+    const filtered = DATA.messages.filter(m => matchesFacets(m, null));
+
+    const buckets = { Today: [], Yesterday: [], 'This week': [], Earlier: [] };
+    filtered.forEach(m => buckets[dayBucket(m.date, today)].push(m));
+
+    const feed = document.getElementById('feed');
+    feed.innerHTML = '';
+    ['Today', 'Yesterday', 'This week', 'Earlier'].forEach(label => {
+      const items = buckets[label];
+      if (!items.length) return;
+      const section = document.createElement('section');
+      section.className = 'group';
+      const h2 = document.createElement('h2');
+      h2.textContent = label;
+      section.appendChild(h2);
+      const itemsWrap = document.createElement('div');
+      itemsWrap.className = 'items';
+      items.forEach(m => {
+        const repostCount = m.reposts ? m.reposts.length : 1;
+        const secondary = (m.topicTags || []).concat(m.eventTags || []).slice(0, 4);
+        const a = document.createElement('div');
+        a.className = 'item';
+        a.tabIndex = 0;
+        const archiveUrl = m.url || 'https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A0=AISWORLD';
+        const toggleOpen = e => {
+          if (e.target.closest('a')) return;
+          const open = a.classList.toggle('open');
+          a.querySelector('.item-toggle').textContent = open ? 'Hide' : 'Read';
+          if (open) track('post-expand/' + ((m.typeTags && m.typeTags[0]) || 'untagged'), 'Post expanded');
+        };
+        a.addEventListener('click', toggleOpen);
+        a.addEventListener('keydown', e => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); toggleOpen(e); } });
+
+        const top = document.createElement('div');
+        top.className = 'item-top';
+        (m.typeTags || []).forEach(t => {
+          const hue = TYPE_HUES[t] !== undefined ? TYPE_HUES[t] : 60;
+          const pill = document.createElement('span');
+          pill.className = 'pill';
+          pill.style.background = hueColor(hue, '92%', '0.03');
+          pill.style.color = hueColor(hue, '32%', '0.09');
+          pill.textContent = t;
+          top.appendChild(pill);
+        });
+        if (repostCount > 1) {
+          const badge = document.createElement('span');
+          badge.className = 'repost-badge';
+          badge.textContent = `posted ${repostCount}×`;
+          top.appendChild(badge);
+        }
+        const dateEl = document.createElement('span');
+        dateEl.className = 'item-date';
+        dateEl.textContent = formatDateLabel(m.date);
+        top.appendChild(dateEl);
+        a.appendChild(top);
+
+        const subjectEl = document.createElement('div');
+        subjectEl.className = 'item-subject';
+        subjectEl.textContent = m.subject;
+        a.appendChild(subjectEl);
+
+        const senderEl = document.createElement('span');
+        senderEl.className = 'item-sender';
+        senderEl.textContent = m.sender || '';
+        a.appendChild(senderEl);
+
+        if (secondary.length > 0) {
+          const tagsWrap = document.createElement('div');
+          tagsWrap.className = 'item-tags';
+          secondary.forEach(t => {
+            const isEvent = (m.eventTags || []).includes(t);
+            const tagEl = document.createElement('span');
+            tagEl.className = 'item-tag ' + (isEvent ? 'event' : 'topic');
+            tagEl.textContent = t;
+            tagsWrap.appendChild(tagEl);
+          });
+          a.appendChild(tagsWrap);
+        }
+
+        const snip = document.createElement('div');
+        snip.className = 'item-snippet';
+        snip.textContent = (m.snippet || 'No preview available.').replace(/\s*\[\.\.\.\]\s*$/, '…');
+        a.appendChild(snip);
+        const actions = document.createElement('div');
+        actions.className = 'item-actions';
+        const ext = document.createElement('a');
+        ext.href = archiveUrl; ext.target = '_blank'; ext.rel = 'noopener';
+        ext.textContent = 'Open full post in archive ↗';
+        ext.addEventListener('click', () => track('post-click/' + ((m.typeTags && m.typeTags[0]) || 'untagged'), 'Post click-through'));
+        actions.appendChild(ext);
+        const hint = document.createElement('span');
+        hint.textContent = 'May ask you to log in';
+        actions.appendChild(hint);
+        a.appendChild(actions);
+        const tg = document.createElement('span');
+        tg.className = 'item-toggle';
+        tg.textContent = 'Read';
+        a.appendChild(tg);
+        itemsWrap.appendChild(a);
+      });
+      section.appendChild(itemsWrap);
+      feed.appendChild(section);
+    });
+
+    document.getElementById('empty-state').style.display = filtered.length === 0 ? 'block' : 'none';
+    const totalReposts = DATA.messages.reduce((sum, m) => sum + (m.reposts ? m.reposts.length : 1), 0);
+    const dates = DATA.messages.map(m => new Date(m.date)).filter(d => !isNaN(d));
+    if (dates.length > 0) {
+      const oldest = new Date(Math.min(...dates));
+      const newest = new Date(Math.max(...dates));
+      const fmt = d => d.toLocaleDateString(undefined, { month: 'short', day: 'numeric', year: 'numeric' });
+      document.getElementById('footer-caption').textContent =
+        `Pulled from the AISWORLD listserv RSS feed (${fmt(oldest)}–${fmt(newest)}); links go to each post's listserv archive page.`;
+    }
+    document.getElementById('footer-counts').textContent = `${totalReposts} messages · ${DATA.messages.length} unique threads`;
+  }
+
+  document.getElementById('clear-all').onclick = clearAll;
+  document.getElementById('mobile-toggle').onclick = () => {
+    sidebarOpen = !sidebarOpen;
+    document.getElementById('sidebar').classList.toggle('open', sidebarOpen);
+    document.getElementById('mobile-toggle-icon').textContent = sidebarOpen ? '\u2212' : '+';
+  };
+
+  document.getElementById('feedback-banner-link').addEventListener('click', function (e) {
+    e.preventDefault();
+    const details = document.getElementById('contact-details');
+    details.open = true;
+    details.scrollIntoView({ block: 'center' });
+  });
+
+  document.getElementById('contact-form').addEventListener('submit', function (e) {
+    e.preventDefault();
+    const form = e.target;
+    const status = document.getElementById('contact-status');
+    status.textContent = 'Sending…';
+    fetch(form.action, { method: 'POST', body: new FormData(form), headers: { Accept: 'application/json' } })
+      .then(r => { status.textContent = r.ok ? 'Thanks — message sent!' : 'Something went wrong, try again.'; if (r.ok) form.reset(); })
+      .catch(() => { status.textContent = 'Something went wrong, try again.'; });
+  });
+
+  // --- Ask (LLM search) --------------------------------------------------
+  // After deploying the Cloudflare Worker (see deploy/worker/search-worker.js),
+  // paste its URL here. While empty, the Ask box stays hidden.
+  const WORKER_URL = 'https://iscboard-search.mostafamm-83.workers.dev/';
+
+  const STOPWORDS = new Set(['the','a','an','and','or','for','of','to','in','on','with','is','are','be','by','at','from','about','this','that','these','those','my','me','i','we','you','your','it','as','has','have','do','does','which','what','when','where','who','how','any','all','some','more','most','can','will','would','should','there','their']);
+
+  function tokenize(s) {
+    return (s || '').toLowerCase().replace(/[^a-z0-9\s]+/g, ' ').split(/\s+/).filter(w => w.length > 2 && !STOPWORDS.has(w));
+  }
+
+  // Cheap keyword pre-filter: score every post by query-term overlap across
+  // subject (weighted), tags (weighted), and snippet, then take the top ones.
+  // This is what keeps cost/latency flat as the corpus grows — the model only
+  // ever sees a small, relevant slice.
+  function prefilter(query, limit) {
+    const terms = tokenize(query);
+    if (terms.length === 0) return [];
+    const scored = DATA.messages.map(m => {
+      const subj = (m.subject || '').toLowerCase();
+      const tagText = [...(m.typeTags || []), ...(m.topicTags || []), ...(m.eventTags || [])].join(' ').toLowerCase();
+      const snip = (m.snippet || '').toLowerCase();
+      let score = 0;
+      terms.forEach(t => {
+        if (subj.includes(t)) score += 3;
+        if (tagText.includes(t)) score += 2;
+        if (snip.includes(t)) score += 1;
+      });
+      return { m, score };
+    }).filter(x => x.score > 0);
+    scored.sort((a, b) => b.score - a.score || new Date(b.m.date) - new Date(a.m.date));
+    return scored.slice(0, limit).map(x => x.m);
+  }
+
+  // Minimal, safe markdown: escapes HTML first, then renders [text](url) links,
+  // **bold**, "- " bullet lists, and paragraph breaks. No raw HTML passes through.
+  function renderMarkdown(md) {
+    const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    const lines = md.split('\n');
+    let html = '';
+    let inList = false;
+    const inline = txt => esc(txt)
+      .replace(/\[([^\]]+)\]\((https?:\/\/[^\s)]+)\)/g, (_, t, u) => `<a href="${u}" target="_blank" rel="noopener">${t}</a>`)
+      .replace(/(^|[\s(])(https?:\/\/[^\s<)]+)/g, (_, pre, u) => `${pre}<a href="${u}" target="_blank" rel="noopener">source</a>`)
+      .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+    lines.forEach(raw => {
+      const line = raw.trim();
+      if (/^[-*]\s+/.test(line)) {
+        if (!inList) { html += '<ul>'; inList = true; }
+        html += `<li>${inline(line.replace(/^[-*]\s+/, '').replace(/^\[[ xX]?\]\s*/, ''))}</li>`;
+      } else {
+        if (inList) { html += '</ul>'; inList = false; }
+        if (line) html += `<p>${inline(line)}</p>`;
+      }
+    });
+    if (inList) html += '</ul>';
+    return html;
+  }
+
+  // --- Conversation state ------------------------------------------------
+  // convo holds the full turn history sent to the model for follow-ups.
+  // askedPosts accumulates every post surfaced across the conversation (by
+  // url) so later turns keep the earlier context in scope.
+  let convo = [];
+  const askedPosts = new Map();
+
+  function addUserBubble(text) {
+    const wrap = document.getElementById('ask-messages');
+    const el = document.createElement('div');
+    el.className = 'ask-user';
+    el.textContent = text;
+    wrap.appendChild(el);
+  }
+
+  function addAiBubble(html) {
+    const wrap = document.getElementById('ask-messages');
+    const el = document.createElement('div');
+    el.className = 'ask-ai';
+    el.innerHTML = html;
+    wrap.appendChild(el);
+    return el;
+  }
+
+  function resetConversation() {
+    convo = [];
+    askedPosts.clear();
+    document.getElementById('ask-messages').innerHTML = '';
+    document.getElementById('ask-thread').classList.remove('show');
+    document.getElementById('ask-input').value = '';
+    document.getElementById('ask-input').focus();
+  }
+
+  async function ask(query) {
+    const submit = document.getElementById('ask-submit');
+    const input = document.getElementById('ask-input');
+    submit.disabled = true;
+
+    document.getElementById('ask-thread').classList.add('show');
+    addUserBubble(query);
+    input.value = '';
+    // Record that a search happened + whether it's an initial or follow-up
+    // turn. Raw query text is intentionally NOT sent.
+    track('search/' + (convo.length === 0 ? 'initial' : 'followup'), 'AI search');
+    const thinking = addAiBubble('<span class="ask-spinner"></span>Searching the board…');
+
+    // Merge this query's matches into the running post set so follow-ups keep
+    // earlier posts in context.
+    prefilter(query, 25).forEach(m => askedPosts.set(m.url || m.subject, m));
+    const subset = Array.from(askedPosts.values()).slice(0, 30);
+
+    convo.push({ role: 'user', content: query });
+
+    if (subset.length === 0) {
+      thinking.innerHTML = '<p>No posts on the board seem related to that. Try different or broader keywords, or use the filters.</p>';
+      convo.push({ role: 'assistant', content: 'No related posts found.' });
+      submit.disabled = false;
+      input.focus();
+      return;
+    }
+
+    try {
+      const payload = {
+        history: convo,
+        posts: subset.map(m => ({
+          subject: m.subject, date: m.date, url: m.url,
+          typeTags: m.typeTags, topicTags: m.topicTags, eventTags: m.eventTags,
+          snippet: m.snippet,
+        })),
+      };
+      const r = await fetch(WORKER_URL, {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(payload),
+      });
+      const data = await r.json();
+      if (!r.ok || data.error) throw new Error(data.error || 'Request failed');
+      thinking.innerHTML = renderMarkdown(data.answer);
+      convo.push({ role: 'assistant', content: data.answer });
+    } catch (e) {
+      thinking.innerHTML = '<p>Something went wrong reaching the assistant. Please try again in a moment.</p>';
+      convo.push({ role: 'assistant', content: 'Error reaching assistant.' });
+    } finally {
+      submit.disabled = false;
+      input.focus();
+    }
+  }
+
+  if (WORKER_URL) {
+    document.getElementById('ask-wrap').style.display = 'block';
+    document.getElementById('ask-form').addEventListener('submit', e => {
+      e.preventDefault();
+      const q = document.getElementById('ask-input').value.trim();
+      if (q) ask(q);
+    });
+    document.getElementById('ask-reset').addEventListener('click', resetConversation);
+  }
+
+  // --- Interaction analytics (first-party, no cookies) -------------------
+  // Emits anonymous custom events to GoatCounter (itself cookieless). We
+  // record only aggregate signals — a filter's name, that a search happened,
+  // a post click-through — never personal data and never raw search text.
+  function track(path, title) {
+    try {
+      if (window.goatcounter && window.goatcounter.count) {
+        window.goatcounter.count({ path: path, title: title || path, event: true });
+      }
+    } catch (e) { /* analytics must never break the page */ }
+  }
+
+  // First-party returning-visitor counter: a visit count + first-seen date in
+  // localStorage (this browser only, never sent anywhere except as an
+  // anonymous "new vs returning" event). No identity, no cookie banner needed.
+  function trackVisit() {
+    try {
+      const KEY = 'iscb_visits';
+      const raw = localStorage.getItem(KEY);
+      const now = Date.now();
+      let rec = raw ? JSON.parse(raw) : null;
+      if (!rec || !rec.firstSeen) {
+        rec = { firstSeen: now, count: 1 };
+        track('visit/new', 'First visit');
+      } else {
+        rec.count = (rec.count || 1) + 1;
+        // Bucket the return count so the dashboard stays readable.
+        const c = rec.count;
+        const bucket = c >= 10 ? '10+' : c >= 5 ? '5-9' : c >= 2 ? '2-4' : String(c);
+        track('visit/returning/' + bucket, 'Returning visit (' + bucket + ')');
+      }
+      localStorage.setItem(KEY, JSON.stringify(rec));
+    } catch (e) { /* private mode / storage disabled — skip silently */ }
+  }
+
+  fetch('./data.json', { cache: 'no-store' })
+    .then(r => r.json())
+    .then(data => { DATA = data; render(); })
+    .catch(() => { render(); });
+
+  // Fire visit analytics once GoatCounter has loaded (its script is async).
+  if (document.readyState === 'complete') setTimeout(trackVisit, 800);
+  else window.addEventListener('load', () => setTimeout(trackVisit, 800));
+</script>
+</body>
+</html>
