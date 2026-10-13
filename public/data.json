@@ -1,6 +1,81 @@
 {
-  "lastUpdated": "2026-10-13T04:07:14.494Z",
+  "lastUpdated": "2026-10-13T18:38:39.832Z",
   "messages": [
+    {
+      "key": "final call for minitrack proposals for sigsand for amcis 2027 sao paulo brazil",
+      "subject": "Final Call for Minitrack Proposals for SIGSAND for AMCIS 2027 (Sao Paulo, Brazil)",
+      "sender": "Beard, Jon W [ISBA]",
+      "date": "2026-10-13T13:39:09.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;164b0f43.2610B",
+      "snippet": "This is a final reminder on the Call for Minitrack proposals for the SIGSAND (Special Interest Group on Systems Analysis and Design) Track for AMCIS 2027. The conference will be held in Sao Paulo, Brazil, July 26 - 30, 2027. The overall Conference Theme is: Digital Humanities. Minitrack Proposal Submissions The submission deadline for minitrack proposals is October 15. Please consider developing and submitting a minitrack for SIGSAND. The broad theme for SIGSAND this year is Who Designs, Who Uses? Systems Analysis and Design in the Age of AI. (Note that this is a revised focus from what is posted [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [
+        "AMCIS"
+      ],
+      "reposts": [
+        "2026-10-13T13:39:09.000Z"
+      ]
+    },
+    {
+      "key": "cfp iwbose 2027 colocated with saner 2027",
+      "subject": "CfP IWBOSE 2027 CO-LOCATED WITH SANER 2027",
+      "sender": "ilaria lunesu",
+      "date": "2026-10-13T13:11:11.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1407e7b0.2610B",
+      "snippet": "Dear author, we'd like to invite you to consider the following Call for Papers",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "IWBOSE",
+        "SANER"
+      ],
+      "reposts": [
+        "2026-10-13T13:11:11.000Z"
+      ]
+    },
+    {
+      "key": "cfp sig egov preicis workshop on digital government extended deadline",
+      "subject": "CfP: SIG eGOV pre-ICIS workshop on digital government - extended deadline",
+      "sender": "Sara Hofmann",
+      "date": "2026-10-13T12:20:12.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;af00d46b.2610B",
+      "snippet": "AIS SIG E-GOV pre-ICIS workshop Full-day workshop on Digital Government December 13, Lisbon (Portugal) Call for extended abstracts - new deadline 23rd October 2026 Dear colleagues, We warmly invite you to submit an extended abstract for presentation and discussion at the 2026 pre-ICIS Workshop on Digital Government, organized by the Association of Information Systems (AIS) Special Interest Group on e-Government (SIG e-Gov). Abstracts should introduce a new or emerging topic, issue, or research question of relevance to researchers and practitioners within the digital government community. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-09-19T17:12:43.000Z",
+        "2026-10-13T12:20:12.000Z"
+      ]
+    },
+    {
+      "key": "nanyang technological university singapore open rank faculty position in information systems",
+      "subject": "Nanyang Technological University, Singapore - Open Rank Faculty Position in Information Systems",
+      "sender": "Ben Choi",
+      "date": "2026-10-13T08:49:41.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;51a642b2.2610B",
+      "snippet": "Open Rank Faculty Position in Information Systems The Nanyang Business School (NBS) at Nanyang Technological University, Singapore (NTU Singapore), invites applications for a tenure-track faculty position in Information Systems. The position is open at the Assistant, Associate, or Full Professor level. About NTU: Nanyang Technological University, Singapore (NTU Singapore), is a research-intensive public university with approximately 33,000 undergraduate and postgraduate students across its Colleges of Engineering, Business, Science, Humanities, Arts, Social Sciences, and Graduate Studies. NTU is also home to the Lee Kong Chian School of Medicine, established jointly with Imperial College London. NTU’s world-class autonomous institutes include the National [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-06T23:30:41.000Z",
+        "2026-10-13T08:49:41.000Z"
+      ]
+    },
     {
       "key": "cfp 8th preicis workshop on the digitization of the individual doti october 18 deadline",
       "subject": "CFP: 8th Pre-ICIS workshop on the Digitization of the Individual (DOTI) – October 18 Deadline",
@@ -544,22 +619,6 @@
       "eventTags": [],
       "reposts": [
         "2026-10-07T01:00:53.000Z"
-      ]
-    },
-    {
-      "key": "nanyang technological university singapore open rank faculty position in information systems",
-      "subject": "Nanyang Technological University, Singapore - Open Rank Faculty Position in Information Systems",
-      "sender": "Ben Choi",
-      "date": "2026-10-06T23:30:41.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ad300de6.2610A",
-      "snippet": "Open Rank Faculty Position in Information Systems The Nanyang Business School (NBS) at Nanyang Technological University, Singapore (NTU Singapore), invites applications for a tenure-track faculty position in Information Systems. The position is open at the Assistant, Associate, or Full Professor level. About NTU: Nanyang Technological University, Singapore (NTU Singapore), is a research-intensive public university with approximately 33,000 undergraduate and postgraduate students across its Colleges of Engineering, Business, Science, Humanities, Arts, Social Sciences, and Graduate Studies. NTU is also home to the Lee Kong Chian School of Medicine, established jointly with Imperial College London. NTU’s world-class autonomous institutes include the National [...]",
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [],
-      "eventTags": [],
-      "reposts": [
-        "2026-10-06T23:30:41.000Z"
       ]
     },
     {
@@ -1746,24 +1805,6 @@
       "eventTags": [],
       "reposts": [
         "2026-09-20T02:21:48.000Z"
-      ]
-    },
-    {
-      "key": "cfp sig egov preicis workshop on digital government",
-      "subject": "CfP: SIG eGOV pre-ICIS workshop on digital government",
-      "sender": "Sara Hofmann",
-      "date": "2026-09-19T17:12:43.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;c0b5913a.2609C",
-      "snippet": "AIS SIG E-GOV pre-ICIS workshop Full-day workshop on Digital Government December 13, Lisbon (Portugal) Call for extended abstracts Dear colleagues, We warmly invite you to submit an extended abstract for presentation and discussion at the 2026 pre-ICIS Workshop on Digital Government, organized by the Association of Information Systems (AIS) Special Interest Group on e-Government (SIG e-Gov). Abstracts should introduce a new or emerging topic, issue, or research question of relevance to researchers and practitioners within the digital government community. [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-09-19T17:12:43.000Z"
       ]
     },
     {
@@ -5215,81 +5256,6 @@
       "eventTags": [],
       "reposts": [
         "2026-07-15T22:19:37.000Z"
-      ]
-    },
-    {
-      "key": "assistant professor in data science",
-      "subject": "Assistant Professor in Data Science",
-      "sender": "Bongsik Shin",
-      "date": "2026-07-15T18:14:31.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;aa46d090.2607C",
-      "snippet": "Dear IS Colleagues, The Department of Management Information Systems (MIS) in the Fowler College of Business at San Diego State University (SDSU) invites applications for a tenure-track assistant professor position in Data Science. The appointment will begin in August 2027 and is contingent on state funding. We are seeking candidates with teaching interest in advanced data science/statistics and research interest in the areas of data science/statistics and/or applied AI. The person holding this position will be responsible for developing and teaching undergraduate and graduate courses in data science. [...]",
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Data Science & Analytics",
-        "Education & Teaching"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-15T18:14:31.000Z"
-      ]
-    },
-    {
-      "key": "assistant professor in information systems",
-      "subject": "Assistant Professor in Information Systems",
-      "sender": "Bongsik Shin",
-      "date": "2026-07-15T17:42:21.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;692e7bc3.2607C",
-      "snippet": "Dear IS Colleagues, The Department of Management Information Systems (MIS) in the Fowler College of Business at San Diego State University (SDSU) invites applications for a tenure-track position in Information Systems at the assistant professor level. The appointment will begin in August 2027 and is contingent on state funding. We are seeking candidates with teaching interest in Information Systems and research interest in the areas of Applied AI for Decision Support, Digital Innovation, or Supply Chain Management. The person holding this position will be responsible for developing and teaching undergraduate and graduate courses in information systems. [...]",
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Digital Transformation",
-        "Education & Teaching"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-15T17:42:21.000Z"
-      ]
-    },
-    {
-      "key": "tenuretrack assistantassociate professor positions at hkust business school",
-      "subject": "Tenure-track Assistant/Associate Professor Positions at HKUST Business School",
-      "sender": "James Y L THONG",
-      "date": "2026-07-15T16:16:21.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;63005fd2.2607C",
-      "snippet": "Position Vacancy: Two Tenure-track openings for Assistant Professor/Associate Professor in Information Systems The Department of Information Systems, Business Statistics and Operations Management (ISOM) at the HKUST Business School invites applications for two tenure-track assistant professor/associate professor positions in the Information Systems area beginning in July 2027. Candidates must have received a doctorate in Information Systems or a related area by May 2027. The candidates must also have a strong commitment to high-quality research and excellent teaching. The successful candidate should have the ability to teach at both the MBA and undergraduate levels. [...]",
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [
-        "Education & Teaching"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-15T16:16:21.000Z"
-      ]
-    },
-    {
-      "key": "youre invited sig data launch celebration friday 17 july",
-      "subject": "YOU'RE INVITED: SIG Data Launch Celebration – Friday, 17 July",
-      "sender": "Lars Taxén",
-      "date": "2026-07-15T13:03:22.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;71f5bc49.2607C",
-      "snippet": "Hi, The link for registration does not seem to work. Best Lars",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-13T17:24:08.000Z",
-        "2026-07-15T13:03:22.000Z"
       ]
     }
   ]
