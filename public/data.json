@@ -1,6 +1,100 @@
 {
-  "lastUpdated": "2026-10-13T18:38:39.832Z",
+  "lastUpdated": "2026-10-14T16:09:14.340Z",
   "messages": [
+    {
+      "key": "1st call extension 20th iadis international conference information systems 2027 in porto portugal",
+      "subject": "1st call extension: 20th IADIS International Conference Information Systems 2027 in Porto, Portugal",
+      "sender": "",
+      "date": "2026-10-14T12:20:39.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;63478e39.2610B",
+      "snippet": "Full message available at: 1st call extension: 20th IADIS International Conference Information Systems 2027 in Porto, Portugal",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-09-17T11:23:55.000Z",
+        "2026-10-14T12:20:39.000Z"
+      ]
+    },
+    {
+      "key": "episode 115 the 9second catastrophe trust no agent",
+      "subject": "Episode 115 -- The 9-Second Catastrophe: Trust No Agent",
+      "sender": "Dave Chatterjee, Ph.D.",
+      "date": "2026-10-14T09:44:59.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;43dbf478.2610B",
+      "snippet": "Dear Colleagues: I'm pleased to share Episode 115 of the Cybersecurity Readiness Podcast Series -- https://youtu.be/MdG0UrOR04I The 9-Second Catastrophe: Trust No Agent; My guest: Oren Michels, Co-Founder and CEO, Barndoor AI, and Co-Founder of Mashery&lt;https://www.linkedin.com/in/omichels/&gt; To set the stage, in April 2026, an AI agent at a company called Pocket OS was told not to run destructive commands. Nine seconds into a routine task, it ran one anyway, deleting the production database and the backup stored alongside it. Nothing was hacked, and every credential was valid. [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Cybersecurity & Privacy"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-14T09:44:59.000Z"
+      ]
+    },
+    {
+      "key": "ecis 2027 call for papers digital transformation track",
+      "subject": "ECIS 2027 Call for Papers: Digital Transformation Track",
+      "sender": "Markus Philipp Zimmer",
+      "date": "2026-10-14T07:43:53.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3ad10b3a.2610B",
+      "snippet": "ECIS 2027 Call for Papers – Digital Transformation: New Perspectives and Emerging Insights Submission deadline: Oct 20, 2026 Author notification: Feb 1, 2027 We invite you to submit your research to the track on “Digital Transformation: New Perspectives and Emerging Insights” at the ECIS 2027. We specifically look for research that engages in further theorising of digital transformation and research that explores how digital transformation shapes organising, processes, and work. In line with the conference theme “Bridging Digital Borders”, we call for contributions that re-think digital transformation processes and outcomes across levels of analysis (i.e., societal or organisational) and domains [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Digital Transformation"
+      ],
+      "eventTags": [
+        "ECIS"
+      ],
+      "reposts": [
+        "2026-10-14T07:43:53.000Z"
+      ]
+    },
+    {
+      "key": "open faculty positions at the university of tampa assistant professor of business analytics",
+      "subject": "Open faculty positions at the University of Tampa - Assistant Professor of Business Analytics",
+      "sender": "J.B. Joo Baek Kim",
+      "date": "2026-10-13T21:26:43.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1c6a9e06.2610B",
+      "snippet": "The Department of Information and Technology Management (ITM) at The University of Tampa's Sykes College of Business invites applicants for the tenure track assistant professor position in business analytics to start in fall 2027. Responsibilities include teaching three four-credit hour courses at graduate and undergraduate levels during each semester in business statistics and analytics and introduction to information systems. The faculty member is also expected to maintain an active research agenda and publish in high-quality peer reviewed journals, as well as engage in service and student involvement activities at the department, college, and university levels. [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "Data Science & Analytics",
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-13T21:26:43.000Z"
+      ]
+    },
+    {
+      "key": "minitrack proposals due october 15 amcis 2027 sig it project management track",
+      "subject": "Minitrack Proposals Due October 15 – AMCIS 2027 SIG IT Project Management Track",
+      "sender": "Michael A. Erskine",
+      "date": "2026-10-13T20:56:53.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;6f454e3b.2610B",
+      "snippet": "Dear Colleagues, On behalf of AIS SIG IT Project Management (SIG ITPROJMGMT), we are pleased to invite minitrack proposals for AMCIS 2027 under our track: IT Project Management Minitrack Proposal Submission Deadline: October 15, 2026 AMCIS 2027: July 26-30, 2027 | São Paulo, Brazil In today&#8217;s highly competitive marketplace, organizations continue to look for ways to maximize the value of their projects. Information technology projects continue to face challenges related to uncertainty, emerging technologies, and evolving societal demands. IT projects have become notorious for high failure rates, escalating costs, and budget overruns. Both research and practice suggest that many IT [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "AMCIS"
+      ],
+      "reposts": [
+        "2026-09-16T16:21:29.000Z",
+        "2026-10-13T20:56:53.000Z"
+      ]
+    },
     {
       "key": "final call for minitrack proposals for sigsand for amcis 2027 sao paulo brazil",
       "subject": "Final Call for Minitrack Proposals for SIGSAND for AMCIS 2027 (Sao Paulo, Brazil)",
@@ -1922,22 +2016,6 @@
       ]
     },
     {
-      "key": "1st cfp 20th iadis international conference information systems 2027",
-      "subject": "1st CFP - 20th IADIS International Conference Information Systems 2027",
-      "sender": "",
-      "date": "2026-09-17T11:23:55.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;9afc9ba9.2609C",
-      "snippet": "Full message available at: 1st CFP - 20th IADIS International Conference Information Systems 2027",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [],
-      "reposts": [
-        "2026-09-17T11:23:55.000Z"
-      ]
-    },
-    {
       "key": "lecture or professor of practice harbert college of business auburn university",
       "subject": "Lecture or Professor of Practice - Harbert College of Business, Auburn University",
       "sender": "Ian Ho",
@@ -2055,24 +2133,6 @@
       "eventTags": [],
       "reposts": [
         "2026-09-16T17:38:21.000Z"
-      ]
-    },
-    {
-      "key": "call for minitrack proposals amcis 2027 sig it project management track",
-      "subject": "Call for Minitrack Proposals – AMCIS 2027 SIG IT Project Management Track",
-      "sender": "Michael A. Erskine",
-      "date": "2026-09-16T16:21:29.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;31922a90.2609C",
-      "snippet": "Dear Colleagues, On behalf of AIS SIG IT Project Management (SIG ITPROJMGMT), we are pleased to invite minitrack proposals for AMCIS 2027 under our track: IT Project Management Minitrack Proposal Submissions Open: September 21, 2026 Submission Deadline: October 15, 2026 AMCIS 2027: July 26-30, 2027 | São Paulo, Brazil In today&#8217;s highly competitive marketplace, organizations continue to look for ways to maximize the value of their projects. Information technology projects continue to face challenges related to uncertainty, emerging technologies, and evolving societal demands. IT projects have become notorious for high failure rates, escalating costs, and budget overruns. Both research and [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "AMCIS"
-      ],
-      "reposts": [
-        "2026-09-16T16:21:29.000Z"
       ]
     },
     {
@@ -5197,65 +5257,6 @@
       "eventTags": [],
       "reposts": [
         "2026-07-17T04:54:43.000Z"
-      ]
-    },
-    {
-      "key": "hiring postdoctoral researcher lmu munich school of management",
-      "subject": "Hiring Postdoctoral Researcher | LMU Munich School of Management",
-      "sender": "Kranz, Johann",
-      "date": "2026-07-16T15:37:18.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;eed60c83.2607C",
-      "snippet": "Dear colleagues, We are currently recruiting a Postdoctoral Researcher at the Professorship for Digital Services and Sustainability (https://www.som.lmu.de/dss/de/) at LMU Munich: Position details and application: https://job-portal.lmu.de/jobposting/b6b367e74e07653090979e23b489d1411b460f450?ref=homepage The position is intended for candidates with a PhD in Information Systems, or a closely related field, who are interested in conducting high-impact research at the intersection of digital technologies, organizations, and management. [...]",
-      "typeTags": [
-        "Journal & Special Issue",
-        "Job Posting"
-      ],
-      "topicTags": [
-        "Sustainability"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-16T15:37:18.000Z"
-      ]
-    },
-    {
-      "key": "aom 2026 pdw governance of and through artificial intelligence organizational perspectives",
-      "subject": "AOM 2026 PDW: Governance of and Through Artificial Intelligence: Organizational Perspectives",
-      "sender": "Rui Sun",
-      "date": "2026-07-16T09:44:48.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;53ee8fe2.2607C",
-      "snippet": "Excited to announce our upcoming Professional Development Workshop at AOM 2026: &quot;Governance of and Through Artificial Intelligence: Organizational Perspectives&quot; — organized together with Natalia Levina, Tamara Thuis, and Shama Patel. &gt; Sponsored by the AOM CTO Division | In collaboration with the AOM Organization &amp; Management Theory Division (OMT) &amp; AOM Technology and Innovation Management (TIM) Division [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Business & Enterprise"
-      ],
-      "eventTags": [
-        "AOM"
-      ],
-      "reposts": [
-        "2026-07-16T09:44:48.000Z"
-      ]
-    },
-    {
-      "key": "call for abstracts lab symposium reno nv august 18 2026",
-      "subject": "Call for Abstracts – LAB Symposium – Reno, NV – August 18, 2026",
-      "sender": "Michael A. Erskine",
-      "date": "2026-07-15T22:19:37.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;dcd4e31e.2607C",
-      "snippet": "Call for Abstracts – LAB Symposium – Reno, NV – August 18, 2026 The 5th Annual Location Analytics in Business Symposium (LAB Symposium) invites submissions for 20-minute research and practitioner presentations. We welcome abstracts describing completed research, works-in-progress, teaching innovations, industry applications, emerging methodologies, and case studies related to location analytics, spatial data science, GIS, GeoAI, location intelligence, and related topics. [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Data Science & Analytics",
-        "Education & Teaching"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-15T22:19:37.000Z"
       ]
     }
   ]
