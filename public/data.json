@@ -1,6 +1,97 @@
 {
-  "lastUpdated": "2026-10-15T15:57:03.385Z",
+  "lastUpdated": "2026-10-16T15:45:06.148Z",
   "messages": [
+    {
+      "key": "24th european semantic web conference eswc 2027 first call for contributions",
+      "subject": "24th European Semantic Web Conference (ESWC 2027): First Call for Contributions",
+      "sender": "Announce",
+      "date": "2026-10-16T13:36:46.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f10b20fd.2610C",
+      "snippet": "*** First Call for Contributions *** 24th European Semantic Web Conference (ESWC 2027) May 23-27, 2027, 5* St. Raphael Resort and Marina, Limassol, Cyprus https://2027.eswc-conferences.org The European Semantic Web Conference (ESWC) is a major venue for academic research and developments in the area of the Semantic Web and Knowledge Graphs. As in previous years, ESWC 2027 will feature a number of tracks (please refer to the webpage of each track for detailed information about topics of interest, submission instructions, important dates, etc). [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ESWC"
+      ],
+      "reposts": [
+        "2026-10-16T13:36:46.000Z"
+      ]
+    },
+    {
+      "key": "sig health spring 2026 newsletter and student service award",
+      "subject": "SIG Health Spring 2026 newsletter and Student Service Award",
+      "sender": "Hao, Haijing",
+      "date": "2026-10-16T12:56:21.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f0e9de8f.2610C",
+      "snippet": "Dear AIS community, SIG Health posted Spring 2026 newsletter and announced our Student Service Award 2026. http://www.aissighealth.com/wordpress/ Best regards, Haijing Hao, Ph.D. Associate Professor, Computer Information Systems Department, Bentley University, Waltham, MA, USA President, SIG Health, Association for Information Systems (AIS) Associate Editor, Nature Portfolio Journals(npj), Health Systems https://faculty.bentley.edu/profile/hhao From: Hao, Haijing Sent: Saturday, September 26, 2026 8:31 AM To: AISWORLD@LISTSERV.ISWORLD.ORG Subject: SIG Health Student Service Award Call for Application [...]",
+      "typeTags": [
+        "Job Posting",
+        "PhD & Funding"
+      ],
+      "topicTags": [
+        "Health"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-16T12:56:21.000Z"
+      ]
+    },
+    {
+      "key": "cfp acm sigmis cpr the future of work in the making computing people and the choices ahead",
+      "subject": "CFP ACM SIGMIS CPR The Future of Work in the Making: Computing, People, and the Choices Ahead",
+      "sender": "Indira R Guzman",
+      "date": "2026-10-16T01:03:18.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;bd8c5166.2610C",
+      "snippet": "Call for Papers: ACM SIGMIS CPR 2027 The Future of Work in the Making: Computing, People, and the Choices Ahead The 64th ACM SIGMIS Computers and People Research (CPR) Conference invites submissions for its 2027 conference to be held in St. Louis, Missouri, USA, May 19-21, 2027. For over 60 years, the ACM SIGMIS Computers and People Research (CPR) conference has engaged academic and practitioner communities in understanding the complex intersection of information technology (IT) and people. From its roots in the study of the IT workforce, CPR has broadened its focus to investigate all aspects of this important relationship; [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-16T01:03:18.000Z"
+      ]
+    },
+    {
+      "key": "reminder postdoc in trustworthy ai",
+      "subject": "Reminder: Postdoc in trustworthy AI",
+      "sender": "Sune Dueholm Müller",
+      "date": "2026-10-15T19:43:01.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ec3ea5e7.2610C",
+      "snippet": "I apologize for cross-posting. I just want to remind junior community members of this excellent opportunity at the University of Oslo: Statistically accurate models often fail when they meet institutions and people meant to use them. Want to help change that? The University of Oslo is hiring a 3-year postdoc to develop Action-Oriented Modeling, a new method that enables local stakeholders to configure, validate, and take ownership of machine learning (ML) models. You will, among other things, work with teams in ten countries on climate-sensitive disease prediction, as part of TRUST, the Norwegian Centre for Trustworthy AI. The position is [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Sustainability"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-15T19:43:01.000Z"
+      ]
+    },
+    {
+      "key": "assistant professor position at cal poly",
+      "subject": "Assistant Professor Position at Cal Poly",
+      "sender": "Jim Burleson",
+      "date": "2026-10-15T16:14:14.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;2d8a3c0f.2610C",
+      "snippet": "Are you looking for a tenure-track position that gives you the chance to excel in both teaching and research? Are you interested in joining a diverse team of engaged, motivated, and cooperative faculty? Do you enjoy interacting with hard-working students that are driven to succeed? Would you like to live in a beautiful climate mere minutes from the Pacific Ocean in a town once described as the “Happiest Place in America”? [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "Education & Teaching",
+        "Sustainability"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-15T16:14:14.000Z"
+      ]
+    },
     {
       "key": "join siggis advancing spatial intelligence geoai and digital twins in ais",
       "subject": "Join SIGGIS: Advancing Spatial Intelligence, GeoAI, and Digital Twins in AIS",
@@ -5240,24 +5331,6 @@
       ],
       "reposts": [
         "2026-07-19T04:53:51.000Z"
-      ]
-    },
-    {
-      "key": "position announcement professor",
-      "subject": "Position Announcement - Professor",
-      "sender": "Kevin Scheibe",
-      "date": "2026-07-17T19:31:31.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;daaf5c72.2607C",
-      "snippet": "The Department of Information Systems and Business Analytics (ISBA) in the Ivy College of Business at Iowa State University invites applications for a tenured position at the rank of Professor. The position includes an endowed chair for a distinguished candidate with an exceptional record of research excellence and leadership in Information Systems and Business Analytics. [...]",
-      "typeTags": [
-        "Job Posting"
-      ],
-      "topicTags": [
-        "Data Science & Analytics"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-17T19:31:31.000Z"
       ]
     }
   ]
