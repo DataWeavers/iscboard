@@ -1,6 +1,24 @@
 {
-  "lastUpdated": "2026-10-16T15:45:06.148Z",
+  "lastUpdated": "2026-10-17T14:37:48.589Z",
   "messages": [
+    {
+      "key": "caise 2027 call for workshop proposals",
+      "subject": "CAiSE 2027 - Call for Workshop Proposals",
+      "sender": "Carlos Capitan-Agudo",
+      "date": "2026-10-16T16:00:17.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;51cc19eb.2610C",
+      "snippet": "Want to help shape the conversation around novel ideas and early stage research? We are pleased to announce that the Call for Workshop Proposals for CAiSE 2027 is now open! CAiSE has a long tradition of hosting workshops in related fields. These workshops offer a great space for presenting innovative ideas with plenty of room for discussion. We especially welcome proposals on topics not already addressed by our two co-located working conferences, BPMDS and EMMSAD. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "CAISE"
+      ],
+      "reposts": [
+        "2026-10-16T16:00:17.000Z"
+      ]
+    },
     {
       "key": "24th european semantic web conference eswc 2027 first call for contributions",
       "subject": "24th European Semantic Web Conference (ESWC 2027): First Call for Contributions",
@@ -5310,27 +5328,6 @@
       ],
       "reposts": [
         "2026-07-20T02:37:35.000Z"
-      ]
-    },
-    {
-      "key": "call for papers rectemp 26 recsys 26 workshop workshop at acm recsys 2026 minneapolis usa",
-      "subject": "Call for Papers - RecTemp 26 (RecSys 26 Workshop) Workshop at ACM RecSys 2026, Minneapolis, USA - גקשגךןמק שפפרםשביןמע",
-      "sender": "",
-      "date": "2026-07-19T04:53:51.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b23222d1.2607C",
-      "snippet": "RecTemp focuses on temporal reasoning in recommender systems, covering changing preferences, short-term and long-term behavior, temporal context integration, and the emerging role of temporal information in LLM-based recommendation pipelines. RecTemp is dedicated to the exploration and advancement of temporal dynamics in recommender systems. As user preferences, intents, and contexts evolve over time, recommendation models must capture both short-term and long-term behavior to remain accurate, adaptive, and personalized across domains such as e-commerce, media, mobility, travel, and finance. [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Business & Enterprise"
-      ],
-      "eventTags": [
-        "RECSYS"
-      ],
-      "reposts": [
-        "2026-07-19T04:53:51.000Z"
       ]
     }
   ]
