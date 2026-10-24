@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-10-23T16:06:02.434Z",
+  "lastUpdated": "2026-10-24T15:02:31.821Z",
   "messages": [
+    {
+      "key": "last call call for nominations sig green award for the best journal paper on green is 2025 deadline extended to october 26",
+      "subject": "Last Call! Call for nominations: SIG Green Award for the Best Journal Paper on Green IS (2025) - deadline extended to October 26",
+      "sender": "Tanya Giannelia",
+      "date": "2026-10-24T00:37:05.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;e4887a5a.2610D",
+      "snippet": "**Deadline Extended to October 26** SIG Green is pleased to accept nominations for the SIG Green Award for the Best Journal Paper on Green IS (2025). See below for details and nomination instructions. 1. Background The award was established in 2017 by the AIS SIG Green board to recognize one outstanding journal paper on topics related to the role of information systems in matters regarding environmental sustainability. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "Sustainability"
+      ],
+      "eventTags": [
+        "IS"
+      ],
+      "reposts": [
+        "2026-09-15T19:37:35.000Z",
+        "2026-10-24T00:37:05.000Z"
+      ]
+    },
+    {
+      "key": "nominating committee seeks qualified candidates",
+      "subject": "Nominating Committee Seeks Qualified Candidates",
+      "sender": "Aretha N Wright",
+      "date": "2026-10-23T18:20:16.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d5c5971f.2610D",
+      "snippet": "The Nominating Committee for the 2027 Council Elections will assemble a ballot early in 2027. The committee's charge this year is to assemble a high-quality slate of candidates for the following open positions: * President-Elect (R1) * Vice President of SIGs and Colleges * Vice President of Education * Vice President of Communications The responsibilities for each position are listed in the Bylaws that can be found at: https://aisnet.org/about-ais/bylaws/ (Bylaw 6) [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-23T18:20:16.000Z"
+      ]
+    },
     {
       "key": "call for papers paper development workshop on data studies 3122026 in stgallen switzerland",
       "subject": "Call for papers: Paper Development Workshop on Data Studies, 3.12.2026, in St.Gallen, Switzerland",
@@ -2812,26 +2851,6 @@
       ]
     },
     {
-      "key": "call for nominations sig green award for the best journal paper on green is 2025",
-      "subject": "Call for nominations: SIG Green Award for the Best Journal Paper on Green IS (2025)",
-      "sender": "Tanya Giannelia",
-      "date": "2026-09-15T19:37:35.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f5c7dd64.2609C",
-      "snippet": "SIG Green is pleased to begin accepting nominations for the SIG Green Award for the Best Journal Paper on Green IS (2025). See below for details and nomination instructions. 1. Background The award was established in 2017 by the AIS SIG Green board to recognize one outstanding journal paper on topics related to the role of information systems in matters regarding environmental sustainability. [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Sustainability"
-      ],
-      "eventTags": [
-        "IS"
-      ],
-      "reposts": [
-        "2026-09-15T19:37:35.000Z"
-      ]
-    },
-    {
       "key": "link to submit papers is now open for eighteenth annual preicis sig globdev workshop",
       "subject": "Link to submit papers is now open for Eighteenth Annual Pre-ICIS SIG GlobDev Workshop",
       "sender": "Meke Kapepo",
@@ -5268,41 +5287,6 @@
       "eventTags": [],
       "reposts": [
         "2026-07-28T12:39:28.000Z"
-      ]
-    },
-    {
-      "key": "jise 2025 acceptance rate 1221",
-      "subject": "JISE 2025 Acceptance Rate: 12.21%",
-      "sender": "JISE Editor",
-      "date": "2026-07-26T13:59:32.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3bc6373f.2607D",
-      "snippet": "IS Community, During 2025, JISE received a total of 262 submissions. Of these, 145 manuscripts (55.34%) were desk rejected during the initial editorial screening, while 10 submissions (3.82%) were rejected by Associate Editors following further evaluation. Among manuscripts that advanced through the review process, 31 (11.83%) received a decision of major revision, 44 (16.79%) were rejected after peer review, and 32 (12.21%) were accepted for publication. These figures indicate that more than half of all submissions did not progress beyond the initial screening stage, underscoring JISE's emphasis on ensuring that manuscripts meet the journal's scope and quality standards before entering [...]",
-      "typeTags": [
-        "Journal & Special Issue",
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "JISE"
-      ],
-      "reposts": [
-        "2026-07-26T13:59:32.000Z"
-      ]
-    },
-    {
-      "key": "remembering bill king",
-      "subject": "Remembering Bill King",
-      "sender": "Galletta, Dennis",
-      "date": "2026-07-25T22:18:49.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;aafe7b2d.2607D",
-      "snippet": "Dear AIS Community, I'm sorry to report that at the age of 87, William R. (&quot;Bill&quot;) King passed away on Thursday, July 23. He left the University of Pittsburgh in 2008, after having made a large number of contributions to the field of Information Systems. His family's personal obituary shows up at the bottom of this email, and more information can be found in his very colorful and extensive Wikipedia page at https://en.wikipedia.org/wiki/William_Richard_King#&lt;https://en.wikipedia.org/wiki/William_Richard_King&gt;. He earned his PhD and master's degrees in Operations Research from Case Institute of Technology in 1962, under Russell L. Ackoff. His first academic appointments as Assistant [...]",
-      "typeTags": [
-        "PhD & Funding"
-      ],
-      "topicTags": [],
-      "eventTags": [],
-      "reposts": [
-        "2026-07-25T22:18:49.000Z"
       ]
     }
   ]
