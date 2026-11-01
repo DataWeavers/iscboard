@@ -1,6 +1,45 @@
 {
-  "lastUpdated": "2026-10-30T17:26:12.231Z",
+  "lastUpdated": "2026-11-01T17:23:28.264Z",
   "messages": [
+    {
+      "key": "aissaccacais 2026 joint seminar",
+      "subject": "AISSAC–CACAIS 2026 Joint Seminar.",
+      "sender": "Grant Oosterwyk",
+      "date": "2026-10-30T20:12:14.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1e3dadc4.2610E",
+      "snippet": "Registration is open for the AISSAC–CACAIS 2026 Joint Seminar. The AIS Southern African Chapter (AISSAC&lt;https://www.linkedin.com/company/aissac/&gt;) and the Central African Chapter of the Association for Information Systems (CACAIS)&lt;https://www.linkedin.com/company/cacais/&gt; are joining forces for our annual seminar, “Advancing African Scholarship in Global IS Research”. We are bringing together IS journal editors and senior scholars to discuss how African IS research reaches top journals. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "CACAIS"
+      ],
+      "reposts": [
+        "2026-10-30T20:12:14.000Z"
+      ]
+    },
+    {
+      "key": "assistant professor tenuretrack position at university of louisville",
+      "subject": "Assistant Professor (tenure-track) Position at University of Louisville",
+      "sender": "Sandeep Goyal",
+      "date": "2026-10-30T18:44:36.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;453afdac.2610E",
+      "snippet": "The Department of Information Systems, Analytics and Operations in the College of Business at the University of Louisville, an R1 Carnegie-classified University, invites applications for a full-time Assistant Professor (tenure-track) position to begin August 2027. Candidate hired will be expected to demonstrate a strong commitment to excellence in research and teaching, and a clear potential to publish high-quality research in top-tier journals. The successful candidate will teach three courses per year while in the tenure-track role (with a successful mid-tenure review) and perform service essential to sustaining the local and broader academic community. Courses taught could be in cybersecurity including [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "Data Science & Analytics",
+        "Cybersecurity & Privacy",
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-10-30T18:36:55.000Z",
+        "2026-10-30T18:44:36.000Z"
+      ]
+    },
     {
       "key": "free webinar oct 30 jonathan h westover on moving students from knowing to performing",
       "subject": "Free webinar Oct 30: Jonathan H. Westover on moving students from knowing to performing",
@@ -5134,28 +5173,6 @@
       "eventTags": [],
       "reposts": [
         "2026-08-03T20:29:34.000Z"
-      ]
-    },
-    {
-      "key": "call for papers 2026 preicis sigdsa symposium december 1213 lisbon portugal",
-      "subject": "Call for Papers: 2026 Pre-ICIS SIGDSA Symposium (December 12–13, Lisbon, Portugal)",
-      "sender": "Zadeh, Amir",
-      "date": "2026-08-01T17:27:18.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;af931943.2608A",
-      "snippet": "The Special Interest Group on Decision Support and Analytics (SIGDSA) invites you to submit your work to the 2026 Pre-ICIS SIGDSA Symposium, taking place December 12–13, 2026, in Lisbon, Portugal. Call for Papers - Pre-ICIS SIGDSA Symposium 2026 | Portugal 2026 Pre-ICIS SIGDSA Symposium&lt;https://preicis.sigdsa.org/home.html&gt; We welcome submissions for: * Research Track * Teaching &amp; Prototype Track * Doctoral Student Workshop Selected outstanding papers will be fast-tracked for consideration at leading journals, including the Decision Support Systems Journal, Journal of Decision Systems, Journal of Information Systems Education, and Decision Sciences Journal of Innovative Education. For submission guidelines, important dates, and additional [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "Data Science & Analytics",
-        "Education & Teaching"
-      ],
-      "eventTags": [
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-08-01T17:22:34.000Z",
-        "2026-08-01T17:27:18.000Z"
       ]
     }
   ]
