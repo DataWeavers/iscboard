@@ -1,6 +1,22 @@
 {
-  "lastUpdated": "2026-11-05T19:13:18.156Z",
+  "lastUpdated": "2026-11-06T18:39:54.569Z",
   "messages": [
+    {
+      "key": "new article on centralized data flow control in smart cities",
+      "subject": "New article on centralized data flow control in smart cities",
+      "sender": "Leonidas Anthopoulos",
+      "date": "2026-11-05T19:13:33.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;cab3d6c0.2611A",
+      "snippet": "Dear colleagues, I would like to draw your attention to a newly published research article: Title: Towards Standardized Data Flow Control in Smart Cities: The SCHub Prototype Journal: SN Computer Science DOI: 10.1007/s42979-026-05412-8 This article addresses the problem of Data flow homogenization and control in Smart Cities (SC), which poses a significant challenge for vendors, governments, and standardization bodies. Currently, a multitude of protocols and standards are used, spanning all layers of a Smart City Platform (SCP), from IoT devices to semantic SCP APIs. The lack of interoperability does not allow for seamless data flow and hinders SC from providing [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-11-05T19:13:33.000Z"
+      ]
+    },
     {
       "key": "dgo 2027 track 12 aidriven smart cities and the citiverse",
       "subject": "dg.o 2027: TRACK 12. AI-Driven Smart Cities and the Citiverse",
@@ -5116,57 +5132,6 @@
       "eventTags": [],
       "reposts": [
         "2026-08-10T08:20:56.000Z"
-      ]
-    },
-    {
-      "key": "call for papers ieee icebe 2026",
-      "subject": "Call for Papers – IEEE ICEBE 2026",
-      "sender": "Eunus Ali",
-      "date": "2026-08-08T08:14:15.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;ffe3d73b.2608B",
-      "snippet": "Dear colleagues, Just a soft reminder that the final submission deadline is only a few days away. I look forward to receiving your submissions. Thanks Eunus &gt; Dear colleagues, &gt; &gt; The *22nd IEEE International Conference on E-Business Engineering (IEEE &gt; ICEBE 2026)* invites original research papers on AI, e-business, digital &gt; transformation, business analytics, FinTech, blockchain, cloud computing, &gt; IoT, cybersecurity, and related areas. &gt; &gt; 📍 *Wuhan, China* &gt; 📅 *11–13 November 2026* &gt; ⏰ *Submission deadline:* *15 August 2026* &gt; &gt; Learn more and submit your paper: &gt; https://conferences.computer.org/icebe/2026/index.html &gt; > Please share this CFP with interested [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Data Science & Analytics",
-        "Cybersecurity & Privacy",
-        "Business & Enterprise"
-      ],
-      "eventTags": [
-        "ICEBE"
-      ],
-      "reposts": [
-        "2026-07-18T11:38:01.000Z",
-        "2026-08-08T08:14:15.000Z"
-      ]
-    },
-    {
-      "key": "call for papers digit 2026 workshop sigadit colocated with icis 2026 lisbon",
-      "subject": "Call for Papers: DIGIT 2026 Workshop (SIG-ADIT), co-located with ICIS 2026, Lisbon",
-      "sender": "Evelyn Ng",
-      "date": "2026-08-07T23:40:57.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;d5dc7bc2.2608A",
-      "snippet": "Dear Colleagues, We are pleased to invite submissions to&nbsp; DIGIT 2026 , the annual Diffusion Interest Group in Information Technology workshop of the AIS Special Interest Group on the Adoption and Diffusion of Information Technology (SIG-ADIT). The workshop will be held on Sunday, December 13, 2026 (1:00&ndash;5:00 pm local time) in Lisbon, Portugal, co-located with ICIS 2026. DIGIT provides a forum for researchers and practitioners interested in the adoption and diffusion of information technology and its impact on individuals, organizations, and societies. Aligned with the ICIS 2026 theme, &quot;Digital Collaboration and Coexistence,&quot; this year&#39;s workshop invites research on the adoption and diffusion of digital technologies in connected environments. To encourage in-depth discussion, participation is limited to approximately 40 attendees, with presentations, roundtable discussions, and panel sessions. Topics of interest include, but are not limited to: Adoption of AI (generative AI, agentic systems) and other emerging technologies IT adoption strategies for digital integration and process reconfiguration Digital transformation across healthcare, education, finance, and the public sector Multi-level contextual factors shaping adoption and resistance Individual values, perceptions, beliefs, and attitudes in technology use, adoption, and resistance Ethical considerations and responsible AI development Digital ecosystems and technology substitution IT adoption in support of the Sustainable Development Goals Security, privacy, and risk management Methodological approaches to studying IT adoption dynamics Adoption of robotics and automation across sectors Important dates: Submission deadline: Friday, October 2, 2026, 11:59 pm EDT Workshop: Sunday, December 13, 2026, 1:00&ndash;5:00 pm local time, Lisbon Submission guidelines: We welcome two categories of papers, submitted as single-spaced PDFs with an abstract and prepared using the DIGIT 2026 template: Completed research papers: up to 16 single-spaced pages Research-in-progress papers: up to 8 single-spaced pages Page limits are all-inclusive (title, body, figures, tables, references, and appendices). The submission template is available here:&nbsp; https://www.uni-bamberg.de/fileadmin/isdl/DIGIT2026_Submission_Template.docx Submission is a two-step process: Complete the submission form:&nbsp; https://forms.office.com/e/Zu4SuPtb7U Forward the confirmation email, with your paper attached, to&nbsp; DIGIT.Submissions@gmail.com Full details and the complete call for papers are available on the workshop website:&nbsp; https://communities.aisnet.org/sigadit-thrive/digit/digit-2026 We look forward to your submissions and to seeing you in Lisbon. Best regards, The DIGIT 2026 Organizing Team Christoph Weinert, University of Bamberg (Workshop Chair) Arturo Cano Bejar, New Mexico State University (Program Co-Chair) Evelyn Ng, University of Sydney (Program Co-Chair) On behalf of AIS SIG-ADIT: Saeed Akhlaghpour (Chair), Azadeh Savoli (Chair-Elect), Hamed Qahri-Saremi (Past-Chair)",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Cybersecurity & Privacy",
-        "Digital Transformation",
-        "Health",
-        "Education & Teaching",
-        "Sustainability"
-      ],
-      "eventTags": [
-        "DIGIT",
-        "ICIS"
-      ],
-      "reposts": [
-        "2026-08-07T23:29:37.000Z",
-        "2026-08-07T23:40:57.000Z"
       ]
     }
   ]
