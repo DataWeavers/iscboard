@@ -1,6 +1,60 @@
 {
-  "lastUpdated": "2026-11-19T19:44:05.083Z",
+  "lastUpdated": "2026-11-20T19:25:00.611Z",
   "messages": [
+    {
+      "key": "icis 2026 sigsand workshop on systems analysis and design here be dragons recharting the frontiers of systems analysis design in the age of ai",
+      "subject": "ICIS 2026 - SIGSAND Workshop on Systems Analysis and Design - \"Here Be Dragons: Re-charting the Frontiers of Systems Analysis & Design in the Age of AI",
+      "sender": "Beard, Jon W [ISBA]",
+      "date": "2026-11-20T13:09:41.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b6cd0130.2611C",
+      "snippet": "SIGSAND Workshop at ICIS 2026 Here Be Dragons: Re-charting the Frontiers of Systems Analysis &amp; Design in the Age of AI Sunday, December 13 | 13:30-15:00 | ICIS 2026, Lisbon Artificial intelligence is changing how information systems are analyzed, designed, built, and used, and by whom. AI now takes part in requirements work, generates models and prototypes, recommends designs, and acts within the systems being designed. Agents, vibe coding, and other emerging capabilities raise a bigger question: what is the intellectual territory of Systems Analysis and Design (SAND) today? [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-11-20T13:09:41.000Z"
+      ]
+    },
+    {
+      "key": "cfp information and organization special issue societal transformation through digital infrastructures in times of change deadline 30 march 2027",
+      "subject": "CFP: Information and Organization Special Issue “Societal Transformation through Digital Infrastructures in Times of Change”, deadline 30 March 2027",
+      "sender": "Fürstenau, Daniel",
+      "date": "2026-11-20T07:20:54.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;f0909993.2611C",
+      "snippet": "Dear all, Consider submitting to our Special Issue on “Societal Transformation through Digital Infrastructures in Times of Change” in Information and Organization instead. I&amp;O is a wonderful journal and a home for theoretically ambitious work on technology and organizing. We are proud to publish this special issue there. The deadline is 30 March 2027, so there&#8217;s still time for a good New Year&#8217;s resolution. [...]",
+      "typeTags": [
+        "Journal & Special Issue"
+      ],
+      "topicTags": [],
+      "eventTags": [],
+      "reposts": [
+        "2026-11-20T07:20:54.000Z"
+      ]
+    },
+    {
+      "key": "free spring 2027 pilot pm and systems analysis courses built for the ai era",
+      "subject": "Free Spring 2027 pilot: PM and Systems Analysis courses built for the AI era",
+      "sender": "Russell L. Purvis Ph.D. PMP",
+      "date": "2026-11-19T21:35:55.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;b6a85f98.2611C",
+      "snippet": "Colleagues, Tired of textbooks out of date on arrival? No videos and no real use of AI? Online tests students beat with AI, even under webcam proctoring? Cases that never change? No simulator where students practice the real job, in a realistic setting, before it counts? RevelationPM and RevelationBA rebuild project management and systems analysis around one idea: AI does the setup faster, so students spend the saved time going deeper. [...]",
+      "typeTags": [
+        "General Discussion"
+      ],
+      "topicTags": [
+        "AI & GenAI"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-11-19T21:35:55.000Z"
+      ]
+    },
     {
       "key": "2nd cfp 20th iadis int conf information systems 2027 in porto portugal",
       "subject": "2nd CFP - 20th IADIS Int. Conf. Information Systems 2027 in Porto, Portugal",
