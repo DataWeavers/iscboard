@@ -1,6 +1,25 @@
 {
-  "lastUpdated": "2026-11-20T19:25:00.611Z",
+  "lastUpdated": "2026-11-21T18:26:23.565Z",
   "messages": [
+    {
+      "key": "cfp confirm 2027 bogota colombia website submission details",
+      "subject": "CFP Conf-IRM 2027, Bogota, Colombia - Website & Submission Details",
+      "sender": "Felix Tan",
+      "date": "2026-11-21T10:00:43.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;1dac25a0.2611C",
+      "snippet": "2027 International Conference on Information Resources Management; May 31- June 2, 2027; An AIS Affiliated Conference Conf-IRM 2027, Bogota, Colombia - Call for Papers; Conference Theme: Intelligent &amp; Fragile Infrastructures: Governing Complexity in Information Systems For details of tracks and submission guidelines including templates, please check out the conference website at: https://ingenieria.javeriana.edu.co/conf-irm2027 [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "IRM"
+      ],
+      "reposts": [
+        "2026-11-11T18:44:24.000Z",
+        "2026-11-21T10:00:43.000Z"
+      ]
+    },
     {
       "key": "icis 2026 sigsand workshop on systems analysis and design here be dragons recharting the frontiers of systems analysis design in the age of ai",
       "subject": "ICIS 2026 - SIGSAND Workshop on Systems Analysis and Design - \"Here Be Dragons: Re-charting the Frontiers of Systems Analysis & Design in the Age of AI",
@@ -549,24 +568,6 @@
       ],
       "reposts": [
         "2026-11-11T19:38:18.000Z"
-      ]
-    },
-    {
-      "key": "confirm 2027 bogota colombia cfp",
-      "subject": "Conf-IRM 2027, Bogota, Colombia - CFP",
-      "sender": "Felix Tan",
-      "date": "2026-11-11T18:44:24.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;80336781.2611B",
-      "snippet": "2027 International Conference on Information Resources Management; May 31- June 2, 2027; An AIS Affiliated Conference Conf-IRM 2027, Bogota, Colombia - Call for Papers; Conference Theme: Intelligent &amp; Fragile Infrastructures: Governing Complexity in Information Systems Submission system (you will be asked to setup an EDAS account if you don't have one): https://conf-irm2027.edas.info/newPaper.php?c=35940 Submission deadline: January 10, 2027 [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [],
-      "eventTags": [
-        "IRM"
-      ],
-      "reposts": [
-        "2026-11-11T18:44:24.000Z"
       ]
     },
     {
