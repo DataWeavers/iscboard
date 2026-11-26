@@ -1,6 +1,64 @@
 {
-  "lastUpdated": "2026-11-25T20:49:38.966Z",
+  "lastUpdated": "2026-11-26T20:41:48.425Z",
   "messages": [
+    {
+      "key": "edcc 2027 call for contributions for companion tracks",
+      "subject": "EDCC 2027 – Call for Contributions for Companion Tracks",
+      "sender": "Leonardo Montecchi",
+      "date": "2026-11-26T17:31:49.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;66ed23c1.2611D",
+      "snippet": "Full message available at: EDCC 2027 – Call for Contributions for Companion Tracks",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "EDCC"
+      ],
+      "reposts": [
+        "2026-11-26T17:31:49.000Z"
+      ]
+    },
+    {
+      "key": "invitation icis 2026 ancillary meeting gcc ais chapter virtual session 1 dec 2026 at 3 to 4 pm utc3",
+      "subject": "Invitation: ICIS 2026 Ancillary Meeting – GCC AIS Chapter (Virtual Session), 1 Dec 2026 at 3 to 4 pm. (UTC+3)",
+      "sender": "Savanid (Nui) Vatanasakdakul",
+      "date": "2026-11-26T09:48:09.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;481293bf.2611D",
+      "snippet": "Dear GCC IS Community, We are pleased to invite you to the *ICIS 2026 Ancillary Meeting of the GCC AIS Chapter*, which will be held virtually. *Date:* Tuesday, December 1, 2026 *Time:* *3:00–4:00 p.m. Doha time (UTC+3)* *Format:* Virtual via Zoom This gathering will bring together Information Systems scholars, educators, researchers, doctoral students, and practitioners who share an interest in advancing the IS discipline across the GCC region. [...]",
+      "typeTags": [
+        "Conference & Workshop"
+      ],
+      "topicTags": [],
+      "eventTags": [
+        "ICIS"
+      ],
+      "reposts": [
+        "2026-11-26T09:42:48.000Z",
+        "2026-11-26T09:48:09.000Z"
+      ]
+    },
+    {
+      "key": "assistant professor in information systems management and analytics warwick business school uk",
+      "subject": "Assistant Professor in Information Systems Management and Analytics | Warwick Business School, UK",
+      "sender": "Joe Nandhakumar",
+      "date": "2026-11-25T21:20:25.000Z",
+      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;de440f36.2611D",
+      "snippet": "Warwick Business School invites applications for the post of Assistant Professor in Information Systems and Analytics, with a start date of 1 August 2027 (job ref. 451). The successful candidate will join our Information Systems Management and Analytics (ISMA) Group, a collegial research community working across AI, digital innovation and business analytics. The role offers opportunities for interdisciplinary collaboration across the University of Warwick and research-led teaching on our MSc programmes. [...]",
+      "typeTags": [
+        "Job Posting"
+      ],
+      "topicTags": [
+        "AI & GenAI",
+        "Data Science & Analytics",
+        "Digital Transformation",
+        "Education & Teaching"
+      ],
+      "eventTags": [],
+      "reposts": [
+        "2026-11-25T21:20:25.000Z"
+      ]
+    },
     {
       "key": "tenure track assistant professor position at university of south florida",
       "subject": "Tenure Track Assistant Professor Position at University of South Florida",
@@ -4946,45 +5004,6 @@
       "eventTags": [],
       "reposts": [
         "2026-08-30T21:40:00.000Z"
-      ]
-    },
-    {
-      "key": "cfa pdw digital innovation transformation and entrepreneurship in the ai age in heilbronn germany",
-      "subject": "CfA: PDW \"Digital Innovation, Transformation, and Entrepreneurship in the AI Age\" in Heilbronn, Germany",
-      "sender": "Wessel, Lauri",
-      "date": "2026-08-28T15:39:48.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;e2b78421.2608D",
-      "snippet": "+++ Apologies for cross-postings +++ Digital Innovation, Transformation, and Entrepreneurship in the AI Age: PhD seminar/ PDW in November in Heilbronn, Germany Janina Sundermeier and I are excited to call for your applications to a PhD seminar/ PDW about “Digital Innovation, Transformation, and Entrepreneurship in the AI Age” taking place November 26th &amp; 27th this year in Heilbronn, Germany! Keynote speaker and mentor during the workshop will be Abayomi Baiyere (Smith School of Business, Queens University, Canada). [...]",
-      "typeTags": [
-        "Conference & Workshop",
-        "PhD & Funding"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Digital Transformation"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-08-28T15:39:48.000Z"
-      ]
-    },
-    {
-      "key": "registration open inaugural conference on generative ai in research methods oct 12 atlanta",
-      "subject": "Registration Open: Inaugural Conference on Generative AI in Research Methods, Oct 1–2, Atlanta",
-      "sender": "Weifeng Li",
-      "date": "2026-08-27T21:27:27.000Z",
-      "url": "https://listserv.isworld.org/scripts/wa-ISWORLD.exe?A2=AISWORLD;3d8b9955.2608D",
-      "snippet": "Dear colleagues, Registration is now open for the inaugural Conference on Generative AI in Research Methods. Join us for an evening reception followed by a full day of research presentations, a keynote, a panel, and discussion on how GenAI is reshaping research methods - all in a supportive, workshop-style setting. Dates: October 1–2, 2026 Location: UGA Terry Executive Education Center, Atlanta, GA Registration: $100 faculty, $50 doctoral students [...]",
-      "typeTags": [
-        "Conference & Workshop"
-      ],
-      "topicTags": [
-        "AI & GenAI",
-        "Education & Teaching"
-      ],
-      "eventTags": [],
-      "reposts": [
-        "2026-08-27T21:27:27.000Z"
       ]
     }
   ]
